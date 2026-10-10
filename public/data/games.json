@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Pragmata",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "playing",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 14.1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobxnx.jpg",
+    "released": "2026",
+    "developer": "Capcom",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791671459729
+  }
+]
