@@ -2,7 +2,7 @@
   {
     "title": "Pragmata",
     "system": "Nintendo Switch 2",
-    "genre": "Adventure",
+    "genre": "Shooter",
     "status": "playing",
     "ownership": "physical",
     "franchise": "",
@@ -19,6 +19,2295 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791671459729
+    "dlc": [],
+    "id": 1791671459729,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791671646850
+  },
+  {
+    "igdbId": 5440,
+    "title": "Kirby: Triple Deluxe",
+    "system": "Nintendo 3DS",
+    "status": "playing",
+    "ownership": "physical",
+    "released": "2014",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q9m.jpg",
+    "timeToBeat": 9,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750170,
+    "developer": "HAL Laboratory",
+    "criticScore": 79,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671758159
+  },
+  {
+    "igdbId": 3810,
+    "title": "Billy Hatcher and the Giant Egg",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co26dv.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750171,
+    "developer": "Sonic Team",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671759595
+  },
+  {
+    "igdbId": 3866,
+    "title": "Cubix Robots for Everyone: Showdown",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "",
+    "franchise": "",
+    "cover": "",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750172,
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671760635
+  },
+  {
+    "igdbId": 3680,
+    "title": "Dance Dance Revolution Mario Mix",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2005",
+    "notes": "",
+    "rating": null,
+    "genre": "Music",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co214p.jpg",
+    "timeToBeat": 4,
+    "tags": [
+      "Party"
+    ],
+    "id": 1791671750173,
+    "developer": "Konami",
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view",
+      "Auditory"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671761284
+  },
+  {
+    "igdbId": 1097,
+    "title": "Donkey Kong Jungle Beat",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2004",
+    "notes": "",
+    "rating": null,
+    "genre": "Music",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5y6u.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750174,
+    "developer": "Nintendo EAD Tokyo Software Development Group No.1",
+    "criticScore": 79,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671762173
+  },
+  {
+    "igdbId": 256803,
+    "title": "Donkey Konga",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2004",
+    "notes": "",
+    "rating": null,
+    "genre": "Music",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f7u.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Party"
+    ],
+    "id": 1791671750175,
+    "developer": "Namco",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Auditory"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671763014
+  },
+  {
+    "igdbId": 2563,
+    "title": "Dragon Ball Z: Budokai",
+    "system": "GameCube",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2002",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u7b.jpg",
+    "timeToBeat": 8,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750176,
+    "developer": "Dimps",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671764014
+  },
+  {
+    "igdbId": 7489,
+    "title": "Yakuza: Dead Souls",
+    "system": "PlayStation 3",
+    "status": "playing",
+    "ownership": "physical",
+    "released": "2011",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5xqj.jpg",
+    "timeToBeat": 10,
+    "tags": [
+      "Action",
+      "Horror",
+      "Sandbox",
+      "Open world"
+    ],
+    "id": 1791671750177,
+    "developer": "Ryu Ga Gotoku Studio",
+    "criticScore": 67,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671765093
+  },
+  {
+    "id": 1791671750178,
+    "title": "Phoenix Wright: Ace Attorney Trilogy",
+    "system": "Nintendo Switch",
+    "genre": "Adventure",
+    "status": "playing",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 46.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa7iv.jpg",
+    "released": "2014",
+    "developer": "Capcom",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person",
+      "Side view",
+      "Text"
+    ],
+    "includedGames": [
+      {
+        "title": "Phoenix Wright: Ace Attorney - Justice For All",
+        "done": false
+      },
+      {
+        "title": "Phoenix Wright: Ace Attorney - Trials and Tribulations",
+        "done": false
+      },
+      {
+        "title": "Phoenix Wright: Ace Attorney",
+        "done": true
+      }
+    ]
+  },
+  {
+    "igdbId": 3942,
+    "title": "Harry Potter and the Goblet of Fire",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2005",
+    "notes": "",
+    "rating": null,
+    "genre": "Adventure",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6gz0.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750179,
+    "developer": "Magic Pockets",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671766828
+  },
+  {
+    "igdbId": 2777,
+    "title": "Kirby Air Ride",
+    "system": "GameCube",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6nwh.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Fantasy"
+    ],
+    "id": 1791671750180,
+    "developer": "HAL Laboratory",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671768680
+  },
+  {
+    "igdbId": 2331,
+    "title": "Mario Party 5",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "Card & Board Game",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2jxf.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "id": 1791671750181,
+    "developer": "Hudson Soft",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671770193
+  },
+  {
+    "igdbId": 2334,
+    "title": "Mario Party 7",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2005",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21z3.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "id": 1791671750182,
+    "developer": "Hudson Soft",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671771160
+  },
+  {
+    "igdbId": 3349,
+    "title": "Paper Mario: The Thousand-Year Door",
+    "system": "GameCube",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2004",
+    "notes": "",
+    "rating": null,
+    "genre": "RPG",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co25us.jpg",
+    "timeToBeat": 24.9,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Comedy"
+    ],
+    "id": 1791671750183,
+    "developer": "Intelligent Systems",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671772307
+  },
+  {
+    "igdbId": 2643,
+    "title": "Pokémon Channel",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2pok.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Comedy",
+      "Kids"
+    ],
+    "id": 1791671750184,
+    "developer": "Ambrella",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Pokémon Channel Bangumi Kakuchou Pack",
+        "done": false
+      }
+    ],
+    "lastSynced": 1791671773294
+  },
+  {
+    "igdbId": 2724,
+    "title": "Pokémon XD: Gale of Darkness",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2005",
+    "notes": "",
+    "rating": null,
+    "genre": "RPG",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk4.jpg",
+    "timeToBeat": 11,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750185,
+    "developer": "Genius Sonority",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671774720
+  },
+  {
+    "igdbId": 4157,
+    "title": "Sonic Mega Collection",
+    "system": "Xbox",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2002",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2uz8.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "includedGames": [
+      {
+        "title": "Comix Zone",
+        "done": false,
+        "igdbId": 3071
+      },
+      {
+        "title": "Sonic the Hedgehog",
+        "done": false,
+        "igdbId": 3192
+      },
+      {
+        "title": "Sonic the Hedgehog 2",
+        "done": false,
+        "igdbId": 4438
+      },
+      {
+        "title": "Dr. Robotnik's Mean Bean Machine",
+        "done": false,
+        "igdbId": 4499
+      },
+      {
+        "title": "Sonic the Hedgehog 3",
+        "done": false,
+        "igdbId": 6797
+      },
+      {
+        "title": "Ristar",
+        "done": false,
+        "igdbId": 7431
+      },
+      {
+        "title": "Sonic & Knuckles",
+        "done": false,
+        "igdbId": 9475
+      },
+      {
+        "title": "Sonic 3D Blast",
+        "done": false,
+        "igdbId": 9476
+      },
+      {
+        "title": "Sonic the Hedgehog 3 & Knuckles",
+        "done": false,
+        "igdbId": 11219
+      },
+      {
+        "title": "Sonic the Hedgehog: Spinball",
+        "done": false,
+        "igdbId": 16036
+      },
+      {
+        "title": "The Ooze",
+        "done": false,
+        "igdbId": 46251
+      },
+      {
+        "title": "Flicky",
+        "done": false,
+        "igdbId": 275674
+      }
+    ],
+    "id": 1791671750186,
+    "developer": "Sonic Team",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Bird view / Isometric",
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671776519
+  },
+  {
+    "igdbId": 227987,
+    "title": "SoulCalibur II",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2003",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x6l.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Historical"
+    ],
+    "id": 1791671750187,
+    "developer": "Project Soul",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671777497
+  },
+  {
+    "igdbId": 1075,
+    "title": "Super Mario Sunshine",
+    "system": "GameCube",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2002",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co68sg.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Sandbox"
+    ],
+    "id": 1791671750188,
+    "developer": "Nintendo Entertainment Analysis & Development",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671778217
+  },
+  {
+    "igdbId": 19309,
+    "title": "Dragon Ball: Revenge of King Piccolo",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2009",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ilp.jpg",
+    "timeToBeat": 7,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750189,
+    "developer": "Media.Vision",
+    "criticScore": 62,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671779423
+  },
+  {
+    "igdbId": 2671,
+    "title": "Guitar Hero III: Legends of Rock",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2007",
+    "notes": "",
+    "rating": null,
+    "genre": "Music",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wqm.jpg",
+    "timeToBeat": 8,
+    "tags": [
+      "Party"
+    ],
+    "id": 1791671750190,
+    "developer": "Vicarious Visions",
+    "criticScore": 84,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Auditory"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671780182
+  },
+  {
+    "igdbId": 2193,
+    "title": "Mario Party 8",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2007",
+    "notes": "",
+    "rating": null,
+    "genre": "Action",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9p83.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750191,
+    "developer": "ExtraToxic",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671780855
+  },
+  {
+    "igdbId": 1112,
+    "title": "Metroid Prime: Trilogy",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2009",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co404a.jpg",
+    "timeToBeat": 21,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "includedGames": [
+      {
+        "title": "Metroid Prime 3: Corruption",
+        "done": false,
+        "igdbId": 1111
+      },
+      {
+        "title": "Metroid Prime",
+        "done": false,
+        "igdbId": 134257
+      },
+      {
+        "title": "Metroid Prime 2: Echoes",
+        "done": false,
+        "igdbId": 134258
+      }
+    ],
+    "id": 1791671750192,
+    "developer": "Retro Studios",
+    "criticScore": 89,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671781662
+  },
+  {
+    "igdbId": 1616,
+    "title": "Mortal Kombat: Armageddon",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2006",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y0j.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750193,
+    "developer": "Just Games Interactive",
+    "criticScore": 73,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person",
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671782684
+  },
+  {
+    "igdbId": 19656,
+    "title": "Naruto Shippuden: Clash of Ninja Revolution 3",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2009",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ubt.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750194,
+    "developer": "Eighting",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671783368
+  },
+  {
+    "igdbId": 5166,
+    "title": "Sonic and the Black Knight",
+    "system": "Wii",
+    "status": "playing",
+    "ownership": "physical",
+    "released": "2009",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4at1.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750195,
+    "developer": "Sonic Team",
+    "criticScore": 57,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671784054
+  },
+  {
+    "igdbId": 1077,
+    "title": "Super Mario Galaxy",
+    "system": "Wii",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2007",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coavv6.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "id": 1791671750196,
+    "developer": "Nintendo Software Technology",
+    "criticScore": 92,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric",
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671785008
+  },
+  {
+    "igdbId": 1078,
+    "title": "Super Mario Galaxy 2",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2010",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coakzq.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "id": 1791671750197,
+    "developer": "CowQuack",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671785655
+  },
+  {
+    "igdbId": 5200,
+    "title": "Super Monkey Ball: Banana Blitz",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2006",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uh1.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Kids",
+      "Party"
+    ],
+    "id": 1791671750198,
+    "developer": "Sega Games",
+    "criticScore": 66,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671786297
+  },
+  {
+    "igdbId": 1628,
+    "title": "Super Smash Bros. Brawl",
+    "system": "Wii",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2008",
+    "notes": "",
+    "rating": null,
+    "genre": "Action",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa3v2.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750199,
+    "developer": "ExtraToxic",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671787132
+  },
+  {
+    "igdbId": 2275,
+    "title": "Tatsunoko vs. Capcom: Ultimate All Stars",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2010",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ydx.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750200,
+    "developer": "Eighting",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671787814
+  },
+  {
+    "igdbId": 5185,
+    "title": "uDraw Studio",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2010",
+    "notes": "",
+    "rating": null,
+    "genre": "Simulation",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobx82.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Sandbox",
+      "Educational"
+    ],
+    "id": 1791671750201,
+    "developer": "Pipeworks Software",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671788464
+  },
+  {
+    "igdbId": 2185,
+    "title": "Wii Play",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2006",
+    "notes": "",
+    "rating": null,
+    "genre": "Sports",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coccva.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "id": 1791671750202,
+    "developer": "Arzest",
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671789114
+  },
+  {
+    "igdbId": 2276,
+    "title": "The Legend of Zelda: The Wind Waker HD",
+    "system": "Wii U",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2013",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ozi.jpg",
+    "timeToBeat": 30,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Kids",
+      "Open world"
+    ],
+    "id": 1791671750203,
+    "developer": "Nintendo EAD Software Development Group No.3",
+    "criticScore": 91,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671789928
+  },
+  {
+    "igdbId": 18017,
+    "title": "The Legend of Zelda: Twilight Princess HD",
+    "system": "Wii U",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2016",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3mqa.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750204,
+    "developer": "Nintendo EPD Production Group No. 3",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671790666
+  },
+  {
+    "igdbId": 1591,
+    "title": "ZombiU",
+    "system": "Wii U",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2012",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co22ag.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival"
+    ],
+    "id": 1791671750205,
+    "developer": "Ubisoft Montpellier",
+    "criticScore": 78,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671791503
+  },
+  {
+    "igdbId": 2350,
+    "title": "Mario Kart 8",
+    "system": "Wii U",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2014",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coc17v.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "id": 1791671750206,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671792137
+  },
+  {
+    "igdbId": 2172,
+    "title": "Nintendo Land",
+    "system": "Wii U",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2012",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p9c.jpg",
+    "timeToBeat": 9.5,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Party"
+    ],
+    "id": 1791671750207,
+    "developer": "Nintendo EAD Software Development Group No.2",
+    "criticScore": 75,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person",
+      "Bird view / Isometric",
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671793105
+  },
+  {
+    "igdbId": 9602,
+    "title": "Super Smash Bros. for Wii U",
+    "system": "Wii U",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "2014",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co45qp.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750208,
+    "developer": "Bandai Namco Studios",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671793917
+  },
+  {
+    "igdbId": 3328,
+    "title": "1080° Snowboarding",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocz1i.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750209,
+    "developer": "Nintendo Entertainment Analysis & Development",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671794552
+  },
+  {
+    "igdbId": 10658,
+    "title": "All-Star Baseball 2000",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co76k0.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750210,
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671797418
+  },
+  {
+    "igdbId": 3441,
+    "title": "Army Men: Sarge's Heroes 2",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6t2g.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Comedy",
+      "Warfare"
+    ],
+    "id": 1791671750211,
+    "developer": "The 3DO Company",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671798521
+  },
+  {
+    "igdbId": 2723,
+    "title": "Diddy Kong Racing",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1997",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wgj.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "id": 1791671750212,
+    "developer": "Rare",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671799547
+  },
+  {
+    "igdbId": 3337,
+    "title": "Excitebike 64",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4an4.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Non-fiction"
+    ],
+    "id": 1791671750213,
+    "developer": "Left Field Productions",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671801285
+  },
+  {
+    "igdbId": 1096,
+    "title": "Donkey Kong 64",
+    "system": "Nintendo 64",
+    "status": "playing",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co289i.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "id": 1791671750214,
+    "developer": "Rare",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671801953
+  },
+  {
+    "igdbId": 47758,
+    "title": "Gex 64: Enter the Gecko",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3966.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "id": 1791671750215,
+    "developer": "Crystal Dynamics",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671802827
+  },
+  {
+    "igdbId": 1638,
+    "title": "GoldenEye 007",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1997",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cockza.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750216,
+    "developer": "Tiger Electronics",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671804365
+  },
+  {
+    "igdbId": 2642,
+    "title": "Hey You, Pikachu!",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "Simulation",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co407c.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Kids"
+    ],
+    "id": 1791671750217,
+    "developer": "Ambrella",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671805225
+  },
+  {
+    "igdbId": 3371,
+    "title": "Hot Wheels Turbo Racing",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f7f.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750218,
+    "developer": "Stormfront Studios",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671806509
+  },
+  {
+    "igdbId": 3397,
+    "title": "Kobe Bryant in NBA Courtside",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "Sports",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co39yb.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750219,
+    "developer": "Left Field Productions",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671807215
+  },
+  {
+    "igdbId": 1030,
+    "title": "The Legend of Zelda: Majora's Mask",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3pah.jpg",
+    "timeToBeat": 23.4,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Horror",
+      "Open world"
+    ],
+    "id": 1791671750220,
+    "developer": "Nintendo EAD Software Development Group No.3",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671808341
+  },
+  {
+    "igdbId": 2342,
+    "title": "Mario Kart 64",
+    "system": "Wii",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1996",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co67hm.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Kids",
+      "Party"
+    ],
+    "id": 1791671750221,
+    "developer": "Nintendo Entertainment Analysis & Development",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671809025
+  },
+  {
+    "igdbId": 2328,
+    "title": "Mario Party 2",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Quiz/Trivia",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21yt.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "id": 1791671750222,
+    "developer": "Hudson Soft",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671809709
+  },
+  {
+    "igdbId": 3406,
+    "title": "Mario Tennis",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "RPG",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21yr.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "id": 1791671750223,
+    "developer": "Camelot",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671810364
+  },
+  {
+    "igdbId": 10615,
+    "title": "Monster Truck Madness 64",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4q96.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750224,
+    "developer": "Edge of Reality",
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671810996
+  },
+  {
+    "igdbId": 3123,
+    "title": "Mission: Impossible",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6xqx.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Stealth"
+    ],
+    "id": 1791671750225,
+    "developer": "Ocean Software",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671811799
+  },
+  {
+    "igdbId": 4121,
+    "title": "Mortal Kombat Trilogy",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1996",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7yvb.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750226,
+    "developer": "Tiger Electronics",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671812611
+  },
+  {
+    "igdbId": 3558,
+    "title": "NFL Quarterback Club 98",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1997",
+    "notes": "",
+    "rating": null,
+    "genre": "Sports",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co47x9.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Non-fiction"
+    ],
+    "id": 1791671750227,
+    "developer": "Iguana Entertainment",
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671813254
+  },
+  {
+    "igdbId": 3574,
+    "title": "Pokémon Puzzle League",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ywa.jpg",
+    "timeToBeat": 1,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750228,
+    "developer": "Nintendo Software Technology",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671814036
+  },
+  {
+    "igdbId": 2289,
+    "title": "Pokémon Stadium",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Simulation",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4w07.jpg",
+    "timeToBeat": 17.7,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Kids"
+    ],
+    "id": 1791671750229,
+    "developer": "HAL Laboratory",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671814790
+  },
+  {
+    "igdbId": 262016,
+    "title": "Quake II",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78d1.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "id": 1791671750230,
+    "developer": "id Software",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671815446
+  },
+  {
+    "igdbId": 2786,
+    "title": "Rugrats: Scavenger Hunt",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dya.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750231,
+    "developer": "Realtime Associates",
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671816250
+  },
+  {
+    "igdbId": 154,
+    "title": "Star Wars: Episode I - Racer",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3wj7.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "id": 1791671750232,
+    "developer": "LucasArts",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671816910
+  },
+  {
+    "igdbId": 1626,
+    "title": "Super Smash Bros.",
+    "system": "Wii",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ysr.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750233,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671817549
+  },
+  {
+    "igdbId": 1327,
+    "title": "Turok: Rage Wars",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Shooter",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2zqu.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "id": 1791671750234,
+    "developer": "Acclaim Studios Austin",
+    "gameModes": [
+      "Single player",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671818195
+  },
+  {
+    "igdbId": 3629,
+    "title": "Wave Race 64",
+    "system": "Nintendo 64",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1996",
+    "notes": "",
+    "rating": null,
+    "genre": "Racing",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7ksa.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Non-fiction"
+    ],
+    "id": 1791671750235,
+    "developer": "Nintendo Entertainment Analysis & Development",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671819257
+  },
+  {
+    "igdbId": 1091,
+    "title": "Donkey Kong Land",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1995",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wvc.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750236,
+    "developer": "Rare",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671820149
+  },
+  {
+    "igdbId": 49920,
+    "title": "Lil' Monster",
+    "system": "Game Boy Color",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "2000",
+    "notes": "",
+    "rating": null,
+    "genre": "Strategy",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cfw5lscnzr4yobbpbpjt.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Fantasy"
+    ],
+    "id": 1791671750237,
+    "developer": "KID",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671821207
+  },
+  {
+    "igdbId": 1063,
+    "title": "Kirby's Dream Land",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1992",
+    "notes": "",
+    "rating": null,
+    "genre": "Action",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1gn.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750238,
+    "developer": "Nintendo",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671822244
+  },
+  {
+    "igdbId": 3718,
+    "title": "Kirby's Dream Land 2",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1995",
+    "notes": "",
+    "rating": null,
+    "genre": "Platformer",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7crs.jpg",
+    "timeToBeat": 2.5,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750239,
+    "developer": "HAL Laboratory",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671822864
+  },
+  {
+    "igdbId": 49834,
+    "title": "Ms. Pac-Man: Special Color Edition",
+    "system": "Game Boy Color",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1999",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3dnp.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "includedGames": [
+      {
+        "title": "Ms. Pac-Man",
+        "done": false,
+        "igdbId": 213874
+      },
+      {
+        "title": "Super Pac-Man",
+        "done": false,
+        "igdbId": 239191
+      }
+    ],
+    "id": 1791671750240,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671823499
+  },
+  {
+    "igdbId": 1511,
+    "title": "Pokémon Blue Version",
+    "system": "Nintendo 3DS",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1996",
+    "notes": "",
+    "rating": null,
+    "genre": "RPG",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7k6p.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Fantasy"
+    ],
+    "id": 1791671750241,
+    "developer": "JoJoBear13",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671824647
+  },
+  {
+    "igdbId": 1512,
+    "title": "Pokémon Yellow Version: Special Pikachu Edition",
+    "system": "Nintendo 3DS",
+    "status": "completed",
+    "ownership": "physical",
+    "released": "1998",
+    "notes": "",
+    "rating": null,
+    "genre": "RPG",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pih.jpg",
+    "timeToBeat": 42,
+    "tags": [
+      "Fantasy",
+      "Kids",
+      "Open world"
+    ],
+    "id": 1791671750242,
+    "developer": "Game Freak",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Bird view / Isometric",
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671825596
+  },
+  {
+    "igdbId": 339277,
+    "title": "Spot: The Video Game",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1990",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6owc.jpg",
+    "timeToBeat": null,
+    "tags": [],
+    "id": 1791671750243,
+    "developer": "Virgin Mastertronic",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791671826240
+  },
+  {
+    "igdbId": 240000,
+    "title": "Street Fighter II",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1995",
+    "notes": "",
+    "rating": null,
+    "genre": "Fighting",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co606p.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Action"
+    ],
+    "id": 1791671750244,
+    "developer": "Capcom",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671826872
+  },
+  {
+    "igdbId": 172787,
+    "title": "Yoshi",
+    "system": "Game Boy",
+    "status": "backlog",
+    "ownership": "physical",
+    "released": "1991",
+    "notes": "",
+    "rating": null,
+    "genre": "Puzzle",
+    "franchise": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z4t.jpg",
+    "timeToBeat": null,
+    "tags": [
+      "Fantasy"
+    ],
+    "id": 1791671750245,
+    "developer": "Game Freak",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "lastSynced": 1791671827545
   }
 ]
