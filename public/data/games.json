@@ -4947,5 +4947,1436 @@
       "Science fiction"
     ],
     "lastSynced": 1791742056837
+  },
+  {
+    "title": "James Bond 007: Nightfire",
+    "system": "Xbox",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co26dt.jpg",
+    "released": "2002",
+    "developer": "Gearbox Software",
+    "criticScore": 58,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1791743404170,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744283652
+  },
+  {
+    "title": "Capcom Fighting Evolution",
+    "system": "Xbox",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9dga.jpg",
+    "released": "2004",
+    "developer": "Capcom Production Studio 2",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791743437537,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791744284238
+  },
+  {
+    "title": "Disney's Chicken Little",
+    "system": "Xbox",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobfzz.jpg",
+    "released": "2005",
+    "developer": "Avalanche Software",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791743451587,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791744284825
+  },
+  {
+    "title": "Fuzion Frenzy",
+    "system": "Xbox",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a2f.jpg",
+    "released": "2001",
+    "developer": "Blitz Games",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1791743463317,
+    "tags": [
+      "Science fiction",
+      "Party"
+    ],
+    "lastSynced": 1791744285445
+  },
+  {
+    "title": "Halo: Combat Evolved",
+    "system": "Xbox",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 10.3,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2r2r.jpg",
+    "released": "2001",
+    "developer": "Bungie",
+    "criticScore": 87,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Halo: Custom Edition",
+        "done": false
+      }
+    ],
+    "id": 1791743473598,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744286107
+  },
+  {
+    "title": "Halo 2",
+    "system": "Xbox",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 11,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x77.jpg",
+    "released": "2004",
+    "developer": "Bungie",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Halo 2: Blastacular Pack",
+        "done": false
+      },
+      {
+        "title": "Halo 2: Bonus Pack",
+        "done": false
+      },
+      {
+        "title": "Halo 2: Killtacular Pack",
+        "done": false
+      },
+      {
+        "title": "Halo 2: Maptacular Pack",
+        "done": false
+      }
+    ],
+    "id": 1791743481719,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744286810
+  },
+  {
+    "title": "The Incredibles: Rise of the Underminer",
+    "system": "Xbox",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaxyo.jpg",
+    "released": "2005",
+    "developer": "Heavy Iron Studios",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791743504035,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744287859
+  },
+  {
+    "title": "Ratatouille",
+    "system": "Xbox",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co891e.jpg",
+    "released": "2007",
+    "developer": "Heavy Iron Studios",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791743524408,
+    "tags": [],
+    "lastSynced": 1791744288512
+  },
+  {
+    "title": "Sega GT 2002 / Jet Set Radio Future",
+    "system": "Xbox",
+    "genre": "Music",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wor.jpg",
+    "released": "2002",
+    "developer": "WOW Entertainment",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Jet Set Radio Future",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Sega GT 2002",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "id": 1791743535338,
+    "tags": [
+      "Non-fiction",
+      "Open world"
+    ],
+    "lastSynced": 1791744289211
+  },
+  {
+    "title": "SNK vs. Capcom: SVC Chaos",
+    "system": "Xbox",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ydh.jpg",
+    "released": "2003",
+    "developer": "Code Mystics",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791743553729,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744290225
+  },
+  {
+    "title": "SoulCalibur II",
+    "system": "Xbox",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co61yo.jpg",
+    "released": "2003",
+    "developer": "Project Soul",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791743569647,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Historical"
+    ],
+    "lastSynced": 1791744290898
+  },
+  {
+    "title": "Tom Clancy's Splinter Cell: Chaos Theory",
+    "system": "Xbox",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 16.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coamhg.jpg",
+    "released": "2005",
+    "developer": "Gameloft",
+    "criticScore": 78,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791743588047,
+    "tags": [
+      "Action",
+      "Stealth"
+    ],
+    "lastSynced": 1791744291508
+  },
+  {
+    "title": "Star Wars: Battlefront",
+    "system": "Xbox",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h1z.jpg",
+    "released": "2004",
+    "developer": "EA Digital Illusions CE",
+    "criticScore": 73,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791743601037,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744292125
+  },
+  {
+    "id": 1791743667452,
+    "title": "Viva Piñata",
+    "system": "Xbox 360",
+    "genre": "Simulation",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h1y.jpg",
+    "released": "2006",
+    "developer": "Rare",
+    "criticScore": 75,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "tags": [
+      "Sandbox"
+    ],
+    "lastSynced": 1791744292996
+  },
+  {
+    "title": "Banjo-Kazooie: Nuts & Bolts",
+    "system": "Xbox 360",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2feg.jpg",
+    "released": "2008",
+    "developer": "Rare",
+    "criticScore": 87,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [
+      {
+        "title": "Banjo-Kazooie: Nuts & Bolts - L.O.G.'s Lost Challenges",
+        "done": false
+      }
+    ],
+    "id": 1791743698762,
+    "tags": [
+      "Action",
+      "Comedy",
+      "Open world"
+    ],
+    "lastSynced": 1791744294313
+  },
+  {
+    "title": "Batman: Arkham City - Game of the Year Edition",
+    "system": "Xbox 360",
+    "genre": "Action",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 22.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kia.jpg",
+    "released": "2012",
+    "developer": "Rocksteady Studios",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Batman: Arkham City",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Catwoman Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Nightwing Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Robin Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Arkham City Skins Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Challenge Map Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Harley Quinn's Revenge",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "id": 1791743733283
+  },
+  {
+    "title": "Batman: Arkham Origins",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 21.2,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmd.jpg",
+    "released": "2013",
+    "developer": "NetherRealm Studios",
+    "criticScore": 71,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person",
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Batman: Arkham Origins - Cold, Cold Heart",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Origins - Initiation",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Origins - Season Pass",
+        "done": false
+      }
+    ],
+    "id": 1791743754213,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744295329
+  },
+  {
+    "title": "Call of Duty: Black Ops II",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 10,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkv.jpg",
+    "released": "2012",
+    "developer": "Treyarch",
+    "criticScore": 70,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Call of Duty: Black Ops II - Apocalypse",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: Black Ops II - Nuketown 2025",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: Black Ops II - Nuketown Zombies",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: Black Ops II - Revolution",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: Black Ops II - Uprising",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: Black Ops II - Vengeance",
+        "done": false
+      }
+    ],
+    "id": 1791743771072,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744295926
+  },
+  {
+    "title": "Call of Duty: World at War",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 13,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wl8.jpg",
+    "released": "2008",
+    "developer": "Treyarch",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Call of Duty: World at War Map Pack 1",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: World at War Map Pack 2",
+        "done": false
+      },
+      {
+        "title": "Call of Duty: World at War Map Pack 3",
+        "done": false
+      }
+    ],
+    "id": 1791743793762,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Historical",
+      "Stealth",
+      "Warfare"
+    ],
+    "lastSynced": 1791744296608
+  },
+  {
+    "title": "Dead Rising 2",
+    "system": "Xbox 360",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gzw.jpg",
+    "released": "2010",
+    "developer": "Blue Castle Games",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791743810202
+  },
+  {
+    "title": "Dead Rising",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 32.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20xf.jpg",
+    "released": "2006",
+    "developer": "Capcom Game Studio Vancouver, Inc.",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Dead Rising 4: Capcom Heroes",
+        "done": false
+      },
+      {
+        "title": "Dead Rising 4: Frank Rising",
+        "done": false
+      },
+      {
+        "title": "Super Ultra Dead Rising 4 Mini Golf",
+        "done": false
+      }
+    ],
+    "id": 1791743821221,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Comedy",
+      "Sandbox",
+      "Open world"
+    ],
+    "lastSynced": 1791744297605
+  },
+  {
+    "title": "Gears of War: Judgment",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2y2a.jpg",
+    "released": "2013",
+    "developer": "People Can Fly",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791743852836,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791744298260
+  },
+  {
+    "title": "Halo 3",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 7.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhc.jpg",
+    "released": "2007",
+    "developer": "Bungie",
+    "criticScore": 91,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791743867238,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791744298992
+  },
+  {
+    "title": "Halo 3: ODST",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 15,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhh.jpg",
+    "released": "2009",
+    "developer": "Bungie",
+    "criticScore": 78,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1791743881270,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Stealth",
+      "Warfare"
+    ],
+    "lastSynced": 1791744299616
+  },
+  {
+    "title": "Halo 4",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhf.jpg",
+    "released": "2012",
+    "developer": "343 Industries",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Halo 4: Castle Map Pack",
+        "done": false
+      },
+      {
+        "title": "Halo 4: Champions Bundle",
+        "done": false
+      },
+      {
+        "title": "Halo 4: Crimson Map Pack",
+        "done": false
+      },
+      {
+        "title": "Halo 4: Majestic Map Pack",
+        "done": false
+      }
+    ],
+    "id": 1791743896487,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744300214
+  },
+  {
+    "title": "Halo: Reach",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xha.jpg",
+    "released": "2010",
+    "developer": "Bungie",
+    "criticScore": 89,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Halo: Reach - Anniversary Map Pack",
+        "done": false
+      },
+      {
+        "title": "Halo: Reach - Defiant Map Pack",
+        "done": false
+      },
+      {
+        "title": "Halo: Reach - Noble Map Pack",
+        "done": false
+      }
+    ],
+    "id": 1791743909036,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744300761
+  },
+  {
+    "title": "Halo: Combat Evolved Anniversary",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhb.jpg",
+    "released": "2011",
+    "developer": "343 Industries",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1791743924385,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Warfare"
+    ],
+    "lastSynced": 1791744301425
+  },
+  {
+    "title": "Metal Gear Solid HD Collection",
+    "system": "Xbox 360",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gkj.jpg",
+    "released": "2011",
+    "developer": "Kojima Productions",
+    "criticScore": 89,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Metal Gear",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Metal Gear 2: Solid Snake",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Metal Gear Solid 3: Snake Eater - HD Edition",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Metal Gear Solid 2: Sons of Liberty - HD Edition",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Metal Gear Solid: Peace Walker - HD Edition",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "id": 1791743946645,
+    "tags": [
+      "Action",
+      "Stealth"
+    ],
+    "lastSynced": 1791744301956
+  },
+  {
+    "title": "Mortal Kombat vs. DC Universe",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y13.jpg",
+    "released": "2008",
+    "developer": "Midway Games",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791743976585,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744302563
+  },
+  {
+    "title": "Naruto: Rise of a Ninja",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u9s.jpg",
+    "released": "2007",
+    "developer": "Ubisoft Montreal",
+    "criticScore": 75,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791743988292,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744303291
+  },
+  {
+    "id": 1791744005779,
+    "title": "Naruto Shippuden: Ultimate Ninja Storm 3",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ulj.jpg",
+    "released": "2013",
+    "developer": "CyberConnect2",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744304041
+  },
+  {
+    "title": "Naruto Shippuden: Ultimate Ninja Storm Generations",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u98.jpg",
+    "released": "2012",
+    "developer": "CyberConnect2",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791744047607,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744304682
+  },
+  {
+    "title": "Naruto Shippuden: Ultimate Ninja Storm Revolution",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u96.jpg",
+    "released": "2014",
+    "developer": "CyberConnect2",
+    "criticScore": 66,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791744066225,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744305247
+  },
+  {
+    "title": "Sonic the Hedgehog",
+    "system": "Xbox 360",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 10,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocae8.jpg",
+    "released": "2006",
+    "developer": "Sonic NEXT PC Team",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791744084185,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744305826
+  },
+  {
+    "title": "SoulCalibur V",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 2.1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ta1.jpg",
+    "released": "2012",
+    "developer": "Project Soul",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791744098211,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791744306476
+  },
+  {
+    "title": "Street Fighter IV: Collector's Edition",
+    "system": "Xbox 360",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4to1.jpg",
+    "released": "2009",
+    "developer": "Dimps",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791744120702
+  },
+  {
+    "title": "Street Fighter X Tekken",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 100,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w4i.jpg",
+    "released": "2012",
+    "developer": "Bandai Namco Studios",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Street Fighter X Tekken: Additional 12 Characters Pack",
+        "done": false
+      }
+    ],
+    "id": 1791744164038,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744307452
+  },
+  {
+    "title": "Super Street Fighter IV: Arcade Edition",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yei.jpg",
+    "released": "2010",
+    "developer": "Dimps",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791744182239,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744308181
+  },
+  {
+    "title": "Tekken 6",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 69.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coboq8.jpg",
+    "released": "2009",
+    "developer": "Namco Bandai Games",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791744194254,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744308729
+  },
+  {
+    "title": "Xbox Live Arcade Compilation Disc",
+    "system": "Xbox 360",
+    "genre": "Puzzle",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6djh.jpg",
+    "released": "2007",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [],
+    "includedGames": [
+      {
+        "title": "Feeding Frenzy",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Uno",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Luxor 2",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Boom Boom Rocket",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Pac-Man Championship Edition",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "id": 1791744218385,
+    "tags": [
+      "Party"
+    ],
+    "lastSynced": 1791744309296
+  },
+  {
+    "title": "Street Fighter X Tekken: Special Edition",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4abh.jpg",
+    "released": "2012",
+    "developer": "Capcom",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791744252910
+  },
+  {
+    "title": "Street Fighter IV",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w4t.jpg",
+    "released": "2008",
+    "developer": "Nexon",
+    "criticScore": 90,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791744274267,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791744310277
   }
 ]
