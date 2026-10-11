@@ -25,7 +25,7 @@
       "Action",
       "Science fiction"
     ],
-    "lastSynced": 1791671646850
+    "lastSynced": 1791723324260
   },
   {
     "igdbId": 5440,
@@ -57,7 +57,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671758159
+    "lastSynced": 1791723324814
   },
   {
     "igdbId": 3810,
@@ -87,7 +87,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671759595
+    "lastSynced": 1791723325753
   },
   {
     "id": 1791671750172,
@@ -112,7 +112,7 @@
     ],
     "dlc": [],
     "tags": [],
-    "lastSynced": 1791672691237
+    "lastSynced": 1791723326319
   },
   {
     "igdbId": 3680,
@@ -141,7 +141,7 @@
       "Auditory"
     ],
     "dlc": [],
-    "lastSynced": 1791671761284
+    "lastSynced": 1791723327013
   },
   {
     "igdbId": 1097,
@@ -169,7 +169,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671762173
+    "lastSynced": 1791723327560
   },
   {
     "id": 1791671750175,
@@ -197,7 +197,7 @@
     "tags": [
       "Party"
     ],
-    "lastSynced": 1791672691976
+    "lastSynced": 1791723328095
   },
   {
     "id": 1791671750176,
@@ -224,7 +224,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672693302
+    "lastSynced": 1791723328668
   },
   {
     "igdbId": 7489,
@@ -255,7 +255,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671765093
+    "lastSynced": 1791723329678
   },
   {
     "id": 1791671750178,
@@ -322,7 +322,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671766828
+    "lastSynced": 1791723330667
   },
   {
     "igdbId": 2777,
@@ -351,7 +351,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671768680
+    "lastSynced": 1791723331297
   },
   {
     "igdbId": 2331,
@@ -382,7 +382,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671770193
+    "lastSynced": 1791723331894
   },
   {
     "igdbId": 2334,
@@ -413,7 +413,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671771160
+    "lastSynced": 1791723332448
   },
   {
     "id": 1791671750183,
@@ -442,7 +442,7 @@
       "Science fiction",
       "Comedy"
     ],
-    "lastSynced": 1791672694451
+    "lastSynced": 1791723332989
   },
   {
     "igdbId": 2643,
@@ -475,7 +475,7 @@
         "done": false
       }
     ],
-    "lastSynced": 1791671773294
+    "lastSynced": 1791723333579
   },
   {
     "igdbId": 2724,
@@ -503,7 +503,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671774720
+    "lastSynced": 1791723334186
   },
   {
     "id": 1791671750186,
@@ -577,7 +577,12 @@
         "title": "Flicky",
         "done": false
       }
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723334823
   },
   {
     "igdbId": 227987,
@@ -607,7 +612,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671777497
+    "lastSynced": 1791723335372
   },
   {
     "igdbId": 1075,
@@ -636,7 +641,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671778217
+    "lastSynced": 1791723336322
   },
   {
     "igdbId": 19309,
@@ -666,7 +671,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671779423
+    "lastSynced": 1791723337212
   },
   {
     "igdbId": 2671,
@@ -697,7 +702,7 @@
       "Auditory"
     ],
     "dlc": [],
-    "lastSynced": 1791671780182
+    "lastSynced": 1791723337840
   },
   {
     "id": 1791671750191,
@@ -724,7 +729,7 @@
     ],
     "dlc": [],
     "tags": [],
-    "lastSynced": 1791672695334
+    "lastSynced": 1791723338401
   },
   {
     "igdbId": 1112,
@@ -771,7 +776,7 @@
       "First person"
     ],
     "dlc": [],
-    "lastSynced": 1791671781662
+    "lastSynced": 1791723339181
   },
   {
     "igdbId": 1616,
@@ -801,7 +806,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671782684
+    "lastSynced": 1791723339806
   },
   {
     "igdbId": 19656,
@@ -829,7 +834,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671783368
+    "lastSynced": 1791723340347
   },
   {
     "id": 1791671750195,
@@ -858,7 +863,7 @@
       "Action",
       "Fantasy"
     ],
-    "lastSynced": 1791672696174
+    "lastSynced": 1791723340952
   },
   {
     "id": 1791671750196,
@@ -890,7 +895,7 @@
       "Action",
       "Science fiction"
     ],
-    "lastSynced": 1791672696901
+    "lastSynced": 1791723341539
   },
   {
     "id": 1791671750197,
@@ -918,7 +923,7 @@
       "Action",
       "Comedy"
     ],
-    "lastSynced": 1791672697727
+    "lastSynced": 1791723342192
   },
   {
     "id": 1791671750198,
@@ -948,7 +953,7 @@
       "Kids",
       "Party"
     ],
-    "lastSynced": 1791672698580
+    "lastSynced": 1791723342756
   },
   {
     "igdbId": 1628,
@@ -973,7 +978,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671787132
+    "lastSynced": 1791723343294
   },
   {
     "igdbId": 2275,
@@ -1001,7 +1006,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671787814
+    "lastSynced": 1791723343989
   },
   {
     "igdbId": 5185,
@@ -1027,7 +1032,7 @@
     ],
     "perspectives": [],
     "dlc": [],
-    "lastSynced": 1791671788464
+    "lastSynced": 1791723344585
   },
   {
     "id": 1791671750202,
@@ -1055,7 +1060,7 @@
       "Action",
       "Party"
     ],
-    "lastSynced": 1791672699764
+    "lastSynced": 1791723345136
   },
   {
     "igdbId": 2276,
@@ -1086,7 +1091,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671789928
+    "lastSynced": 1791723345744
   },
   {
     "igdbId": 18017,
@@ -1115,7 +1120,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671790666
+    "lastSynced": 1791723346364
   },
   {
     "igdbId": 1591,
@@ -1146,7 +1151,7 @@
       "First person"
     ],
     "dlc": [],
-    "lastSynced": 1791671791503
+    "lastSynced": 1791723346919
   },
   {
     "id": 1791671750206,
@@ -1188,7 +1193,7 @@
       "Action",
       "Party"
     ],
-    "lastSynced": 1791672700886
+    "lastSynced": 1791723347542
   },
   {
     "id": 1791671750207,
@@ -1224,7 +1229,7 @@
       "Science fiction",
       "Party"
     ],
-    "lastSynced": 1791672701517
+    "lastSynced": 1791723348078
   },
   {
     "id": 1791671750208,
@@ -1302,7 +1307,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672702146
+    "lastSynced": 1791723348780
   },
   {
     "igdbId": 3328,
@@ -1331,7 +1336,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671794552
+    "lastSynced": 1791723349374
   },
   {
     "igdbId": 10658,
@@ -1351,7 +1356,7 @@
     "gameModes": [],
     "perspectives": [],
     "dlc": [],
-    "lastSynced": 1791671797418
+    "lastSynced": 1791723349931
   },
   {
     "igdbId": 3441,
@@ -1383,7 +1388,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671798521
+    "lastSynced": 1791723350560
   },
   {
     "igdbId": 2723,
@@ -1414,7 +1419,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671799547
+    "lastSynced": 1791723351213
   },
   {
     "igdbId": 3337,
@@ -1444,7 +1449,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671801285
+    "lastSynced": 1791723351773
   },
   {
     "id": 1791671750214,
@@ -1473,7 +1478,7 @@
       "Action",
       "Comedy"
     ],
-    "lastSynced": 1791672702916
+    "lastSynced": 1791723352382
   },
   {
     "igdbId": 47758,
@@ -1501,7 +1506,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671802827
+    "lastSynced": 1791723352916
   },
   {
     "id": 1791671750216,
@@ -1527,7 +1532,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672703721
+    "lastSynced": 1791723353513
   },
   {
     "igdbId": 2642,
@@ -1554,7 +1559,7 @@
       "First person"
     ],
     "dlc": [],
-    "lastSynced": 1791671805225
+    "lastSynced": 1791723354412
   },
   {
     "igdbId": 3371,
@@ -1583,7 +1588,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671806509
+    "lastSynced": 1791723355014
   },
   {
     "igdbId": 3397,
@@ -1608,7 +1613,7 @@
     ],
     "perspectives": [],
     "dlc": [],
-    "lastSynced": 1791671807215
+    "lastSynced": 1791723355568
   },
   {
     "igdbId": 1030,
@@ -1638,7 +1643,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671808341
+    "lastSynced": 1791723356471
   },
   {
     "id": 1791671750221,
@@ -1668,7 +1673,7 @@
       "Kids",
       "Party"
     ],
-    "lastSynced": 1791672704361
+    "lastSynced": 1791723357118
   },
   {
     "igdbId": 2328,
@@ -1699,7 +1704,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671809709
+    "lastSynced": 1791723357841
   },
   {
     "id": 1791671750223,
@@ -1727,7 +1732,7 @@
       "Action",
       "Fantasy"
     ],
-    "lastSynced": 1791672705170
+    "lastSynced": 1791723358393
   },
   {
     "igdbId": 10615,
@@ -1754,7 +1759,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671810996
+    "lastSynced": 1791723359489
   },
   {
     "id": 1791671750225,
@@ -1781,7 +1786,7 @@
       "Action",
       "Stealth"
     ],
-    "lastSynced": 1791672705818
+    "lastSynced": 1791723360794
   },
   {
     "igdbId": 4121,
@@ -1808,7 +1813,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671812611
+    "lastSynced": 1791723361390
   },
   {
     "igdbId": 3558,
@@ -1836,7 +1841,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671813254
+    "lastSynced": 1791723361997
   },
   {
     "igdbId": 3574,
@@ -1865,7 +1870,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671814036
+    "lastSynced": 1791723362540
   },
   {
     "id": 1791671750229,
@@ -1894,7 +1899,7 @@
       "Science fiction",
       "Kids"
     ],
-    "lastSynced": 1791672706926
+    "lastSynced": 1791723363175
   },
   {
     "igdbId": 262016,
@@ -1922,7 +1927,7 @@
       "First person"
     ],
     "dlc": [],
-    "lastSynced": 1791671815446
+    "lastSynced": 1791723363851
   },
   {
     "igdbId": 2786,
@@ -1946,7 +1951,7 @@
     ],
     "perspectives": [],
     "dlc": [],
-    "lastSynced": 1791671816250
+    "lastSynced": 1791723364407
   },
   {
     "igdbId": 154,
@@ -1977,7 +1982,7 @@
       "Third person"
     ],
     "dlc": [],
-    "lastSynced": 1791671816910
+    "lastSynced": 1791723364985
   },
   {
     "id": 1791671750233,
@@ -2005,7 +2010,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672707575
+    "lastSynced": 1791723365571
   },
   {
     "igdbId": 1327,
@@ -2035,7 +2040,7 @@
       "First person"
     ],
     "dlc": [],
-    "lastSynced": 1791671818195
+    "lastSynced": 1791723366371
   },
   {
     "id": 1791671750235,
@@ -2063,7 +2068,7 @@
     "tags": [
       "Non-fiction"
     ],
-    "lastSynced": 1791672708444
+    "lastSynced": 1791723366913
   },
   {
     "id": 1791671750236,
@@ -2084,7 +2089,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723367709
   },
   {
     "igdbId": 49920,
@@ -2111,7 +2121,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671821207
+    "lastSynced": 1791723368638
   },
   {
     "id": 1791671750238,
@@ -2137,7 +2147,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672710001
+    "lastSynced": 1791723369246
   },
   {
     "igdbId": 3718,
@@ -2164,7 +2174,7 @@
       "Side view"
     ],
     "dlc": [],
-    "lastSynced": 1791671822864
+    "lastSynced": 1791723369827
   },
   {
     "igdbId": 49834,
@@ -2202,7 +2212,7 @@
       "Bird view / Isometric"
     ],
     "dlc": [],
-    "lastSynced": 1791671823499
+    "lastSynced": 1791723370466
   },
   {
     "id": 1791671750241,
@@ -2229,7 +2239,7 @@
     "tags": [
       "Fantasy"
     ],
-    "lastSynced": 1791672710741
+    "lastSynced": 1791723371094
   },
   {
     "id": 1791671750242,
@@ -2259,7 +2269,7 @@
       "Kids",
       "Open world"
     ],
-    "lastSynced": 1791672711379
+    "lastSynced": 1791723371694
   },
   {
     "igdbId": 339277,
@@ -2282,7 +2292,7 @@
     ],
     "perspectives": [],
     "dlc": [],
-    "lastSynced": 1791671826240
+    "lastSynced": 1791723372366
   },
   {
     "id": 1791671750244,
@@ -2309,7 +2319,7 @@
     "tags": [
       "Action"
     ],
-    "lastSynced": 1791672712328
+    "lastSynced": 1791723372914
   },
   {
     "id": 1791671750245,
@@ -2336,7 +2346,7 @@
     "tags": [
       "Fantasy"
     ],
-    "lastSynced": 1791672712975
+    "lastSynced": 1791723373501
   },
   {
     "title": "Dave the Diver",
@@ -2401,12 +2411,12 @@
       "Action",
       "Business"
     ],
-    "lastSynced": 1791672713660
+    "lastSynced": 1791723374431
   },
   {
     "title": "Sonic Adventure 2: Battle",
     "system": "GameCube",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -2415,7 +2425,7 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5p3m.jpg",
     "released": "2001",
-    "developer": "Sonic Team",
+    "developer": "Sonic Team USA",
     "gameModes": [
       "Single player",
       "Multiplayer",
@@ -2424,12 +2434,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722421344
+    "id": 1791722421344,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723375004
   },
   {
     "title": "Onimusha: Way of the Sword",
     "system": "Nintendo Switch 2",
-    "genre": "Action",
+    "genre": "RPG",
     "status": "wishlist",
     "ownership": "",
     "franchise": "",
@@ -2446,7 +2461,13 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722652009
+    "id": 1791722652009,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723375628
   },
   {
     "title": "Mario Hoops 3-on-3",
@@ -2469,12 +2490,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722664990
+    "id": 1791722664990,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723376174
   },
   {
     "title": "Naruto: Ultimate Ninja",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -2487,12 +2513,17 @@
     "criticScore": 70,
     "gameModes": [
       "Single player",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
-      "Side view"
+      "First person"
     ],
-    "id": 1791722695505
+    "id": 1791722695505,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723377122
   },
   {
     "title": "Ben 10: Galactic Racing",
@@ -2513,12 +2544,18 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722748431
+    "id": 1791722748431,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723377661
   },
   {
     "title": "Code Name: S.T.E.A.M.",
     "system": "Nintendo 3DS",
-    "genre": "Adventure",
+    "genre": "Shooter",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2535,12 +2572,20 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722764556
+    "id": 1791722764556,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Historical"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723378206
   },
   {
     "title": "The Legend of Zelda: Majora's Mask 3D",
     "system": "Nintendo 3DS",
-    "genre": "Adventure",
+    "genre": "Puzzle",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2558,7 +2603,13 @@
       "Third person",
       "Bird view / Isometric"
     ],
-    "id": 1791722779617
+    "id": 1791722779617,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723378839
   },
   {
     "title": "Naruto: Powerful Shippuden",
@@ -2579,12 +2630,18 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791722794138
+    "id": 1791722794138,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723379397
   },
   {
     "title": "Pokémon Alpha Sapphire",
     "system": "Nintendo 3DS",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -2603,12 +2660,19 @@
       "Third person",
       "Bird view / Isometric"
     ],
-    "id": 1791722809474
+    "id": 1791722809474,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723380251
   },
   {
     "title": "Pokémon Sun",
     "system": "Nintendo 3DS",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2626,6 +2690,222 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791722822956
+    "id": 1791722822956,
+    "tags": [
+      "Science fiction",
+      "Party"
+    ],
+    "dlc": [],
+    "lastSynced": 1791723380799
+  },
+  {
+    "title": "Resident Evil Requiem",
+    "system": "Nintendo Switch 2",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 13.4,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobmj0.jpg",
+    "released": "2026",
+    "developer": "Capcom Development Division 1",
+    "criticScore": 91,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791723869785,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival"
+    ],
+    "lastSynced": 1791724067966
+  },
+  {
+    "title": "Street Fighter 6",
+    "system": "Nintendo Switch 2",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 20,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaw08.jpg",
+    "released": "2025",
+    "developer": "Capcom Development Division 2",
+    "criticScore": 93,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Street Fighter 6: Additional Character - Alex",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Alex & Outfit 2",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Arjun & Outfit 2",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Bosch & Outfit 2 & Outfit 3 (Yasmine, Arjun, Tifa, Bosch)",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Ingrid & Outfit 2 & Outfit 3 (Sagat, C. Viper, Alex, Ingrid)",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Tifa & Outfit 2",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Additional Character - Yasmine & Outfit 2",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Reniala Remains Stage",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 1 - A.K.I.",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 1 - Akuma",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 1 - Ed",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 1 - Rashid",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 2 - Elena",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 2 - M. Bison",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 2 - Mai",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 2 - Terry",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 3 - C. Viper",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 3 - Ingrid",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 3 - Sagat",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 4 - Arjun",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 4 - Bosch",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 4 - Tifa",
+        "done": false
+      },
+      {
+        "title": "Street Fighter 6: Year 4 - Yasmine",
+        "done": false
+      }
+    ],
+    "id": 1791723900072,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791724069150
+  },
+  {
+    "title": "Donkey Kong Bananza",
+    "system": "Nintendo Switch 2",
+    "genre": "Platformer",
+    "status": "completed",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 31.2,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobd1q.jpg",
+    "released": "2025",
+    "developer": "Nintendo EPD Production Group No. 8",
+    "criticScore": 90,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person",
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Donkey Kong Bananza: DK Island & Emerald Rush",
+        "done": false
+      }
+    ],
+    "id": 1791723965767,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791724070173
+  },
+  {
+    "title": "Mario Kart World",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 6,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9s9.jpg",
+    "released": "2025",
+    "developer": "Nintendo EPD Production Group No. 9",
+    "criticScore": 92,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791724129137
   }
 ]

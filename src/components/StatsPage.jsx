@@ -44,6 +44,62 @@ function Section({ title, children }) {
   )
 }
 
+function StatusPie({ byStatus, total }) {
+  if (!total) return null
+
+  const finishedCount = (byStatus.completed ?? 0) + (byStatus.shelved ?? 0)
+  const slices = [
+    { key: 'finished', count: finishedCount,          color: 'var(--color-completed)', label: 'Completed / Shelved' },
+    { key: 'playing',  count: byStatus.playing ?? 0,  color: 'var(--color-playing)',   label: 'Playing' },
+    { key: 'backlog',  count: byStatus.backlog ?? 0,  color: 'var(--color-backlog)',   label: 'Not Started' },
+  ].filter(s => s.count > 0)
+
+  // Build SVG donut slices — strokeDashoffset trick:
+  // Each circle shows one coloured arc. offset starts at C/4 (12 o'clock) and
+  // decreases by each segment's arc length so they stack clockwise.
+  const r = 40, cx = 50, cy = 50, stroke = 14
+  const circumference = 2 * Math.PI * r
+  let cumulativeDash = 0
+  const segments = slices.map(s => {
+    const dash = (s.count / total) * circumference
+    const dashOffset = circumference * 0.25 - cumulativeDash
+    cumulativeDash += dash
+    return { ...s, dash, dashOffset }
+  })
+
+  const finishedPct = Math.round((finishedCount / total) * 100)
+
+  return (
+    <div className="pie-wrap">
+      <svg className="pie-svg" viewBox="0 0 100 100">
+        <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--color-border)" strokeWidth={stroke} />
+        {segments.map(s => (
+          <circle
+            key={s.key}
+            cx={cx} cy={cy} r={r}
+            fill="none"
+            stroke={s.color}
+            strokeWidth={stroke}
+            strokeDasharray={`${s.dash} ${circumference - s.dash}`}
+            strokeDashoffset={s.dashOffset}
+          />
+        ))}
+        <text x={cx} y={cy - 5} textAnchor="middle" className="pie-center-pct">{finishedPct}%</text>
+        <text x={cx} y={cy + 8} textAnchor="middle" className="pie-center-label">finished</text>
+      </svg>
+      <div className="pie-legend">
+        {slices.map(s => (
+          <div key={s.key} className="pie-legend-row">
+            <span className="pie-legend-dot" style={{ background: s.color }} />
+            <span className="pie-legend-label">{s.label}</span>
+            <span className="pie-legend-value">{s.count} <span style={{ fontWeight: 400, color: 'var(--color-muted)', fontSize: '0.72rem' }}>({Math.round((s.count / total) * 100)}%)</span></span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, onClearSync, unsyncedCount }) {
   // ── Stat filters ─────────────────────────────────────────────────────────────
   const [filterStatus,    setFilterStatus]    = useState('all')
@@ -51,6 +107,7 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
   const [filterGenre,     setFilterGenre]     = useState('all')
   const [filterFranchise, setFilterFranchise] = useState('all')
   const [filterDeveloper, setFilterDeveloper] = useState('all')
+  const [filterOwnership, setFilterOwnership] = useState('all')
 
   // Owned = everything except wishlist
   const owned = allGames.filter(g => g.status !== 'wishlist')
@@ -69,15 +126,17 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
     if (filterGenre     !== 'all' && g.genre     !== filterGenre)     return false
     if (filterFranchise !== 'all' && g.franchise !== filterFranchise) return false
     if (filterDeveloper !== 'all' && g.developer !== filterDeveloper) return false
+    if (filterOwnership === 'physical' && g.ownership !== 'physical' && g.ownership !== 'both') return false
+    if (filterOwnership === 'digital'  && g.ownership !== 'digital'  && g.ownership !== 'both') return false
     return true
   })
 
-  const anyFilter = filterStatus !== 'all' || filterSystem !== 'all' || filterGenre !== 'all' || filterFranchise !== 'all' || filterDeveloper !== 'all'
+  const anyFilter = filterStatus !== 'all' || filterSystem !== 'all' || filterGenre !== 'all' || filterFranchise !== 'all' || filterDeveloper !== 'all' || filterOwnership !== 'all'
 
   const clearFilters = () => {
     setFilterStatus('all');    setFilterSystem('all')
     setFilterGenre('all');     setFilterFranchise('all')
-    setFilterDeveloper('all')
+    setFilterDeveloper('all'); setFilterOwnership('all')
   }
 
   const total = games.length
@@ -116,6 +175,16 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
   games.forEach(g => { systemMap[g.system] = (systemMap[g.system] ?? 0) + 1 })
   const topSystems = topN(systemMap)
   const maxSystem  = topSystems[0]?.[1] ?? 1
+
+  // ── Completion rate by system ────────────────────────────────────────────────
+  const systemCompletion = Object.keys(systemMap)
+    .map(sys => {
+      const sysGames = games.filter(g => g.system === sys)
+      const finished = sysGames.filter(g => g.status === 'completed' || g.status === 'shelved').length
+      return { sys, total: sysGames.length, finished, pct: Math.round((finished / sysGames.length) * 100) }
+    })
+    .filter(s => s.total >= 2)
+    .sort((a, b) => b.pct - a.pct)
 
   // ── By genre ─────────────────────────────────────────────────────────────────
   const genreMap = {}
@@ -161,17 +230,6 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
     { label: '0–24',   min: 0,  max: 24,  color: '#64748b' },
   ].map(b => ({ ...b, count: withCritic.filter(g => g.criticScore >= b.min && g.criticScore <= b.max).length }))
   const maxCriticBand = Math.max(...criticBands.map(b => b.count), 1)
-
-  // ── DLC stats ────────────────────────────────────────────────────────────────
-  const gamesWithDlc     = games.filter(g => g.dlc?.length)
-  const totalDlc         = gamesWithDlc.reduce((s, g) => s + g.dlc.length, 0)
-  const completedDlc     = gamesWithDlc.reduce((s, g) => s + g.dlc.filter(d => d.done).length, 0)
-  const dlcPct           = totalDlc ? pct(completedDlc, totalDlc) : 0
-  // Top games by DLC count
-  const topDlcGames = games
-    .filter(g => g.dlc?.length)
-    .sort((a, b) => b.dlc.length - a.dlc.length)
-    .slice(0, 5)
 
   // ── Ratings ──────────────────────────────────────────────────────────────────
   const rated     = games.filter(g => g.rating)
@@ -294,6 +352,15 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
           </div>
         )}
 
+        <div className="filter-group">
+          <label>Ownership</label>
+          <select value={filterOwnership} onChange={e => setFilterOwnership(e.target.value)}>
+            <option value="all">All</option>
+            <option value="physical">Physical</option>
+            <option value="digital">Digital</option>
+          </select>
+        </div>
+
         {anyFilter && (
           <button className="btn-ghost filter-clear" onClick={clearFilters}><Icon name="close" size={12} /> Clear</button>
         )}
@@ -341,8 +408,12 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
               <StatCard label="Journal Entries" value={totalEntries} />
               {avgTTB && <StatCard label="Avg Time to Beat" value={`${avgTTB}h`} sub={`${withTTB.length} tagged`} />}
               {backlogTTB > 0 && <StatCard label="Backlog Hours" value={`${Math.round(backlogTTB)}h`} sub="to beat all unstarted" />}
-              {totalDlc > 0 && <StatCard label="DLC Available" value={totalDlc} sub={`${completedDlc} completed · ${dlcPct}%`} color="var(--color-shelved)" />}
             </div>
+          </Section>
+
+          {/* ── Status pie chart ── */}
+          <Section title="Collection Breakdown">
+            <StatusPie byStatus={byStatus} total={total} />
           </Section>
 
           {/* ── Ownership ── */}
@@ -373,6 +444,23 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
               <div className="bar-list">
                 {topSystems.map(([sys, count]) => (
                   <BarRow key={sys} label={sys} value={count} max={maxSystem} />
+                ))}
+              </div>
+            </Section>
+          )}
+
+          {/* ── Completion rate by system ── */}
+          {systemCompletion.length > 0 && filterSystem === 'all' && (
+            <Section title="Completion Rate by System">
+              <div className="bar-list">
+                {systemCompletion.map(s => (
+                  <div key={s.sys} className="bar-row">
+                    <span className="bar-label">{s.sys}</span>
+                    <div className="bar-track">
+                      <div className="bar-fill" style={{ width: `${s.pct}%`, background: 'var(--color-completed)' }} />
+                    </div>
+                    <span className="bar-value">{s.pct}% <span style={{ fontWeight: 400, color: 'var(--color-muted)', fontSize: '0.72rem' }}>({s.finished}/{s.total})</span></span>
+                  </div>
                 ))}
               </div>
             </Section>
@@ -462,26 +550,6 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
                 {ratingDist.map(([r, count]) => (
                   <BarRow key={r} label={`${'★'.repeat(r)} (${r})`} value={count} max={maxRating} color="#f59e0b" />
                 ))}
-              </div>
-            </Section>
-          )}
-
-          {/* ── DLC breakdown ── */}
-          {topDlcGames.length > 0 && (
-            <Section title="DLC & Expansions">
-              <div className="bar-list">
-                {topDlcGames.map(g => {
-                  const done = g.dlc.filter(d => d.done).length
-                  return (
-                    <div key={g.id} className="bar-row">
-                      <span className="bar-label">{g.title}</span>
-                      <div className="bar-track">
-                        <div className="bar-fill" style={{ width: `${pct(done, g.dlc.length)}%`, background: 'var(--color-shelved)' }} />
-                      </div>
-                      <span className="bar-value">{done}/{g.dlc.length}</span>
-                    </div>
-                  )
-                })}
               </div>
             </Section>
           )}

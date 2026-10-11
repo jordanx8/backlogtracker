@@ -61,18 +61,18 @@ export default function GameCard({ game, onEdit, onDelete, onOpenJournal, onTogg
 
   return (
     <div className={`game-card status-${game.status}`}>
-      {game.cover && (
-        <div className="card-cover-wrap">
-          <img className="card-cover" src={game.cover} alt={game.title} loading="lazy" />
-          <div className="card-cover-overlay" />
-        </div>
-      )}
-
       <div className="card-body">
         <div className="card-header">
-          <span className={`status-badge status-badge--${game.status}`}>
-            {STATUS_LABELS[game.status]}
-          </span>
+          <div className="card-header-left">
+            {game.cover && (
+              <div className="card-cover-wrap">
+                <img className="card-cover" src={game.cover} alt={game.title} loading="lazy" />
+              </div>
+            )}
+            <span className={`status-badge status-badge--${game.status}`}>
+              {STATUS_LABELS[game.status]}
+            </span>
+          </div>
           <div className="card-actions">
             {game.criticScore != null && <CriticScore score={game.criticScore} />}
             <button className="icon-btn" title="Edit" onClick={() => onEdit(game)}><Icon name="edit" size={14} /></button>
