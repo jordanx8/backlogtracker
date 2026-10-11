@@ -2887,7 +2887,7 @@
   {
     "title": "Mario Kart World",
     "system": "Nintendo Switch 2",
-    "genre": "Adventure",
+    "genre": "Racing",
     "status": "backlog",
     "ownership": "digital",
     "franchise": "",
@@ -2906,7 +2906,14 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791724129137
+    "id": 1791724129137,
+    "tags": [
+      "Fantasy",
+      "Open world",
+      "Party"
+    ],
+    "dlc": [],
+    "lastSynced": 1791736415226
   },
   {
     "title": "Mario Tennis Fever",
@@ -2930,7 +2937,13 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791734900088
+    "dlc": [],
+    "id": 1791734900088,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736415840
   },
   {
     "title": "A Bug's Life",
@@ -2944,14 +2957,19 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w1i.jpg",
     "released": "1998",
-    "developer": "Tiertex Design Studios",
+    "developer": "Traveller's Tales",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
-      "Side view"
+      "Third person"
     ],
-    "id": 1791735059798
+    "dlc": [],
+    "id": 1791735059798,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736416440
   },
   {
     "title": "Frogger",
@@ -2965,14 +2983,19 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5bno.jpg",
     "released": "1998",
-    "developer": "Morning Star Multimedia",
+    "developer": "Raw Thrills",
     "gameModes": [
-      "Single player"
+      "Multiplayer"
     ],
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791735091148
+    "dlc": [],
+    "id": 1791735091148,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736417050
   },
   {
     "title": "Harry Potter and the Chamber of Secrets",
@@ -2986,15 +3009,20 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20dm.jpg",
     "released": "2002",
-    "developer": "Griptonite Games",
+    "developer": "Electronic Arts",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
-      "Bird view / Isometric",
-      "Side view"
+      "Third person"
     ],
-    "id": 1791735112768
+    "dlc": [],
+    "id": 1791735112768,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736417650
   },
   {
     "title": "Hot Wheels Stunt Track Driver",
@@ -3008,16 +3036,25 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6psf.jpg",
     "released": "2000",
-    "developer": "Lucky Chicken Games",
+    "developer": "Mattel Interactive",
     "gameModes": [
       "Single player"
     ],
-    "id": 1791735127651
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791735127651,
+    "tags": [
+      "Action",
+      "Sandbox"
+    ],
+    "lastSynced": 1791736418365
   },
   {
     "title": "The Legend of Zelda: Oracle of Ages",
     "system": "Game Boy Color",
-    "genre": "Adventure",
+    "genre": "Puzzle",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3034,7 +3071,12 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791735143345
+    "dlc": [],
+    "id": 1791735143345,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736419108
   },
   {
     "title": "Rugrats in Paris: The Movie",
@@ -3049,12 +3091,17 @@
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6prh.jpg",
     "released": "2000",
     "developer": "Software Creations",
-    "id": 1791735162600
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1791735162600,
+    "tags": [],
+    "lastSynced": 1791736419813
   },
   {
     "title": "SpongeBob SquarePants: Legend of the Lost Spatula",
     "system": "Game Boy Color",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3070,7 +3117,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735176609
+    "dlc": [],
+    "id": 1791735176609,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736420549
   },
   {
     "title": "The Wild Thornberrys: Rambler",
@@ -3085,7 +3137,14 @@
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa0n3.jpg",
     "released": "2000",
     "developer": "Vicarious Visions",
-    "id": 1791735201053
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1791735201053,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736421264
   },
   {
     "title": "Pokémon Puzzle Challenge",
@@ -3107,7 +3166,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735216283
+    "dlc": [],
+    "id": 1791735216283,
+    "tags": [
+      "Kids"
+    ],
+    "lastSynced": 1791736421876
   },
   {
     "title": "Project S-11",
@@ -3121,7 +3185,15 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4eqy.jpg",
     "released": "2001",
-    "id": 1791735234202
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1791735234202,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791736422580
   },
   {
     "title": "Sesame Street: Elmo's 123s",
@@ -3142,7 +3214,13 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735249255
+    "dlc": [],
+    "id": 1791735249255,
+    "tags": [
+      "Educational",
+      "Kids"
+    ],
+    "lastSynced": 1791736423295
   },
   {
     "title": "Tonka Construction Site",
@@ -3157,12 +3235,19 @@
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w0o.jpg",
     "released": "2002",
     "developer": "Cosmigo",
-    "id": 1791735261253
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1791735261253,
+    "tags": [
+      "Kids"
+    ],
+    "lastSynced": 1791736423914
   },
   {
     "title": "Tony Hawk's Pro Skater",
     "system": "Game Boy Color",
-    "genre": "Racing",
+    "genre": "Simulation",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3171,14 +3256,21 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5cdk.jpg",
     "released": "2000",
+    "developer": "Neversoft Entertainment",
     "gameModes": [
-      "Single player"
+      "Single player",
+      "Multiplayer",
+      "Split screen"
     ],
     "perspectives": [
-      "Bird view / Isometric",
-      "Side view"
+      "Third person"
     ],
-    "id": 1791735276506
+    "dlc": [],
+    "id": 1791735276506,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736424533
   },
   {
     "title": "Toy Story 2",
@@ -3192,14 +3284,17 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5srx.jpg",
     "released": "1999",
-    "developer": "Tiertex Design Studios",
+    "developer": "Pixar",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735287253
+    "dlc": [],
+    "id": 1791735287253,
+    "tags": [],
+    "lastSynced": 1791736425137
   },
   {
     "title": "Who Wants to Be a Millionaire: 2nd Edition",
@@ -3213,13 +3308,17 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7mrb.jpg",
     "released": "2001",
+    "developer": "Glu Mobile",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
       "Text"
     ],
-    "id": 1791735313482
+    "dlc": [],
+    "id": 1791735313482,
+    "tags": [],
+    "lastSynced": 1791736425799
   },
   {
     "title": "Yu-Gi-Oh! Dark Duel Stories",
@@ -3241,7 +3340,12 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791735338698
+    "dlc": [],
+    "id": 1791735338698,
+    "tags": [
+      "Fantasy"
+    ],
+    "lastSynced": 1791736426413
   },
   {
     "title": "X-Men: Mutant Academy",
@@ -3255,19 +3359,26 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6vj4.jpg",
     "released": "2000",
-    "developer": "Crawfish Interactive",
+    "developer": "Midway Studios Los Angeles",
     "gameModes": [
-      "Single player"
+      "Single player",
+      "Multiplayer"
     ],
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735355174
+    "dlc": [],
+    "id": 1791735355174,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791736427045
   },
   {
     "title": "The Bouncer",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3285,12 +3396,18 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735453813
+    "dlc": [],
+    "id": 1791735453813,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791736427651
   },
   {
     "title": "Capcom vs. SNK 2: Mark of the Millennium 2001",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3307,7 +3424,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735667456
+    "dlc": [],
+    "id": 1791735667456,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736428252
   },
   {
     "title": "Dragon Ball Z: Budokai 2",
@@ -3329,7 +3451,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735683131
+    "dlc": [],
+    "id": 1791735683131,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736428894
   },
   {
     "title": "Dragon Ball Z: Budokai Tenkaichi 2",
@@ -3353,7 +3480,12 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735701824
+    "dlc": [],
+    "id": 1791735701824,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736429494
   },
   {
     "title": "Dragon Ball Z: Budokai Tenkaichi 3",
@@ -3377,12 +3509,18 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735754213
+    "dlc": [],
+    "id": 1791735754213,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736430100
   },
   {
     "title": "EyeToy: Play",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Simulation",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3400,7 +3538,13 @@
     "perspectives": [
       "First person"
     ],
-    "id": 1791735782012
+    "dlc": [],
+    "id": 1791735782012,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "lastSynced": 1791736430821
   },
   {
     "title": "Harry Potter and the Chamber of Secrets",
@@ -3414,19 +3558,25 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3rbm.jpg",
     "released": "2002",
-    "developer": "EA Bright Light",
+    "developer": "Electronic Arts",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735803421
+    "dlc": [],
+    "id": 1791735803421,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736431426
   },
   {
     "title": "Kingdom Hearts II",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "shelved",
     "ownership": "physical",
     "franchise": "",
@@ -3443,7 +3593,13 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735823523
+    "dlc": [],
+    "id": 1791735823523,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736432018
   },
   {
     "title": "The Lord of the Rings: The Two Towers",
@@ -3464,12 +3620,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791735841584
+    "dlc": [],
+    "id": 1791735841584,
+    "tags": [
+      "Fantasy"
+    ],
+    "lastSynced": 1791736432625
   },
   {
     "title": "Mega Man Anniversary Collection",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Shooter",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3478,7 +3639,7 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2050.jpg",
     "released": "2004",
-    "developer": "Atomic Planet Entertainment",
+    "developer": "Capcom",
     "gameModes": [
       "Single player"
     ],
@@ -3527,7 +3688,12 @@
         "done": false
       }
     ],
-    "id": 1791735867541
+    "dlc": [],
+    "id": 1791735867541,
+    "tags": [
+      "Science fiction"
+    ],
+    "lastSynced": 1791736433228
   },
   {
     "title": "Mortal Kombat: Deception",
@@ -3551,12 +3717,17 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791735984454
+    "dlc": [],
+    "id": 1791735984454,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736433829
   },
   {
     "title": "Mortal Kombat: Armageddon",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3575,7 +3746,12 @@
       "Third person",
       "Side view"
     ],
-    "id": 1791736013309
+    "dlc": [],
+    "id": 1791736013309,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736434539
   },
   {
     "title": "Naruto: Ultimate Ninja 2",
@@ -3598,7 +3774,13 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791736029411
+    "dlc": [],
+    "id": 1791736029411,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791736435147
   },
   {
     "title": "Naruto: Ultimate Ninja 3",
@@ -3621,12 +3803,17 @@
     "perspectives": [
       "First person"
     ],
-    "id": 1791736043154
+    "dlc": [],
+    "id": 1791736043154,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736435750
   },
   {
     "title": "Naruto: Uzumaki Chronicles",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Puzzle",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3643,12 +3830,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736059589
+    "dlc": [],
+    "id": 1791736059589,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736436395
   },
   {
     "title": "Naruto: Uzumaki Chronicles 2",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3665,7 +3857,12 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736067585
+    "dlc": [],
+    "id": 1791736067585,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736437103
   },
   {
     "title": "NBA 2K2",
@@ -3690,12 +3887,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736084802
+    "dlc": [],
+    "id": 1791736084802,
+    "tags": [
+      "Non-fiction"
+    ],
+    "lastSynced": 1791736438005
   },
   {
     "title": "Shadow the Hedgehog",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3704,20 +3906,24 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1up3.jpg",
     "released": "2005",
-    "developer": "Sega Studio USA",
+    "developer": "FeliciaVal",
     "gameModes": [
-      "Single player",
-      "Split screen"
+      "Single player"
     ],
     "perspectives": [
-      "Third person"
+      "Side view"
     ],
-    "id": 1791736108909
+    "dlc": [],
+    "id": 1791736108909,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736438623
   },
   {
     "title": "Shrek 2",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3735,12 +3941,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736118838
+    "dlc": [],
+    "id": 1791736118838,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736439225
   },
   {
     "title": "The Simpsons: Hit & Run",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3759,7 +3970,14 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736133263
+    "dlc": [],
+    "id": 1791736133263,
+    "tags": [
+      "Action",
+      "Comedy",
+      "Open world"
+    ],
+    "lastSynced": 1791736439837
   },
   {
     "title": "SoulCalibur III",
@@ -3775,10 +3993,18 @@
     "released": "2005",
     "developer": "Project Soul",
     "criticScore": 83,
+    "gameModes": [],
     "perspectives": [
       "Side view"
     ],
-    "id": 1791736149643
+    "dlc": [],
+    "id": 1791736149643,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Historical"
+    ],
+    "lastSynced": 1791736440451
   },
   {
     "title": "Spider-Man",
@@ -3792,7 +4018,7 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p17.jpg",
     "released": "2002",
-    "developer": "Treyarch",
+    "developer": "Digital Eclipse",
     "criticScore": 75,
     "gameModes": [
       "Single player"
@@ -3800,7 +4026,12 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736164590
+    "dlc": [],
+    "id": 1791736164590,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736441063
   },
   {
     "title": "SpyHunter",
@@ -3816,14 +4047,17 @@
     "released": "2001",
     "developer": "Paradigm Entertainment",
     "gameModes": [
-      "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Single player"
     ],
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736197934
+    "dlc": [],
+    "id": 1791736197934,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736441712
   },
   {
     "title": "Star Wars: Battlefront II",
@@ -3849,12 +4083,18 @@
       "First person",
       "Third person"
     ],
-    "id": 1791736219757
+    "dlc": [],
+    "id": 1791736219757,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791736442341
   },
   {
     "title": "Street Fighter Alpha Anthology",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3895,12 +4135,15 @@
         "done": false
       }
     ],
-    "id": 1791736230208
+    "dlc": [],
+    "id": 1791736230208,
+    "tags": [],
+    "lastSynced": 1791736442949
   },
   {
     "title": "Street Fighter Anniversary Collection",
     "system": "PlayStation 2",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -3927,7 +4170,12 @@
         "done": false
       }
     ],
-    "id": 1791736244770
+    "dlc": [],
+    "id": 1791736244770,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736443717
   },
   {
     "title": "Street Fighter EX3",
@@ -3949,7 +4197,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791736263731
+    "dlc": [],
+    "id": 1791736263731,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736444331
   },
   {
     "title": "Super Dragon Ball Z",
@@ -3958,12 +4211,12 @@
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
-    "timeToBeat": 7,
+    "timeToBeat": 4,
     "rating": null,
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co50f5.jpg",
     "released": "2005",
-    "developer": "Crafts & Meister",
+    "developer": "Tose",
     "gameModes": [
       "Single player",
       "Multiplayer"
@@ -3971,7 +4224,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791736276624
+    "dlc": [],
+    "id": 1791736276624,
+    "tags": [
+      "Science fiction"
+    ],
+    "lastSynced": 1791736444952
   },
   {
     "title": "Tekken Tag Tournament",
@@ -3980,12 +4238,13 @@
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
-    "timeToBeat": 28,
+    "timeToBeat": 48,
     "rating": null,
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co84rb.jpg",
     "released": "2000",
-    "developer": "Namco",
+    "developer": "Namco Bandai Games",
+    "criticScore": 83,
     "gameModes": [
       "Single player",
       "Multiplayer"
@@ -3994,12 +4253,17 @@
       "Third person",
       "Side view"
     ],
-    "id": 1791736288134
+    "dlc": [],
+    "id": 1791736288134,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736445658
   },
   {
     "title": "Tony Hawk's Pro Skater 4",
     "system": "PlayStation 2",
-    "genre": "Sports",
+    "genre": "Simulation",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -4008,20 +4272,26 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co48wx.jpg",
     "released": "2002",
-    "developer": "Neversoft Entertainment",
+    "developer": "Iron Galaxy Studios",
     "gameModes": [
       "Single player",
-      "Multiplayer"
+      "Multiplayer",
+      "Split screen"
     ],
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736308003
+    "dlc": [],
+    "id": 1791736308003,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736446266
   },
   {
     "title": "Tony Hawk's Underground",
     "system": "PlayStation 2",
-    "genre": "Adventure",
+    "genre": "Racing",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -4030,15 +4300,19 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g2b.jpg",
     "released": "2003",
-    "developer": "Beenox",
+    "developer": "Vicarious Visions",
     "gameModes": [
-      "Single player",
-      "Split screen"
+      "Single player"
     ],
     "perspectives": [
       "Third person"
     ],
-    "id": 1791736324161
+    "dlc": [],
+    "id": 1791736324161,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736447001
   },
   {
     "title": "Viewtiful Joe",
@@ -4059,6 +4333,11 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791736335825
+    "dlc": [],
+    "id": 1791736335825,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791736447719
   }
 ]
