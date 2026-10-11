@@ -109,7 +109,10 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [],
+    "lastSynced": 1791672691237
   },
   {
     "igdbId": 3680,
@@ -189,7 +192,12 @@
     ],
     "perspectives": [
       "Auditory"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Party"
+    ],
+    "lastSynced": 1791672691976
   },
   {
     "id": 1791671750176,
@@ -211,7 +219,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672693302
   },
   {
     "igdbId": 7489,
@@ -421,7 +434,15 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Comedy"
+    ],
+    "lastSynced": 1791672694451
   },
   {
     "igdbId": 2643,
@@ -485,84 +506,18 @@
     "lastSynced": 1791671774720
   },
   {
-    "igdbId": 4157,
+    "id": 1791671750186,
     "title": "Sonic Mega Collection",
-    "system": "Xbox",
+    "system": "GameCube",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
-    "released": "2002",
-    "notes": "",
-    "rating": null,
-    "genre": "Platformer",
     "franchise": "",
-    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2uz8.jpg",
     "timeToBeat": null,
-    "tags": [
-      "Action"
-    ],
-    "includedGames": [
-      {
-        "title": "Comix Zone",
-        "done": false,
-        "igdbId": 3071
-      },
-      {
-        "title": "Sonic the Hedgehog",
-        "done": false,
-        "igdbId": 3192
-      },
-      {
-        "title": "Sonic the Hedgehog 2",
-        "done": false,
-        "igdbId": 4438
-      },
-      {
-        "title": "Dr. Robotnik's Mean Bean Machine",
-        "done": false,
-        "igdbId": 4499
-      },
-      {
-        "title": "Sonic the Hedgehog 3",
-        "done": false,
-        "igdbId": 6797
-      },
-      {
-        "title": "Ristar",
-        "done": false,
-        "igdbId": 7431
-      },
-      {
-        "title": "Sonic & Knuckles",
-        "done": false,
-        "igdbId": 9475
-      },
-      {
-        "title": "Sonic 3D Blast",
-        "done": false,
-        "igdbId": 9476
-      },
-      {
-        "title": "Sonic the Hedgehog 3 & Knuckles",
-        "done": false,
-        "igdbId": 11219
-      },
-      {
-        "title": "Sonic the Hedgehog: Spinball",
-        "done": false,
-        "igdbId": 16036
-      },
-      {
-        "title": "The Ooze",
-        "done": false,
-        "igdbId": 46251
-      },
-      {
-        "title": "Flicky",
-        "done": false,
-        "igdbId": 275674
-      }
-    ],
-    "id": 1791671750186,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2uz8.jpg",
+    "released": "2002",
     "developer": "Sonic Team",
     "gameModes": [
       "Single player",
@@ -573,8 +528,56 @@
       "Bird view / Isometric",
       "Side view"
     ],
-    "dlc": [],
-    "lastSynced": 1791671776519
+    "includedGames": [
+      {
+        "title": "Comix Zone",
+        "done": false
+      },
+      {
+        "title": "Sonic the Hedgehog",
+        "done": false
+      },
+      {
+        "title": "Sonic the Hedgehog 2",
+        "done": false
+      },
+      {
+        "title": "Dr. Robotnik's Mean Bean Machine",
+        "done": false
+      },
+      {
+        "title": "Sonic the Hedgehog 3",
+        "done": false
+      },
+      {
+        "title": "Ristar",
+        "done": false
+      },
+      {
+        "title": "Sonic & Knuckles",
+        "done": false
+      },
+      {
+        "title": "Sonic 3D Blast",
+        "done": false
+      },
+      {
+        "title": "Sonic the Hedgehog 3 & Knuckles",
+        "done": false
+      },
+      {
+        "title": "Sonic the Hedgehog: Spinball",
+        "done": false
+      },
+      {
+        "title": "The Ooze",
+        "done": false
+      },
+      {
+        "title": "Flicky",
+        "done": false
+      }
+    ]
   },
   {
     "igdbId": 227987,
@@ -700,7 +703,7 @@
     "id": 1791671750191,
     "title": "Mario Party 8",
     "system": "Wii",
-    "genre": "Puzzle",
+    "genre": "Action",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -709,18 +712,19 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coba2w.jpg",
     "released": "2007",
-    "developer": "Hudson Soft",
+    "developer": "ExtraToxic",
     "criticScore": 58,
     "gameModes": [
-      "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Single player"
     ],
     "perspectives": [
       "First person",
       "Third person",
       "Bird view / Isometric"
-    ]
+    ],
+    "dlc": [],
+    "tags": [],
+    "lastSynced": 1791672695334
   },
   {
     "igdbId": 1112,
@@ -848,13 +852,19 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791672696174
   },
   {
     "id": 1791671750196,
     "title": "Super Mario Galaxy",
     "system": "Wii",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -863,21 +873,30 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21ro.jpg",
     "released": "2007",
-    "developer": "Nintendo Entertainment Analysis & Development",
-    "criticScore": 99,
+    "developer": "Nintendo Software Technology",
+    "criticScore": 92,
     "gameModes": [
       "Single player",
+      "Multiplayer",
       "Co-operative"
     ],
     "perspectives": [
-      "Third person"
-    ]
+      "Third person",
+      "Bird view / Isometric",
+      "Side view"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791672696901
   },
   {
     "id": 1791671750197,
     "title": "Super Mario Galaxy 2",
     "system": "Wii",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -886,22 +905,26 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21tl.jpg",
     "released": "2010",
-    "developer": "Nintendo Entertainment Analysis & Development",
+    "developer": "CowQuack",
     "criticScore": 96,
     "gameModes": [
-      "Single player",
-      "Multiplayer"
+      "Single player"
     ],
     "perspectives": [
-      "Third person",
-      "Bird view / Isometric"
-    ]
+      "Third person"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "lastSynced": 1791672697727
   },
   {
     "id": 1791671750198,
     "title": "Super Monkey Ball: Banana Blitz",
     "system": "Wii",
-    "genre": "Puzzle",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -910,15 +933,22 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ha8.jpg",
     "released": "2006",
-    "developer": "New Entertainment R&D Dept.",
-    "criticScore": 73,
+    "developer": "Sega Games",
+    "criticScore": 66,
     "gameModes": [
       "Single player",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Kids",
+      "Party"
+    ],
+    "lastSynced": 1791672698580
   },
   {
     "igdbId": 1628,
@@ -1003,7 +1033,7 @@
     "id": 1791671750202,
     "title": "Wii Play",
     "system": "Wii",
-    "genre": "Action",
+    "genre": "Sports",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -1012,16 +1042,20 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobwcx.jpg",
     "released": "2006",
-    "developer": "Nintendo EAD Software Development Group No.2",
+    "developer": "Arzest",
     "gameModes": [
       "Single player",
-      "Multiplayer"
+      "Split screen"
     ],
     "perspectives": [
-      "First person",
-      "Third person",
-      "Bird view / Isometric"
-    ]
+      "Third person"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "lastSynced": 1791672699764
   },
   {
     "igdbId": 2276,
@@ -1118,7 +1152,7 @@
     "id": 1791671750206,
     "title": "Mario Kart 8",
     "system": "Wii U",
-    "genre": "Action",
+    "genre": "Racing",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -1131,8 +1165,7 @@
     "criticScore": 91,
     "gameModes": [
       "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
       "Third person"
@@ -1150,7 +1183,12 @@
         "title": "Mario Kart 8: Mercedez-Benz X Mario Kart 8",
         "done": false
       }
-    ]
+    ],
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "lastSynced": 1791672700886
   },
   {
     "id": 1791671750207,
@@ -1178,7 +1216,15 @@
       "Third person",
       "Bird view / Isometric",
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Party"
+    ],
+    "lastSynced": 1791672701517
   },
   {
     "id": 1791671750208,
@@ -1193,13 +1239,12 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co213x.jpg",
     "released": "2014",
-    "developer": "Sora",
+    "developer": "Bandai Namco Studios",
     "criticScore": 95,
     "gameModes": [
       "Single player",
       "Multiplayer",
-      "Co-operative",
-      "Split screen"
+      "Co-operative"
     ],
     "perspectives": [
       "Side view"
@@ -1253,7 +1298,11 @@
         "title": "Super Smash Bros. for Wii U: Super Mario Maker",
         "done": false
       }
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672702146
   },
   {
     "igdbId": 3328,
@@ -1418,7 +1467,13 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "lastSynced": 1791672702916
   },
   {
     "igdbId": 47758,
@@ -1461,15 +1516,18 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocckw.jpg",
     "released": "1997",
-    "developer": "Rare",
+    "developer": "Tiger Electronics",
     "gameModes": [
-      "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Single player"
     ],
     "perspectives": [
-      "First person"
-    ]
+      "Side view"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672703721
   },
   {
     "igdbId": 2642,
@@ -1603,7 +1661,14 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Kids",
+      "Party"
+    ],
+    "lastSynced": 1791672704361
   },
   {
     "igdbId": 2328,
@@ -1640,7 +1705,7 @@
     "id": 1791671750223,
     "title": "Mario Tennis",
     "system": "Nintendo 64",
-    "genre": "Sports",
+    "genre": "RPG",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -1652,13 +1717,17 @@
     "developer": "Camelot",
     "gameModes": [
       "Single player",
-      "Multiplayer",
-      "Co-operative",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
-      "Third person"
-    ]
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791672705170
   },
   {
     "igdbId": 10615,
@@ -1691,7 +1760,7 @@
     "id": 1791671750225,
     "title": "Mission: Impossible",
     "system": "Nintendo 64",
-    "genre": "Adventure",
+    "genre": "Shooter",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -1706,7 +1775,13 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Stealth"
+    ],
+    "lastSynced": 1791672705818
   },
   {
     "igdbId": 4121,
@@ -1796,11 +1871,11 @@
     "id": 1791671750229,
     "title": "Pokémon Stadium",
     "system": "Nintendo 64",
-    "genre": "RPG",
+    "genre": "Simulation",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
-    "timeToBeat": 13.4,
+    "timeToBeat": 17.7,
     "rating": null,
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yyd.jpg",
@@ -1808,13 +1883,18 @@
     "developer": "HAL Laboratory",
     "gameModes": [
       "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
-      "Third person",
-      "Bird view / Isometric"
-    ]
+      "Third person"
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Kids"
+    ],
+    "lastSynced": 1791672706926
   },
   {
     "igdbId": 262016,
@@ -1916,12 +1996,16 @@
     "gameModes": [
       "Single player",
       "Multiplayer",
-      "Co-operative",
-      "Split screen"
+      "Co-operative"
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672707575
   },
   {
     "igdbId": 1327,
@@ -1973,15 +2057,19 @@
       "Split screen"
     ],
     "perspectives": [
-      "First person",
       "Third person"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Non-fiction"
+    ],
+    "lastSynced": 1791672708444
   },
   {
     "id": 1791671750236,
     "title": "Donkey Kong Land",
-    "system": "Nintendo 3DS",
-    "genre": "Adventure",
+    "system": "Game Boy",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2029,7 +2117,7 @@
     "id": 1791671750238,
     "title": "Kirby's Dream Land",
     "system": "Game Boy",
-    "genre": "Platformer",
+    "genre": "Action",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2038,13 +2126,18 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ffy.jpg",
     "released": "1992",
-    "developer": "HAL Laboratory",
+    "developer": "Nintendo",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672710001
   },
   {
     "igdbId": 3718,
@@ -2115,7 +2208,7 @@
     "id": 1791671750241,
     "title": "Pokémon Blue Version",
     "system": "Game Boy",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2124,21 +2217,25 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pi7.jpg",
     "released": "1996",
-    "developer": "Game Freak",
+    "developer": "JoJoBear13",
     "gameModes": [
       "Single player",
       "Multiplayer"
     ],
     "perspectives": [
-      "Bird view / Isometric",
-      "Side view"
-    ]
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "tags": [
+      "Fantasy"
+    ],
+    "lastSynced": 1791672710741
   },
   {
     "id": 1791671750242,
     "title": "Pokémon Yellow Version: Special Pikachu Edition",
     "system": "Game Boy",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -2155,7 +2252,14 @@
     "perspectives": [
       "Bird view / Isometric",
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Fantasy",
+      "Kids",
+      "Open world"
+    ],
+    "lastSynced": 1791672711379
   },
   {
     "igdbId": 339277,
@@ -2200,7 +2304,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791672712328
   },
   {
     "id": 1791671750245,
@@ -2222,12 +2331,17 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "dlc": [],
+    "tags": [
+      "Fantasy"
+    ],
+    "lastSynced": 1791672712975
   },
   {
     "title": "Dave the Diver",
     "system": "Nintendo Switch 2",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "playing",
     "ownership": "digital",
     "franchise": "",
@@ -2282,6 +2396,236 @@
         "done": false
       }
     ],
-    "id": 1791672074438
+    "id": 1791672074438,
+    "tags": [
+      "Action",
+      "Business"
+    ],
+    "lastSynced": 1791672713660
+  },
+  {
+    "title": "Sonic Adventure 2: Battle",
+    "system": "GameCube",
+    "genre": "Adventure",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5p3m.jpg",
+    "released": "2001",
+    "developer": "Sonic Team",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722421344
+  },
+  {
+    "title": "Onimusha: Way of the Sword",
+    "system": "Nintendo Switch 2",
+    "genre": "Action",
+    "status": "wishlist",
+    "ownership": "",
+    "franchise": "",
+    "timeToBeat": 26,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocdt3.jpg",
+    "released": "2026",
+    "developer": "Capcom",
+    "criticScore": 85,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722652009
+  },
+  {
+    "title": "Mario Hoops 3-on-3",
+    "system": "Nintendo DS",
+    "genre": "Sports",
+    "status": "wishlist",
+    "ownership": "",
+    "franchise": "",
+    "timeToBeat": 8,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2206.jpg",
+    "released": "2006",
+    "developer": "Square Enix",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722664990
+  },
+  {
+    "title": "Naruto: Ultimate Ninja",
+    "system": "PlayStation 2",
+    "genre": "Action",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1oxo.jpg",
+    "released": "2003",
+    "developer": "CyberConnect2",
+    "criticScore": 70,
+    "gameModes": [
+      "Single player",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791722695505
+  },
+  {
+    "title": "Ben 10: Galactic Racing",
+    "system": "Nintendo 3DS",
+    "genre": "Racing",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7rr7.jpg",
+    "released": "2011",
+    "developer": "Monkey Bar Games",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722748431
+  },
+  {
+    "title": "Code Name: S.T.E.A.M.",
+    "system": "Nintendo 3DS",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21q1.jpg",
+    "released": "2015",
+    "developer": "Nintendo SPD Production Group No. 2",
+    "criticScore": 68,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722764556
+  },
+  {
+    "title": "The Legend of Zelda: Majora's Mask 3D",
+    "system": "Nintendo 3DS",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9x9.jpg",
+    "released": "2015",
+    "developer": "Grezzo",
+    "criticScore": 91,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "id": 1791722779617
+  },
+  {
+    "title": "Naruto: Powerful Shippuden",
+    "system": "Nintendo 3DS",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u9u.jpg",
+    "released": "2012",
+    "developer": "Inti Creates",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791722794138
+  },
+  {
+    "title": "Pokémon Alpha Sapphire",
+    "system": "Nintendo 3DS",
+    "genre": "Adventure",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 26.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocjde.jpg",
+    "released": "2014",
+    "developer": "Game Freak",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "id": 1791722809474
+  },
+  {
+    "title": "Pokémon Sun",
+    "system": "Nintendo 3DS",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 33.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co7.jpg",
+    "released": "2016",
+    "developer": "Game Freak",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1791722822956
   }
 ]
