@@ -246,17 +246,22 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
 
     const resolvedSystem = form.system === 'Other' ? customSystem.trim() : form.system
 
-    // Build new includedGames, preserving existing done state where titles match
-    const existingMap = Object.fromEntries(
+    // Build new includedGames, preserving existing status/done state where titles match
+    const existingIncludedMap = Object.fromEntries(
       (game?.includedGames ?? []).map(g =>
-        typeof g === 'string' ? [g, false] : [g.title, g.done]
+        typeof g === 'string'
+          ? [g, { status: 'backlog', done: false }]
+          : [g.title, { status: g.status ?? (g.done ? 'completed' : 'backlog'), done: g.done ?? false }]
       )
     )
     const includedGames = form.includedGames
       .split('\n')
       .map(s => s.trim())
       .filter(Boolean)
-      .map(title => ({ title, done: existingMap[title] ?? false }))
+      .map(title => {
+        const existing = existingIncludedMap[title] ?? { status: 'backlog', done: false }
+        return { title, status: existing.status, done: existing.done }
+      })
 
     // Build dlc array, preserving existing done-states
     const existingDlcMap = Object.fromEntries((game?.dlc ?? []).map(d => [d.title, d.done]))

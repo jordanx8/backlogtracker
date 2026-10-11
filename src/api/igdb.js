@@ -236,19 +236,24 @@ export async function enrichGame(title) {
 export async function searchGames(query, platformId = null) {
   if (!query.trim()) return []
 
-  const platformClause = platformId ? ` & platforms = (${platformId})` : ''
+  const platformWhere = platformId ? `where platforms = (${platformId});` : ''
 
   const data = await igdbPost('/v4/games',
     `fields name,cover.image_id,first_release_date,genres.name,platforms.name,bundles.name,
             collection.name,aggregated_rating,aggregated_rating_count,
             involved_companies.company.name,involved_companies.developer,
-            game_modes.name,player_perspectives.name,dlcs.name,expansions.name;
+            game_modes.name,player_perspectives.name,dlcs.name,expansions.name,category;
      search "${query.replace(/"/g, '')}";
-     limit 8;
-     where version_parent = null${platformClause};`
+     limit 15;
+     ${platformWhere}`
   )
 
-  return data.map(g => {
+  // Exclude pure mods (category 5), episodes (6), seasons (7) — keep everything else
+  // including versions/complete editions (which have version_parent set)
+  const EXCLUDE_CATEGORIES = new Set([5, 6, 7])
+  const filtered = data.filter(g => !EXCLUDE_CATEGORIES.has(g.category))
+
+  return filtered.map(g => {
     const year = g.first_release_date
       ? new Date(g.first_release_date * 1000).getFullYear().toString()
       : null

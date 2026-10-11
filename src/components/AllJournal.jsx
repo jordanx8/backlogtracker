@@ -13,11 +13,29 @@ function formatDate(iso) {
 }
 
 export default function AllJournal({ games, journal, onDeleteEntry, onOpenJournal }) {
-  // Flatten every entry with its parent game attached, then sort newest first
+  // Build a lookup from id → game for sub-game key resolution
+  const gameById = Object.fromEntries(games.map(g => [String(g.id), g]))
+
+  // Flatten every entry with its parent game + optional subGame title attached
   const allEntries = []
-  for (const game of games) {
-    for (const entry of (journal[game.id] ?? [])) {
-      allEntries.push({ ...entry, game })
+  for (const [key, entries] of Object.entries(journal)) {
+    const colonIdx = key.indexOf(':')
+    if (colonIdx === -1) {
+      // Plain game journal
+      const game = gameById[key]
+      if (!game) continue
+      for (const entry of (entries ?? [])) {
+        allEntries.push({ ...entry, game, subGame: null })
+      }
+    } else {
+      // Sub-game journal: key is `${gameId}:${subGameTitle}`
+      const gameId  = key.slice(0, colonIdx)
+      const subGame = key.slice(colonIdx + 1)
+      const game = gameById[gameId]
+      if (!game) continue
+      for (const entry of (entries ?? [])) {
+        allEntries.push({ ...entry, game, subGame })
+      }
     }
   }
   allEntries.sort((a, b) => {
@@ -61,31 +79,39 @@ export default function AllJournal({ games, journal, onDeleteEntry, onOpenJourna
                 <span className="journal-day-label">{formatDate(group.date)}</span>
               </div>
 
-              {group.entries.map(entry => (
-                <div key={entry.id} className="all-journal-entry">
-                  <div className="all-journal-entry-game">
-                    {entry.game.cover && (
-                      <img className="all-journal-thumb" src={entry.game.cover} alt="" loading="lazy" />
-                    )}
-                    <div className="all-journal-game-info">
-                      <button
-                        className="all-journal-game-link"
-                        onClick={() => onOpenJournal(entry.game)}
-                        title="Open game journal"
-                      >
-                        {entry.game.title}
-                      </button>
-                      <span className="all-journal-game-system">{entry.game.system}</span>
+              {group.entries.map(entry => {
+                const journalKey = entry.subGame
+                  ? `${entry.game.id}:${entry.subGame}`
+                  : entry.game.id
+                return (
+                  <div key={entry.id} className="all-journal-entry">
+                    <div className="all-journal-entry-game">
+                      {entry.game.cover && (
+                        <img className="all-journal-thumb" src={entry.game.cover} alt="" loading="lazy" />
+                      )}
+                      <div className="all-journal-game-info">
+                        <button
+                          className="all-journal-game-link"
+                          onClick={() => onOpenJournal(entry.subGame
+                            ? { game: entry.game, subGame: entry.subGame }
+                            : entry.game
+                          )}
+                          title="Open journal"
+                        >
+                          {entry.subGame ? `${entry.game.title} › ${entry.subGame}` : entry.game.title}
+                        </button>
+                        <span className="all-journal-game-system">{entry.game.system}</span>
+                      </div>
                     </div>
+                    <p className="all-journal-entry-text">{entry.text}</p>
+                    <button
+                      className="all-journal-delete"
+                      title="Delete entry"
+                      onClick={() => onDeleteEntry(journalKey, entry.id)}
+                    ><Icon name="trash" size={14} /></button>
                   </div>
-                  <p className="all-journal-entry-text">{entry.text}</p>
-                  <button
-                    className="all-journal-delete"
-                    title="Delete entry"
-                    onClick={() => onDeleteEntry(entry.game.id, entry.id)}
-                  ><Icon name="trash" size={14} /></button>
-                </div>
-              ))}
+                )
+              })}
             </div>
           ))}
         </div>

@@ -23,7 +23,7 @@ export default function App() {
   const [tab, setTab]           = useState('home')
   const [showModal, setShowModal]       = useState(false)
   const [editingGame, setEditingGame]   = useState(null)
-  const [journalGame, setJournalGame]   = useState(null)
+  const [journalGame, setJournalGame]   = useState(null)   // { game, subGame? }
   const [showPicker, setShowPicker]     = useState(false)
   const [showImport, setShowImport]     = useState(false)
   const [filters, setFilters]   = useState(EMPTY_FILTERS)
@@ -67,14 +67,13 @@ export default function App() {
     setShowModal(false)
   }
 
-  const toggleIncluded = (gameId, index) => {
+  const updateIncludedStatus = (gameId, index, status) => {
     setGames(prev => prev.map(g => {
       if (g.id !== gameId) return g
       const next = (g.includedGames ?? []).map((item, i) => {
         if (i !== index) return item
         const title = typeof item === 'string' ? item : item.title
-        const done  = typeof item === 'string' ? true  : !item.done
-        return { title, done }
+        return { title, status, done: status === 'completed' }
       })
       return { ...g, includedGames: next }
     }))
@@ -93,7 +92,14 @@ export default function App() {
 
   const deleteGame = (id) => {
     setGames(prev => prev.filter(g => g.id !== id))
-    setJournal(prev => { const next = { ...prev }; delete next[id]; return next })
+    setJournal(prev => {
+      const next = { ...prev }
+      // Remove main journal + any sub-game journals keyed as `${id}:*`
+      for (const key of Object.keys(next)) {
+        if (key === String(id) || key.startsWith(`${id}:`)) delete next[key]
+      }
+      return next
+    })
   }
 
   const openEdit  = (game) => { setEditingGame(game); setShowModal(true) }
@@ -159,13 +165,14 @@ export default function App() {
   }, [games])
 
   // ── Journal CRUD ─────────────────────────────────────────────────────────────
+  // Sub-game entries are keyed as `${gameId}:${subGameTitle}` in the journal map.
 
-  const addEntry = (gameId, entry) => {
-    setJournal(prev => ({ ...prev, [gameId]: [...(prev[gameId] ?? []), entry] }))
+  const addEntry = (journalKey, entry) => {
+    setJournal(prev => ({ ...prev, [journalKey]: [...(prev[journalKey] ?? []), entry] }))
   }
 
-  const deleteEntry = (gameId, entryId) => {
-    setJournal(prev => ({ ...prev, [gameId]: (prev[gameId] ?? []).filter(e => e.id !== entryId) }))
+  const deleteEntry = (journalKey, entryId) => {
+    setJournal(prev => ({ ...prev, [journalKey]: (prev[journalKey] ?? []).filter(e => e.id !== entryId) }))
   }
 
   // ── Derived data ─────────────────────────────────────────────────────────────
@@ -180,6 +187,7 @@ export default function App() {
   const gamesWithCounts = games.map(g => ({
     ...g,
     journalCount: (journal[g.id] ?? []).length,
+    journal,
   }))
 
   const ownedWithCounts = gamesWithCounts.filter(g => g.status !== 'wishlist')
@@ -260,7 +268,7 @@ export default function App() {
           <HomePage
             games={gamesWithCounts}
             journal={journal}
-            onOpenJournal={setJournalGame}
+            onOpenJournal={g => setJournalGame(g?.subGame ? g : { game: g })}
             onOpenGame={openEdit}
             counts={counts}
           />
@@ -300,8 +308,8 @@ export default function App() {
                     game={game}
                     onEdit={openEdit}
                     onDelete={deleteGame}
-                    onOpenJournal={setJournalGame}
-                    onToggleIncluded={toggleIncluded}
+                    onOpenJournal={g => setJournalGame(g?.subGame ? g : { game: g })}
+                    onUpdateIncludedStatus={updateIncludedStatus}
                     onToggleDlc={toggleDlc}
                   />
                 ))}
@@ -324,7 +332,7 @@ export default function App() {
             games={games}
             journal={journal}
             onDeleteEntry={deleteEntry}
-            onOpenJournal={setJournalGame}
+            onOpenJournal={g => setJournalGame(g?.game ? g : { game: g })}
           />
         )}
 
@@ -351,8 +359,11 @@ export default function App() {
 
       {journalGame && (
         <GameJournal
-          game={journalGame}
-          entries={journal[journalGame.id] ?? []}
+          game={journalGame.game}
+          subGame={journalGame.subGame ?? null}
+          entries={journal[journalGame.subGame
+            ? `${journalGame.game.id}:${journalGame.subGame}`
+            : journalGame.game.id] ?? []}
           onAddEntry={addEntry}
           onDeleteEntry={deleteEntry}
           onClose={() => setJournalGame(null)}

@@ -98,7 +98,24 @@ function CollectionPie({ games }) {
 
 // ── Main HomePage ─────────────────────────────────────────────────────────────
 export default function HomePage({ games, journal, onOpenJournal, onOpenGame, counts }) {
-  const playing = games.filter(g => g.status === 'playing')
+  // Sub-games with status === 'playing', grouped by parent id
+  const playingSubGames = []
+  const parentsWithPlayingSub = new Set()
+  for (const game of games) {
+    for (const item of (game.includedGames ?? [])) {
+      const status = typeof item === 'string' ? 'backlog' : (item.status ?? (item.done ? 'completed' : 'backlog'))
+      if (status === 'playing') {
+        playingSubGames.push({ parentGame: game, subGame: item.title })
+        parentsWithPlayingSub.add(game.id)
+      }
+    }
+  }
+
+  // Top-level playing games — suppress a collection if any of its sub-games are playing
+  const playingGames = games.filter(g =>
+    g.status === 'playing' && !parentsWithPlayingSub.has(g.id)
+  )
+
   const wishlist = games.filter(g => g.status === 'wishlist').slice(0, 4)
 
   // Up next by time-to-beat (shortest first; games without TTB go last)
@@ -107,11 +124,20 @@ export default function HomePage({ games, journal, onOpenJournal, onOpenGame, co
     .sort((a, b) => (a.timeToBeat ?? Infinity) - (b.timeToBeat ?? Infinity))
     .slice(0, 6)
 
-  // Recent journal entries across all games, last 8
+  // Recent journal entries across all games (including sub-games), last 8
+  const gameById = Object.fromEntries(games.map(g => [String(g.id), g]))
   const recentEntries = []
-  for (const game of games) {
-    for (const entry of (journal[game.id] ?? [])) {
-      recentEntries.push({ ...entry, game })
+  for (const [key, entries] of Object.entries(journal)) {
+    const colonIdx = key.indexOf(':')
+    if (colonIdx === -1) {
+      const game = gameById[key]
+      if (!game) continue
+      for (const entry of (entries ?? [])) recentEntries.push({ ...entry, game, subGame: null })
+    } else {
+      const game = gameById[key.slice(0, colonIdx)]
+      const subGame = key.slice(colonIdx + 1)
+      if (!game) continue
+      for (const entry of (entries ?? [])) recentEntries.push({ ...entry, game, subGame })
     }
   }
   recentEntries.sort((a, b) => {
@@ -139,11 +165,11 @@ export default function HomePage({ games, journal, onOpenJournal, onOpenGame, co
           {/* ── Currently playing ── */}
           <section className="home-section">
             <h3 className="home-section-title"><Icon name="play" size={15} /> Currently Playing</h3>
-            {playing.length === 0 ? (
+            {playingGames.length === 0 && playingSubGames.length === 0 ? (
               <p className="home-empty">Nothing in progress — pick something from your backlog!</p>
             ) : (
               <div className="playing-list">
-                {playing.map(game => (
+                {playingGames.map(game => (
                   <div
                     key={game.id}
                     className="playing-card"
@@ -178,6 +204,28 @@ export default function HomePage({ games, journal, onOpenJournal, onOpenGame, co
                     ><Icon name="journal" size={16} /></button>
                   </div>
                 ))}
+                {playingSubGames.map(({ parentGame, subGame }) => (
+                  <div
+                    key={`${parentGame.id}:${subGame}`}
+                    className="playing-card playing-card--sub"
+                    onClick={() => onOpenGame(parentGame)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={e => e.key === 'Enter' && onOpenGame(parentGame)}
+                  >
+                    {parentGame.cover && <img className="playing-cover" src={parentGame.cover} alt="" loading="lazy" />}
+                    <div className="playing-info">
+                      <p className="playing-title">{subGame}</p>
+                      <p className="playing-sub-parent"><Icon name="collection" size={11} /> {parentGame.title}</p>
+                      <p className="playing-meta">{parentGame.system}</p>
+                    </div>
+                    <button
+                      className="playing-journal-btn"
+                      onClick={e => { e.stopPropagation(); onOpenJournal({ game: parentGame, subGame }) }}
+                      title={`Journal: ${subGame}`}
+                    ><Icon name="journal" size={16} /></button>
+                  </div>
+                ))}
               </div>
             )}
           </section>
@@ -192,11 +240,16 @@ export default function HomePage({ games, journal, onOpenJournal, onOpenGame, co
                 {recent.map(entry => (
                   <div key={entry.id} className="recent-entry">
                     <div className="recent-entry-header">
-                      <button className="recent-entry-game" onClick={() => onOpenJournal(entry.game)}>
+                      <button
+                        className="recent-entry-game"
+                        onClick={() => onOpenJournal(entry.subGame ? { game: entry.game, subGame: entry.subGame } : entry.game)}
+                      >
                         {entry.game.cover && (
                           <img className="recent-entry-thumb" src={entry.game.cover} alt="" loading="lazy" />
                         )}
-                        <span>{entry.game.title}</span>
+                        <span>
+                          {entry.subGame ? `${entry.game.title} › ${entry.subGame}` : entry.game.title}
+                        </span>
                       </button>
                       <span className="recent-entry-date">{formatDate(entry.date)}</span>
                     </div>

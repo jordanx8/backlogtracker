@@ -22,14 +22,17 @@ function localToday() {
   return `${y}-${m}-${day}`
 }
 
-export default function GameJournal({ game, entries, onAddEntry, onDeleteEntry, onClose }) {
+export default function GameJournal({ game, subGame, entries, onAddEntry, onDeleteEntry, onClose }) {
   const [text, setText] = useState('')
   const [date, setDate] = useState(localToday)
   const [error, setError] = useState('')
 
+  // Journal key: compound for sub-games, plain id for the parent game
+  const journalKey = subGame ? `${game.id}:${subGame}` : game.id
+
   const handleAdd = () => {
     if (!text.trim()) { setError('Entry text is required'); return }
-    onAddEntry(game.id, { id: Date.now(), date, text: text.trim() })
+    onAddEntry(journalKey, { id: Date.now(), date, text: text.trim() })
     setText('')
     setError('')
   }
@@ -42,7 +45,15 @@ export default function GameJournal({ game, entries, onAddEntry, onDeleteEntry, 
         <div className="modal-header">
           <div>
             <h2><Icon name="journal" size={18} /> Journal</h2>
-            <p className="journal-game-title">{game.title}</p>
+            <p className="journal-game-title">
+              {subGame ? (
+                <>
+                  <span className="journal-parent-title">{game.title}</span>
+                  <span className="journal-sub-separator"> › </span>
+                  {subGame}
+                </>
+              ) : game.title}
+            </p>
           </div>
           <button className="icon-btn" onClick={onClose}><Icon name="close" size={14} /></button>
         </div>
@@ -84,7 +95,7 @@ export default function GameJournal({ game, entries, onAddEntry, onDeleteEntry, 
                   <button
                     className="icon-btn icon-btn--sm"
                     title="Delete entry"
-                    onClick={() => onDeleteEntry(game.id, entry.id)}
+                    onClick={() => onDeleteEntry(journalKey, entry.id)}
                   ><Icon name="trash" size={14} /></button>
                 </div>
                 <p className="journal-entry-text">{entry.text}</p>

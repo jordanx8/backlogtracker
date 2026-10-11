@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Icon from './Icon'
 
 const STATUS_LABELS  = { playing: 'Playing', backlog: 'Not Started', completed: 'Completed', shelved: 'Shelved', wishlist: 'Wishlist' }
+const SUB_STATUS_LABELS = { playing: 'Playing', backlog: 'Not Started', completed: 'Completed', shelved: 'Shelved' }
 const OWNERSHIP_ICON  = { physical: <Icon name="physical" size={13} />, digital: <Icon name="digital" size={13} />, both: <><Icon name="physical" size={13} /><Icon name="digital" size={13} /></> }
 const OWNERSHIP_LABEL = { physical: 'Physical', digital: 'Digital', both: 'Physical + Digital' }
 const STARS = [1, 2, 3, 4, 5]
@@ -48,16 +49,22 @@ function ChecklistSection({ label, items, onToggle, gameId }) {
   )
 }
 
-export default function GameCard({ game, onEdit, onDelete, onOpenJournal, onToggleIncluded, onToggleDlc }) {
+export default function GameCard({ game, onEdit, onDelete, onOpenJournal, onUpdateIncludedStatus, onToggleDlc }) {
   const entryWord = game.journalCount === 1 ? 'entry' : 'entries'
   const [showIncluded, setShowIncluded] = useState(false)
   const hasIncluded = Array.isArray(game.includedGames) && game.includedGames.length > 0
 
-  // Normalise includedGames to {title, done}[]
+  // Normalise includedGames to {title, status, done}[]
   const includedNorm = hasIncluded
-    ? game.includedGames.map(g => typeof g === 'string' ? { title: g, done: false } : g)
+    ? game.includedGames.map(g => {
+        if (typeof g === 'string') return { title: g, status: 'backlog', done: false }
+        return { title: g.title, status: g.status ?? (g.done ? 'completed' : 'backlog'), done: g.done ?? false }
+      })
     : []
-  const doneCount = includedNorm.filter(g => g.done).length
+  const doneCount = includedNorm.filter(g => g.status === 'completed').length
+
+  // Count sub-game journal entries from the parent game's full journal map
+  const subJournalCount = (subTitle) => (game.journal?.[`${game.id}:${subTitle}`] ?? []).length
 
   return (
     <div className={`game-card status-${game.status}`}>
@@ -138,18 +145,34 @@ export default function GameCard({ game, onEdit, onDelete, onOpenJournal, onTogg
             </button>
             {showIncluded && (
               <ul className="included-games-list">
-                {includedNorm.map((item, i) => (
-                  <li key={i} className={item.done ? 'included-item--done' : ''}>
-                    <label className="included-item">
-                      <input
-                        type="checkbox"
-                        checked={item.done}
-                        onChange={() => onToggleIncluded?.(game.id, i)}
-                      />
-                      <span>{item.title}</span>
-                    </label>
-                  </li>
-                ))}
+                {includedNorm.map((item, i) => {
+                  const sjCount = subJournalCount(item.title)
+                  return (
+                    <li key={i} className={`included-item-row included-item-row--${item.status}`}>
+                      <span className="included-item-title">{item.title}</span>
+                      <div className="included-item-controls">
+                        <select
+                          className="included-status-select"
+                          value={item.status}
+                          onChange={e => onUpdateIncludedStatus?.(game.id, i, e.target.value)}
+                          title="Set status"
+                        >
+                          {Object.entries(SUB_STATUS_LABELS).map(([val, label]) => (
+                            <option key={val} value={val}>{label}</option>
+                          ))}
+                        </select>
+                        <button
+                          className="included-journal-btn"
+                          title={`Journal: ${item.title}`}
+                          onClick={() => onOpenJournal?.({ game, subGame: item.title })}
+                        >
+                          <Icon name="journal" size={12} />
+                          {sjCount > 0 && <span className="included-journal-count">{sjCount}</span>}
+                        </button>
+                      </div>
+                    </li>
+                  )
+                })}
               </ul>
             )}
           </div>

@@ -284,14 +284,17 @@
     "includedGames": [
       {
         "title": "Phoenix Wright: Ace Attorney - Justice For All",
+        "status": "playing",
         "done": false
       },
       {
         "title": "Phoenix Wright: Ace Attorney - Trials and Tribulations",
+        "status": "backlog",
         "done": false
       },
       {
         "title": "Phoenix Wright: Ace Attorney",
+        "status": "completed",
         "done": true
       }
     ]
@@ -4339,5 +4342,610 @@
       "Action"
     ],
     "lastSynced": 1791736447719
+  },
+  {
+    "title": "Grand Theft Auto: The Trilogy - The Definitive Edition",
+    "system": "Nintendo Switch",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65yx.jpg",
+    "released": "2021",
+    "developer": "Grove Street Games",
+    "criticScore": 47,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Grand Theft Auto III: The Definitive Edition",
+        "done": false
+      },
+      {
+        "title": "Grand Theft Auto: San Andreas - The Definitive Edition",
+        "done": false
+      },
+      {
+        "title": "Grand Theft Auto: Vice City - The Definitive Edition",
+        "done": false
+      }
+    ],
+    "id": 1791739811215,
+    "tags": [
+      "Action",
+      "Business",
+      "Sandbox",
+      "Open world"
+    ],
+    "dlc": [],
+    "lastSynced": 1791742044785
+  },
+  {
+    "title": "Kirby and the Forgotten Land",
+    "system": "Nintendo Switch",
+    "genre": "Platformer",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 9,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vlw.jpg",
+    "released": "2022",
+    "developer": "HAL Laboratory",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791739829056,
+    "tags": [],
+    "dlc": [],
+    "lastSynced": 1791742045339
+  },
+  {
+    "title": "Kirby Star Allies",
+    "system": "Nintendo Switch",
+    "genre": "Platformer",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8ezz.jpg",
+    "released": "2018",
+    "developer": "HAL Laboratory",
+    "criticScore": 74,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791739851311,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791742045933
+  },
+  {
+    "title": "Digimon Story Cyber Sleuth: Complete Edition",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coar93.jpg",
+    "released": "2019",
+    "developer": "Media.Vision",
+    "criticScore": 67,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Digimon Story: Cyber Sleuth",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Digimon Story: Cyber Sleuth - Hacker's Memory",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "id": 1791741691734
+  },
+  {
+    "title": "Mario Golf: Super Rush",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob7q8.jpg",
+    "released": "2021",
+    "developer": "Camelot Software Planning",
+    "criticScore": 74,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741751387,
+    "tags": [
+      "Party"
+    ],
+    "lastSynced": 1791742047058
+  },
+  {
+    "title": "Mario Party Superstars",
+    "system": "Nintendo Switch",
+    "genre": "Card & Board Game",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 16,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9yl.jpg",
+    "released": "2021",
+    "developer": "Sebzouy",
+    "criticScore": 79,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791741769143,
+    "tags": [
+      "Fantasy",
+      "Comedy",
+      "Party"
+    ],
+    "lastSynced": 1791742048118
+  },
+  {
+    "title": "Mario Strikers: Battle League",
+    "system": "Nintendo Switch",
+    "genre": "Sports",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co83vf.jpg",
+    "released": "2022",
+    "developer": "Next Level Games",
+    "criticScore": 69,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791741784512,
+    "tags": [
+      "Action",
+      "Party"
+    ],
+    "lastSynced": 1791742048889
+  },
+  {
+    "title": "Mario Tennis Aces",
+    "system": "Nintendo Switch",
+    "genre": "Sports",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tfw.jpg",
+    "released": "2018",
+    "developer": "Camelot Software Planning",
+    "criticScore": 78,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741797278,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791742049484
+  },
+  {
+    "title": "My Hero One's Justice",
+    "system": "Nintendo Switch",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qrf.jpg",
+    "released": "2018",
+    "developer": "Byking Inc.",
+    "criticScore": 69,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "My Hero One's Justice: Additional Mission - Gale",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice: Mission - Above and Beyond Endeavor",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice: Mission - O.F.A Deku Shoot Style",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice: Playable Character - Inasa Yoarashi",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice: Playable Character - Pro Hero Endeavor",
+        "done": false
+      }
+    ],
+    "id": 1791741816117,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791742050336
+  },
+  {
+    "title": "Paper Mario: The Origami King",
+    "system": "Nintendo Switch",
+    "genre": "Puzzle",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 20,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob89j.jpg",
+    "released": "2020",
+    "developer": "Intelligent Systems",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741837174,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Open world"
+    ],
+    "lastSynced": 1791742050977
+  },
+  {
+    "title": "Pokémon Brilliant Diamond",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b9t.jpg",
+    "released": "2021",
+    "developer": "ILCA",
+    "criticScore": 79,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791741849054,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Kids"
+    ],
+    "lastSynced": 1791742051601
+  },
+  {
+    "title": "Pokémon Legends: Arceus",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 29,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3d03.jpg",
+    "released": "2022",
+    "developer": "Game Freak",
+    "criticScore": 85,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741861021,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Open world"
+    ],
+    "lastSynced": 1791742052462
+  },
+  {
+    "title": "Pokémon Sword",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 39.1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk2.jpg",
+    "released": "2019",
+    "developer": "Game Freak",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Pokémon Sword: The Crown Tundra",
+        "done": false
+      },
+      {
+        "title": "Pokémon Sword: The Isle of Armor",
+        "done": false
+      }
+    ],
+    "id": 1791741874506,
+    "tags": [
+      "Fantasy",
+      "Kids",
+      "Open world"
+    ],
+    "lastSynced": 1791742053010
+  },
+  {
+    "title": "Ring Fit Adventure",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobcnq.jpg",
+    "released": "2019",
+    "developer": "Nintendo Entertainment Planning & Development",
+    "criticScore": 84,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741887503,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791742053591
+  },
+  {
+    "title": "Splatoon 2",
+    "system": "Nintendo Switch",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8r9.jpg",
+    "released": "2017",
+    "developer": "Nintendo EPD Production Group No. 5",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Splatoon 2: Octo Expansion",
+        "done": false
+      }
+    ],
+    "id": 1791741901136,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1791742054171
+  },
+  {
+    "title": "Super Mario Party",
+    "system": "Nintendo Switch",
+    "genre": "Card & Board Game",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobaa9.jpg",
+    "released": "2018",
+    "developer": "NDCube",
+    "criticScore": 73,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1791741919143,
+    "tags": [
+      "Comedy",
+      "Kids",
+      "Party"
+    ],
+    "lastSynced": 1791742054758
+  },
+  {
+    "title": "Super Mario RPG",
+    "system": "Nintendo Switch",
+    "genre": "RPG",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 15,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coba9n.jpg",
+    "released": "2023",
+    "developer": "Intelligent Systems",
+    "criticScore": 85,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1791741932912,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1791742055315
+  },
+  {
+    "title": "Ultra Street Fighter II: The Final Challengers",
+    "system": "Nintendo Switch",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yen.jpg",
+    "released": "2017",
+    "developer": "Capcom",
+    "criticScore": 72,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1791741948202,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1791742055912
+  },
+  {
+    "id": 1791741963016,
+    "title": "Yu-Gi-Oh! Legacy of the Duelist: Link Evolution",
+    "system": "Nintendo Switch",
+    "genre": "Puzzle",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ujo.jpg",
+    "released": "2019",
+    "developer": "Other Ocean Interactive",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1791742056837
   }
 ]

@@ -258,6 +258,77 @@ body {
   line-height: 1.7;
 }
 
+/* ── Sub-game rows ──────────────────────────────────────────────────────── */
+.included-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.included-item-row:last-child { border-bottom: none; }
+
+.included-item-title {
+  flex: 1;
+  font-size: 0.78rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.included-item-row--completed .included-item-title {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.included-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.included-status-select {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.included-item-row--playing   .included-status-select { color: var(--color-playing); border-color: var(--color-playing); }
+.included-item-row--completed .included-status-select { color: var(--color-completed); border-color: var(--color-completed); }
+.included-item-row--shelved   .included-status-select { color: var(--color-shelved); border-color: var(--color-shelved); }
+
+.included-journal-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: color 0.15s, border-color 0.15s;
+}
+.included-journal-btn:hover { color: var(--color-accent); border-color: var(--color-accent); }
+
+.included-journal-count {
+  font-size: 0.65rem;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 4px;
+  min-width: 14px;
+  text-align: center;
+}
+
+/* legacy — kept for backward compat if any old data renders this class */
 .included-item {
   display: flex;
   align-items: center;
@@ -265,15 +336,6 @@ body {
   cursor: pointer;
   user-select: none;
 }
-
-.included-item input[type="checkbox"] {
-  accent-color: var(--color-completed);
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
 .included-item--done .included-item span {
   text-decoration: line-through;
   opacity: 0.5;
@@ -447,6 +509,9 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.journal-parent-title { color: var(--color-muted); }
+.journal-sub-separator { color: var(--color-border); }
 
 .journal-compose {
   padding: 16px 20px;
@@ -1158,6 +1223,17 @@ body {
   text-align: left;
 }
 .playing-card:hover { border-color: var(--color-accent); }
+
+.playing-card--sub { border-left: 2px solid var(--color-playing); }
+
+.playing-sub-parent {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 
 .playing-cover {
   width: 48px;
