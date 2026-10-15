@@ -19,7 +19,13 @@
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "dlc": [],
+    "lastSynced": 1792090092228
   },
   {
     "igdbId": 5440,
@@ -5645,7 +5651,7 @@
     "id": 1791743821221,
     "title": "Dead Rising",
     "system": "Xbox 360",
-    "genre": "Action",
+    "genre": "Shooter",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -5654,14 +5660,39 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20xf.jpg",
     "released": "2006",
-    "developer": "QLOC",
-    "criticScore": 82,
+    "developer": "Capcom Game Studio Vancouver, Inc.",
+    "criticScore": 77,
     "gameModes": [
-      "Single player"
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
     ],
     "perspectives": [
       "Third person"
-    ]
+    ],
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Comedy",
+      "Sandbox",
+      "Open world"
+    ],
+    "dlc": [
+      {
+        "title": "Dead Rising 4: Capcom Heroes",
+        "done": false
+      },
+      {
+        "title": "Dead Rising 4: Frank Rising",
+        "done": false
+      },
+      {
+        "title": "Super Ultra Dead Rising 4 Mini Golf",
+        "done": false
+      }
+    ],
+    "lastSynced": 1792090094739
   },
   {
     "title": "Gears of War: Judgment",
@@ -7057,6 +7088,539 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791905889775
+    "id": 1791905889775,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Mystery"
+    ],
+    "dlc": [],
+    "lastSynced": 1792090097389
+  },
+  {
+    "title": "Asura's Wrath",
+    "system": "PlayStation 3",
+    "genre": "Action",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 11.1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4961.jpg",
+    "released": "2012",
+    "developer": "CyberConnect2",
+    "criticScore": 75,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Asura's Wrath Episode 11.5",
+        "done": false
+      },
+      {
+        "title": "Asura's Wrath Episode 15.5",
+        "done": false
+      },
+      {
+        "title": "Asura's Wrath: Lost Episode 1",
+        "done": false
+      },
+      {
+        "title": "Asura's Wrath: Lost Episode 2",
+        "done": false
+      },
+      {
+        "title": "Asura's Wrath: Part IV Nirvana",
+        "done": false
+      }
+    ],
+    "id": 1792089737078,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090097989
+  },
+  {
+    "title": "BlazBlue: Chrono Phantasma",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2pkl.jpg",
+    "released": "2012",
+    "developer": "Arc System Works",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792089792810,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1792090098603
+  },
+  {
+    "title": "Dead Space 3: Limited Edition",
+    "system": "PlayStation 3",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co315w.jpg",
+    "released": "2013",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1792089814390
+  },
+  {
+    "title": "Dengeki Bunko: Fighting Climax",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co60q0.jpg",
+    "released": "2014",
+    "developer": "Ecole Software",
+    "criticScore": 70,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792089847410,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090099640
+  },
+  {
+    "title": "Dragon Ball Z: Budokai HD Collection",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 12,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7lqf.jpg",
+    "released": "2012",
+    "developer": "Dimps",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "includedGames": [
+      {
+        "title": "Dragon Ball Z: Budokai 3 HD",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Dragon Ball Z: Budokai HD",
+        "status": "completed",
+        "done": true
+      }
+    ],
+    "dlc": [],
+    "id": 1792089862168,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090100343
+  },
+  {
+    "title": "JoJo's Bizarre Adventure: All Star Battle",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qgm.jpg",
+    "released": "2013",
+    "developer": "CyberConnect2",
+    "criticScore": 71,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792089904711,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090100971
+  },
+  {
+    "title": "The King of Fighters XII",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9xqu.jpg",
+    "released": "2009",
+    "developer": "SNK Playmore",
+    "criticScore": 56,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792089920059,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090101689
+  },
+  {
+    "title": "LittleBigPlanet 2: Special Edition",
+    "system": "PlayStation 3",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kpu.jpg",
+    "released": "2011",
+    "developer": "Media Molecule",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1792089936312
+  },
+  {
+    "title": "Lost Planet 2",
+    "system": "PlayStation 3",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8ur0.jpg",
+    "released": "2010",
+    "developer": "Capcom",
+    "criticScore": 71,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792089947882,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1792090102870
+  },
+  {
+    "title": "Marvel vs. Capcom 3: Fate of Two Worlds",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ye3.jpg",
+    "released": "2011",
+    "developer": "Eighting",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792089964879,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090103473
+  },
+  {
+    "title": "Metal Gear Solid 4: Guns of the Patriots",
+    "system": "PlayStation 3",
+    "genre": "Shooter",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 22,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5eju.jpg",
+    "released": "2008",
+    "developer": "Kojima Productions",
+    "criticScore": 84,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Metal Gear Solid 4 Database",
+        "done": false
+      }
+    ],
+    "id": 1792089975291,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Survival",
+      "Historical",
+      "Stealth"
+    ],
+    "lastSynced": 1792090104067
+  },
+  {
+    "title": "Mortal Kombat",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 41.4,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20mc.jpg",
+    "released": "2011",
+    "developer": "NetherRealm Studios",
+    "criticScore": 85,
+    "gameModes": [
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Mortal Kombat: Freddy Krueger",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat: Warrior Kenshi",
+        "done": false
+      }
+    ],
+    "id": 1792089994913,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090104673
+  },
+  {
+    "title": "Naruto: Ultimate Ninja Storm",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 100,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u9d.jpg",
+    "released": "2008",
+    "developer": "CyberConnect2",
+    "criticScore": 76,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person",
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792090016524,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090105425
+  },
+  {
+    "title": "Naruto Shippuden: Ultimate Ninja Storm 2",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ssk.jpg",
+    "released": "2010",
+    "developer": "CyberConnect2",
+    "criticScore": 67,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090025800,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090106045
+  },
+  {
+    "title": "Red Dead Redemption: Undead Nightmare",
+    "system": "PlayStation 3",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 8,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lcw.jpg",
+    "released": "2010",
+    "developer": "Rockstar Games",
+    "criticScore": 90,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090043286,
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "lastSynced": 1792090106648
+  },
+  {
+    "title": "Resident Evil 6",
+    "system": "PlayStation 3",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 21.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobgod.jpg",
+    "released": "2012",
+    "developer": "Capcom",
+    "criticScore": 64,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Resident Evil 6: Survivors Mode",
+        "done": false
+      }
+    ],
+    "id": 1792090056332,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Stealth"
+    ],
+    "lastSynced": 1792090107275
+  },
+  {
+    "title": "SoulCalibur IV",
+    "system": "PlayStation 3",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 27,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9avl.jpg",
+    "released": "2008",
+    "developer": "Project Soul",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792090072274,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792090107969
   }
 ]
