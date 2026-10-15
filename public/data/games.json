@@ -1,9 +1,10 @@
 [
   {
+    "id": 1791671459729,
     "title": "Pragmata",
     "system": "Nintendo Switch 2",
     "genre": "Shooter",
-    "status": "playing",
+    "status": "completed",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": 14.1,
@@ -18,14 +19,7 @@
     ],
     "perspectives": [
       "Third person"
-    ],
-    "dlc": [],
-    "id": 1791671459729,
-    "tags": [
-      "Action",
-      "Science fiction"
-    ],
-    "lastSynced": 1791723324260
+    ]
   },
   {
     "igdbId": 5440,
@@ -2145,7 +2139,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860795424
   },
   {
     "igdbId": 3718,
@@ -2216,7 +2215,7 @@
     "id": 1791671750241,
     "title": "Pokémon Blue Version",
     "system": "Game Boy",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -2225,15 +2224,19 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pi7.jpg",
     "released": "1996",
-    "developer": "Game Freak",
+    "developer": "JoJoBear13",
     "gameModes": [
       "Single player",
       "Multiplayer"
     ],
     "perspectives": [
-      "Bird view / Isometric",
-      "Side view"
-    ]
+      "Bird view / Isometric"
+    ],
+    "tags": [
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860796154
   },
   {
     "id": 1791671750242,
@@ -3907,7 +3910,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860797006
   },
   {
     "title": "Shrek 2",
@@ -5634,9 +5642,10 @@
     "id": 1791743810202
   },
   {
+    "id": 1791743821221,
     "title": "Dead Rising",
     "system": "Xbox 360",
-    "genre": "Shooter",
+    "genre": "Action",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -5645,40 +5654,14 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20xf.jpg",
     "released": "2006",
-    "developer": "Capcom Game Studio Vancouver, Inc.",
-    "criticScore": 77,
+    "developer": "QLOC",
+    "criticScore": 82,
     "gameModes": [
-      "Single player",
-      "Multiplayer",
-      "Co-operative"
+      "Single player"
     ],
     "perspectives": [
       "Third person"
-    ],
-    "dlc": [
-      {
-        "title": "Dead Rising 4: Capcom Heroes",
-        "done": false
-      },
-      {
-        "title": "Dead Rising 4: Frank Rising",
-        "done": false
-      },
-      {
-        "title": "Super Ultra Dead Rising 4 Mini Golf",
-        "done": false
-      }
-    ],
-    "id": 1791743821221,
-    "tags": [
-      "Action",
-      "Horror",
-      "Survival",
-      "Comedy",
-      "Sandbox",
-      "Open world"
-    ],
-    "lastSynced": 1791744297605
+    ]
   },
   {
     "title": "Gears of War: Judgment",
@@ -6368,7 +6351,7 @@
   {
     "title": "Dino Crisis",
     "system": "PC",
-    "genre": "Adventure",
+    "genre": "Shooter",
     "status": "wishlist",
     "ownership": "",
     "franchise": "",
@@ -6384,7 +6367,15 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791771101281
+    "id": 1791771101281,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "Survival"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860799989
   },
   {
     "title": "Marvel's Wolverine",
@@ -6406,7 +6397,15 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791825612303
+    "id": 1791825612303,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Stealth",
+      "Drama"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860800806
   },
   {
     "title": "Cars",
@@ -6428,7 +6427,10 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791825691521
+    "id": 1791825691521,
+    "tags": [],
+    "dlc": [],
+    "lastSynced": 1791860801541
   },
   {
     "title": "Dora the Explorer: Super Spies",
@@ -6442,12 +6444,17 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/scdhttubhtwuiaxajckz.jpg",
     "released": "2004",
-    "id": 1791825743569
+    "id": 1791825743569,
+    "tags": [],
+    "gameModes": [],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791860802147
   },
   {
     "title": "Dragon Ball GT: Transformation",
     "system": "Game Boy Advance",
-    "genre": "Action",
+    "genre": "Fighting",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6463,7 +6470,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791825758484
+    "id": 1791825758484,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860802850
   },
   {
     "title": "Guilty Gear X: Advance Edition",
@@ -6484,12 +6496,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791825777928
+    "id": 1791825777928,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860803627
   },
   {
     "title": "Hamtaro: Ham-Ham Heartbreak",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "Puzzle",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6505,16 +6522,22 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791825808039
+    "id": 1791825808039,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860804335
   },
   {
     "title": "Harry Potter and the Sorcerer's Stone",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
-    "timeToBeat": null,
+    "timeToBeat": 11,
     "rating": null,
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3jh2.jpg",
@@ -6526,7 +6549,10 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791826207392
+    "id": 1791826207392,
+    "tags": [],
+    "dlc": [],
+    "lastSynced": 1791860804938
   },
   {
     "title": "Kingdom Hearts: Chain of Memories",
@@ -6548,12 +6574,19 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791826217487
+    "id": 1791826217487,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Comedy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860805832
   },
   {
     "title": "Kirby: Nightmare in Dream Land",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "Action",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6562,20 +6595,24 @@
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wcd.jpg",
     "released": "2002",
-    "developer": "HAL Laboratory",
+    "developer": "Nintendo",
     "gameModes": [
-      "Single player",
-      "Multiplayer"
+      "Single player"
     ],
     "perspectives": [
       "Side view"
     ],
-    "id": 1791826237783
+    "id": 1791826237783,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860806806
   },
   {
     "title": "LEGO Island 2: The Brickster's Revenge",
     "system": "Game Boy Advance",
-    "genre": "Action",
+    "genre": "Adventure",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6589,14 +6626,21 @@
       "Single player"
     ],
     "perspectives": [
-      "Side view"
+      "Third person"
     ],
-    "id": 1791848351539
+    "id": 1791848351539,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Comedy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860807423
   },
   {
     "title": "Mario & Luigi: Superstar Saga",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6610,14 +6654,22 @@
       "Single player"
     ],
     "perspectives": [
-      "Side view"
+      "Bird view / Isometric"
     ],
-    "id": 1791848371681
+    "id": 1791848371681,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Comedy"
+    ],
+    "criticScore": 84,
+    "dlc": [],
+    "lastSynced": 1791860808147
   },
   {
     "title": "Pokémon Emerald Version",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -6635,13 +6687,20 @@
       "Bird view / Isometric",
       "Side view"
     ],
-    "id": 1791848391440
+    "id": 1791848391440,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Kids"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860808859
   },
   {
     "id": 1791848403233,
     "title": "Pokémon Mystery Dungeon: Red Rescue Team",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "RPG",
     "status": "completed",
     "ownership": "physical",
     "franchise": "",
@@ -6656,7 +6715,13 @@
     ],
     "perspectives": [
       "Bird view / Isometric"
-    ]
+    ],
+    "tags": [
+      "Fantasy",
+      "Kids"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860809487
   },
   {
     "title": "SpongeBob SquarePants: Revenge of the Flying Dutchman",
@@ -6677,7 +6742,13 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791848416900
+    "id": 1791848416900,
+    "tags": [
+      "Action",
+      "Kids"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860810136
   },
   {
     "title": "Planet of the Apes",
@@ -6698,7 +6769,10 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791848437767
+    "id": 1791848437767,
+    "tags": [],
+    "dlc": [],
+    "lastSynced": 1791860810908
   },
   {
     "title": "Rescue Heroes: Billy Blazes",
@@ -6718,7 +6792,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791848452589
+    "id": 1791848452589,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860811543
   },
   {
     "title": "Scooby-Doo",
@@ -6733,12 +6812,21 @@
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a3x.jpg",
     "released": "2002",
     "developer": "Helixe",
-    "id": 1791848461666
+    "id": 1791848461666,
+    "tags": [
+      "Action"
+    ],
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "lastSynced": 1791860812257
   },
   {
     "title": "Naruto: Ninja Council 2",
     "system": "Game Boy Advance",
-    "genre": "Action",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6755,7 +6843,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791848471102
+    "id": 1791848471102,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860812866
   },
   {
     "title": "Super Mario Advance",
@@ -6795,7 +6888,7 @@
   {
     "title": "The Urbz: Sims in the City",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "Simulation",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6808,12 +6901,16 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791848494208
+    "id": 1791848494208,
+    "tags": [],
+    "gameModes": [],
+    "dlc": [],
+    "lastSynced": 1791860814440
   },
   {
     "title": "Wario Land 4",
     "system": "Game Boy Advance",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
@@ -6829,7 +6926,12 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1791848508619
+    "id": 1791848508619,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860815467
   },
   {
     "title": "Yu-Gi-Oh! Destiny Board Traveler",
@@ -6852,7 +6954,12 @@
       "First person",
       "Bird view / Isometric"
     ],
-    "id": 1791848525529
+    "id": 1791848525529,
+    "tags": [
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860816077
   },
   {
     "title": "Yu-Gi-Oh! The Eternal Duelist Soul",
@@ -6874,7 +6981,12 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1791848534326
+    "id": 1791848534326,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860816817
   },
   {
     "title": "Yu-Gi-Oh! World Championship Tournament 2004",
@@ -6895,7 +7007,12 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1791848548575
+    "id": 1791848548575,
+    "tags": [
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1791860817419
   },
   {
     "title": "Yu-Gi-Oh! Worldwide Edition: Stairway to the Destined Duel",
@@ -6919,5 +7036,27 @@
       "Side view"
     ],
     "id": 1791848591995
+  },
+  {
+    "title": "Ghost Trick: Phantom Detective",
+    "system": "Nintendo Switch",
+    "genre": "Adventure",
+    "status": "wishlist",
+    "ownership": "",
+    "franchise": "",
+    "timeToBeat": 14,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9sm.jpg",
+    "released": "2023",
+    "developer": "Capcom",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1791905889775
   }
 ]
