@@ -7622,5 +7622,1461 @@
       "Fantasy"
     ],
     "lastSynced": 1792090107969
+  },
+  {
+    "id": 1792090146749,
+    "title": "Capcom Fighting Collection",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6dik.jpg",
+    "released": "2022",
+    "developer": "Capcom",
+    "criticScore": 78,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "includedGames": [
+      {
+        "title": "Darkstalkers: The Night Warriors",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Night Warriors: Darkstalkers' Revenge",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Cyberbots: Fullmetal Madness",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Super Puzzle Fighter II Turbo",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Red Earth",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Vampire Savior: The Lord of Vampire",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Vampire Hunter 2",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Vampire Savior 2: The Lord of Vampire",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Super Gem Fighter Mini Mix",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Hyper Street Fighter II: The Anniversary Edition",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090858985
+  },
+  {
+    "id": 1792090155935,
+    "title": "Capcom Fighting Collection 2",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8qmx.jpg",
+    "released": "2025",
+    "developer": "Capcom",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "includedGames": [
+      {
+        "title": "Plasma Sword: Nightmare of Bilstein",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Power Stone",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Power Stone 2",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Project Justice",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter Zero 3 Upper",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Capcom vs. SNK: Millennium Fight 2000 Pro",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Capcom vs. SNK 2: Mark of the Millennium 2001",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Capcom Fighting Evolution",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1792090859844
+  },
+  {
+    "title": "Dragon Ball FighterZ",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 15,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nih.jpg",
+    "released": "2018",
+    "developer": "Arc System Works",
+    "criticScore": 87,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Dragon Ball FighterZ: Android 17",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Android 21 - Lab Coat",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Bardock",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Broly",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Broly (DBS)",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Cooler",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Daima Pack",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Dragon Ball Daima Pack",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Gogeta - SSGSS",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Gogeta (SS4)",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Goku",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Goku (GT)",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Goku (Ultra Instinct)",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Janemba",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Jiren",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Kefla",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Master Roshi",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Super Baby 2",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Vegeta",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Vegito (SSGSS)",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Videl",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball FighterZ: Zamasu (Fused)",
+        "done": false
+      }
+    ],
+    "id": 1792090204157,
+    "tags": [],
+    "lastSynced": 1792090314191
+  },
+  {
+    "title": "For Honor",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4orw.jpg",
+    "released": "2022",
+    "developer": "Ubisoft Montreal",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090302417,
+    "tags": [
+      "Action",
+      "Historical"
+    ],
+    "lastSynced": 1792090314798
+  },
+  {
+    "title": "Guitar Hero Live",
+    "system": "PlayStation 4",
+    "genre": "Music",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wpe.jpg",
+    "released": "2015",
+    "developer": "FreeStyleGames",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Auditory"
+    ],
+    "dlc": [],
+    "id": 1792090363113,
+    "tags": [
+      "Party"
+    ],
+    "lastSynced": 1792090860472
+  },
+  {
+    "title": "Injustice 2",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 18,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xym.jpg",
+    "released": "2017",
+    "developer": "NetherRealm Studios",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Injustice 2: Black Manta",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Brainiac",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Darkseid",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Enchantress",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Fighter Pack 1",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Fighter Pack 2",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Fighter Pack 3",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Hellboy",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Raiden",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Red Hood",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Starfire",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: Sub-Zero",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: The Atom",
+        "done": false
+      },
+      {
+        "title": "Injustice 2: TMNT",
+        "done": false
+      }
+    ],
+    "id": 1792090373000,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090861263
+  },
+  {
+    "title": "J-Stars Victory Vs+",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kx6.jpg",
+    "released": "2015",
+    "developer": "Spike Chunsoft",
+    "criticScore": 67,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090382642,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Comedy"
+    ],
+    "lastSynced": 1792090862401
+  },
+  {
+    "title": "The King of Fighters XIV",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uf2.jpg",
+    "released": "2016",
+    "developer": "SNK",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "The King of Fighters XIV: Blue Mary",
+        "done": false
+      },
+      {
+        "title": "The King of Fighters XIV: Heidern",
+        "done": false
+      },
+      {
+        "title": "The King of Fighters XIV: Najd",
+        "done": false
+      },
+      {
+        "title": "The King of Fighters XIV: Oswald",
+        "done": false
+      },
+      {
+        "title": "The King Of Fighters XIV: Rock Howard",
+        "done": false
+      },
+      {
+        "title": "The King Of Fighters XIV: Ryuji Yamazaki",
+        "done": false
+      },
+      {
+        "title": "The King of Fighters XIV: Vanessa",
+        "done": false
+      },
+      {
+        "title": "The King Of Fighters XIV: Whip",
+        "done": false
+      }
+    ],
+    "id": 1792090398148,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090863009
+  },
+  {
+    "id": 1792090417234,
+    "title": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8tax.jpg",
+    "released": "2024",
+    "developer": "Capcom",
+    "criticScore": 89,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "includedGames": [
+      {
+        "title": "The Punisher",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "X-Men: Children of the Atom",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Marvel Super Heroes",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "X-Men vs. Street Fighter",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Marvel Super Heroes vs. Street Fighter",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Clash of Super Heroes",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom 2: New Age of Heroes",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Horror"
+    ],
+    "lastSynced": 1792090863720
+  },
+  {
+    "id": 1792090428254,
+    "title": "Marvel vs. Capcom: Infinite",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wqa.jpg",
+    "released": "2017",
+    "developer": "Capcom",
+    "criticScore": 69,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Marvel vs. Capcom: Infinite - Black Panther",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Infinite - Black Widow",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Infinite - Monster Hunter",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Infinite - Sigma",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Infinite - Venom",
+        "done": false
+      },
+      {
+        "title": "Marvel vs. Capcom: Infinite - Winter Soldier",
+        "done": false
+      }
+    ],
+    "tags": [],
+    "lastSynced": 1792090864425
+  },
+  {
+    "id": 1792090442195,
+    "title": "Mortal Kombat 11",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20mh.jpg",
+    "released": "2019",
+    "developer": "NetherRealm Studios",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Mortal Kombat 11: Aftermath",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Frost",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Fujin",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Mileena",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Nightwolf",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Rain",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Rambo",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: RoboCop",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Shang Tsung",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Shao Kahn",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Sheeva",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Sindel",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Spawn",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: Terminator T-800",
+        "done": false
+      },
+      {
+        "title": "Mortal Kombat 11: The Joker",
+        "done": false
+      }
+    ],
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792090865059
+  },
+  {
+    "title": "My Hero One's Justice 2",
+    "system": "PlayStation 4",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2hy5.jpg",
+    "released": "2020",
+    "developer": "Byking Inc.",
+    "criticScore": 66,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 1 - Hawks",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 2 - Mei Hatsume",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 3 - Itsuka Kendo",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 4 - Tetsutetsu Tetsutetsu",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 5 - Gentle & La Brava",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 6 - Hitoshi Shinso",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: DLC Pack 9 - Midnight",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: Pack 10 Yuga Aoyama",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: Pack 7 Present Mic",
+        "done": false
+      },
+      {
+        "title": "My Hero One's Justice 2: Pack 8 Kurogiri",
+        "done": false
+      }
+    ],
+    "id": 1792090455943
+  },
+  {
+    "title": "Naruto Shippuden: Ultimate Ninja Storm 4",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 13.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3whm.jpg",
+    "released": "2016",
+    "developer": "CyberConnect2",
+    "criticScore": 75,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Naruto Shippuden: Ultimate Ninja Storm 4 - Gaara's Tale Extra Scenario",
+        "done": false
+      },
+      {
+        "title": "Naruto Shippuden: Ultimate Ninja Storm 4 - Road to Boruto Next Generations",
+        "done": false
+      },
+      {
+        "title": "Naruto Shippuden: Ultimate Ninja Storm 4 - Shikamaru's Tale Extra Scenario",
+        "done": false
+      },
+      {
+        "title": "Naruto Shippuden: Ultimate Ninja Storm 4 - The Sound Four Characters",
+        "done": false
+      }
+    ],
+    "id": 1792090467814,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090866758
+  },
+  {
+    "title": "NBA 2K20",
+    "system": "PlayStation 4",
+    "genre": "Simulation",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 17.2,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wmv.jpg",
+    "released": "2019",
+    "developer": "Visual Concepts",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1792090479097,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090867360
+  },
+  {
+    "title": "Persona 5",
+    "system": "PlayStation 4",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 60,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r76.jpg",
+    "released": "2016",
+    "developer": "Omega Force",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090496223,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792090868190
+  },
+  {
+    "title": "The Rumble Fish 2: Collector's Edition",
+    "system": "PlayStation 4",
+    "genre": "",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6jdi.jpg",
+    "released": "2023",
+    "includedGames": [
+      {
+        "title": "The Rumble Fish 2",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "The Rumble Fish",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "id": 1792090507823
+  },
+  {
+    "id": 1792090523344,
+    "title": "Samurai Shodown",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1m9a.jpg",
+    "released": "2019",
+    "developer": "SNK",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Samurai Shodown: Baiken",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Basara",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Cham Cham",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Hibiki Takane",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Iroha",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Kazuki Kazama",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Mina Majikina",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Rimururu",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Shiro Tokisada Amakusa",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Sogetsu Kazama",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Wan-Fu",
+        "done": false
+      },
+      {
+        "title": "Samurai Shodown: Warden",
+        "done": false
+      }
+    ],
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090869368
+  },
+  {
+    "title": "SNK vs. Capcom: SVC Chaos",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8jko.jpg",
+    "released": "2024",
+    "developer": "Code Mystics",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792090537114,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090869989
+  },
+  {
+    "title": "Street Fighter 30th Anniversary Collection",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nvd.jpg",
+    "released": "2018",
+    "developer": "Capcom",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "includedGames": [
+      {
+        "title": "Street Fighter",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter II",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter II: Champion Edition",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter II' Turbo: Hyper Fighting",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Super Street Fighter II: The New Challengers",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Super Street Fighter II Turbo",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter Alpha: Warriors' Dreams",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter Alpha 2",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter III: New Generation",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter III 2nd Impact: Giant Attack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter Alpha 3",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Street Fighter III: 3rd Strike",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "id": 1792090584936,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090870715
+  },
+  {
+    "title": "Street Fighter V",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pka.jpg",
+    "released": "2016",
+    "developer": "Capcom",
+    "criticScore": 72,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Street Fighter V: A Shadow Falls",
+        "done": false
+      },
+      {
+        "title": "Street FIghter V: Seasons 1-3 Stage Pack",
+        "done": false
+      },
+      {
+        "title": "Street Fighter V: Skies of Honor",
+        "done": false
+      },
+      {
+        "title": "Street Fighter V: Temple of Ascension",
+        "done": false
+      }
+    ],
+    "id": 1792090596229,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090871421
+  },
+  {
+    "title": "Tekken 7",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w4f.jpg",
+    "released": "2017",
+    "developer": "Bandai Namco Studios",
+    "criticScore": 85,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Tekken 7: Anna Williams",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Armor King",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Cave of Enlightenment",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Craig Marduk",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Eliza",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Fahkumram",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Frame Data Display",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Ganryu",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Geese Howard",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Island Paradise",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Julia Chang",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Kunimitsu",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Lei Wulong",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Leroy Smith",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Lidia Sobieska",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Negan",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Noctis Lucis Caelum",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Ultimate Tekken Bowl & Additional Costumes",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Vermilion Gates",
+        "done": false
+      },
+      {
+        "title": "Tekken 7: Zafina",
+        "done": false
+      }
+    ],
+    "id": 1792090605270,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792090872189
+  },
+  {
+    "title": "Yakuza 0",
+    "system": "PlayStation 4",
+    "genre": "RPG",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 49.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co252x.jpg",
+    "released": "2015",
+    "developer": "Ryu Ga Gotoku Studio",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090617156,
+    "tags": [
+      "Action",
+      "Drama",
+      "Open world"
+    ],
+    "lastSynced": 1792090873046
+  },
+  {
+    "title": "Yakuza 6: The Song of Life",
+    "system": "PlayStation 4",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 40,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co492w.jpg",
+    "released": "2016",
+    "developer": "Ryu Ga Gotoku Studio",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090628642,
+    "tags": [
+      "Action",
+      "Drama",
+      "Open world"
+    ],
+    "lastSynced": 1792090873645
+  },
+  {
+    "title": "Yakuza Kiwami",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 32.9,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1qh.jpg",
+    "released": "2016",
+    "developer": "Ryu Ga Gotoku Studio",
+    "criticScore": 83,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792090650647,
+    "tags": [
+      "Action",
+      "Open world"
+    ],
+    "lastSynced": 1792090874339
+  },
+  {
+    "title": "Mortal Kombat X",
+    "system": "PlayStation 4",
+    "genre": "Fighting",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co698e.jpg",
+    "released": "",
+    "developer": "NetherRealm Studios",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792090711942,
+    "tags": [],
+    "lastSynced": 1792090874936
+  },
+  {
+    "title": "Yakuza: Like a Dragon",
+    "system": "PlayStation 4",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 78.3,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2em9.jpg",
+    "released": "2020",
+    "developer": "Ryu Ga Gotoku Studio",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Yakuza: Like a Dragon - Job Set",
+        "done": false
+      },
+      {
+        "title": "Yakuza: Like a Dragon - Pachislot Machines",
+        "done": false
+      }
+    ],
+    "id": 1792090811817,
+    "tags": [
+      "Action",
+      "Open world"
+    ],
+    "lastSynced": 1792090875561
+  },
+  {
+    "title": "The Yakuza Remastered Collection",
+    "system": "PlayStation 4",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coc54a.jpg",
+    "released": "2019",
+    "developer": "Ryu Ga Gotoku Studio",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Yakuza 3 Remastered",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Yakuza 4 Remastered",
+        "status": "completed",
+        "done": true
+      },
+      {
+        "title": "Yakuza 5 Remastered",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [],
+    "id": 1792090824119,
+    "tags": [
+      "Action",
+      "Sandbox",
+      "Open world"
+    ],
+    "lastSynced": 1792090876168
   }
 ]
