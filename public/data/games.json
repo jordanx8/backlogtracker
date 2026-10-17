@@ -2352,10 +2352,11 @@
     "lastSynced": 1791723373501
   },
   {
+    "id": 1791672074438,
     "title": "Dave the Diver",
     "system": "Nintendo Switch 2",
     "genre": "RPG",
-    "status": "playing",
+    "status": "completed",
     "ownership": "digital",
     "franchise": "",
     "timeToBeat": 28,
@@ -2408,13 +2409,7 @@
         "title": "Dave the Diver: Subnautica 2",
         "done": false
       }
-    ],
-    "id": 1791672074438,
-    "tags": [
-      "Action",
-      "Business"
-    ],
-    "lastSynced": 1791723374431
+    ]
   },
   {
     "title": "Sonic Adventure 2: Battle",
