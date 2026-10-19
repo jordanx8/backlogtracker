@@ -227,25 +227,18 @@
     "lastSynced": 1791723328668
   },
   {
-    "igdbId": 7489,
+    "id": 1791671750177,
     "title": "Yakuza: Dead Souls",
     "system": "PlayStation 3",
-    "status": "playing",
-    "ownership": "physical",
-    "released": "2011",
-    "notes": "",
-    "rating": null,
     "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "physical",
     "franchise": "",
-    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5xqj.jpg",
     "timeToBeat": 10,
-    "tags": [
-      "Action",
-      "Horror",
-      "Sandbox",
-      "Open world"
-    ],
-    "id": 1791671750177,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5xqj.jpg",
+    "released": "2011",
     "developer": "Ryu Ga Gotoku Studio",
     "criticScore": 67,
     "gameModes": [
@@ -254,8 +247,14 @@
     "perspectives": [
       "Third person"
     ],
+    "tags": [
+      "Action",
+      "Horror",
+      "Sandbox",
+      "Open world"
+    ],
     "dlc": [],
-    "lastSynced": 1791723329678
+    "lastSynced": 1792420320263
   },
   {
     "id": 1791671750178,
@@ -9034,10 +9033,11 @@
     "lastSynced": 1792090875561
   },
   {
+    "id": 1792090824119,
     "title": "The Yakuza Remastered Collection",
     "system": "PlayStation 4",
     "genre": "RPG",
-    "status": "backlog",
+    "status": "playing",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": null,
@@ -9066,17 +9066,1322 @@
       },
       {
         "title": "Yakuza 5 Remastered",
-        "status": "backlog",
+        "status": "playing",
         "done": false
       }
     ],
-    "dlc": [],
-    "id": 1792090824119,
     "tags": [
       "Action",
       "Sandbox",
       "Open world"
     ],
-    "lastSynced": 1792090876168
+    "dlc": [],
+    "lastSynced": 1792420326504
+  },
+  {
+    "title": "9 Childs Street",
+    "system": "PC",
+    "genre": "",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5cwt.jpg",
+    "released": "2023",
+    "developer": "N4bA",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1792419528856,
+    "tags": [],
+    "lastSynced": 1792420327231
+  },
+  {
+    "title": "Alien: Isolation",
+    "system": "PC",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 21,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vzu.jpg",
+    "released": "2014",
+    "developer": "The Creative Assembly",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Alien: Isolation - Corporate Lockdown",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - Crew Expendable",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - Last Survivor",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - Lost Contact",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - Safe Haven",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - The Trigger",
+        "done": false
+      },
+      {
+        "title": "Alien: Isolation - Trauma",
+        "done": false
+      }
+    ],
+    "id": 1792419583531,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "Thriller",
+      "Survival",
+      "Stealth"
+    ],
+    "lastSynced": 1792420327844
+  },
+  {
+    "title": "Aliens: Colonial Marines",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 8.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2sj6.jpg",
+    "released": "2013",
+    "developer": "Gearbox Software",
+    "criticScore": 45,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Aliens: Colonial Marines - Bug Hunt",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Collector's Edition Pack",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Limited Edition Pack",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Movie Map Pack",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Sawed-off Double Barrel Shotgun",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Sharp Sticks",
+        "done": false
+      },
+      {
+        "title": "Aliens: Colonial Marines - Stasis Interrupted",
+        "done": false
+      }
+    ],
+    "id": 1792419598791,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror"
+    ],
+    "lastSynced": 1792420328460
+  },
+  {
+    "title": "Aliens vs. Predator",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 6,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a29.jpg",
+    "released": "2010",
+    "developer": "Rebellion Developments",
+    "criticScore": 74,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1792419626776,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "Survival"
+    ],
+    "lastSynced": 1792420329092
+  },
+  {
+    "title": "Back 4 Blood",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 25,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mhj.jpg",
+    "released": "2021",
+    "developer": "Turtle Rock Studios",
+    "criticScore": 79,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Back 4 Blood: Annual Pass",
+        "done": false
+      },
+      {
+        "title": "Back 4 Blood: Children of the Worm",
+        "done": false
+      },
+      {
+        "title": "Back 4 Blood: River of Blood",
+        "done": false
+      },
+      {
+        "title": "Back 4 Blood: Tunnels of Terror",
+        "done": false
+      }
+    ],
+    "id": 1792419650343,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival"
+    ],
+    "lastSynced": 1792420329800
+  },
+  {
+    "title": "7 Days to Die",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 187,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaaqz.jpg",
+    "released": "2024",
+    "developer": "The Fun Pimps",
+    "criticScore": 36,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person",
+      "Virtual Reality"
+    ],
+    "dlc": [],
+    "id": 1792419671226,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Sandbox",
+      "Open world"
+    ],
+    "lastSynced": 1792420330512
+  },
+  {
+    "title": "Balatro",
+    "system": "PC",
+    "genre": "Strategy",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 45.9,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9f4g.jpg",
+    "released": "2024",
+    "developer": "LocalThunk",
+    "criticScore": 91,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1792419691133,
+    "tags": [],
+    "lastSynced": 1792420331116
+  },
+  {
+    "title": "Barotrauma",
+    "system": "PC",
+    "genre": "Simulation",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 76.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa97f.jpg",
+    "released": "2023",
+    "developer": "Undertow Games",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Barotrauma: Home & Harbor",
+        "done": false
+      }
+    ],
+    "id": 1792419721257,
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "Survival"
+    ],
+    "lastSynced": 1792420331715
+  },
+  {
+    "title": "Bastion",
+    "system": "PC",
+    "genre": "RPG",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 9,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qlj.jpg",
+    "released": "2011",
+    "developer": "Supergiant Games",
+    "criticScore": 90,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1792419735004,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792420332358
+  },
+  {
+    "title": "Aimlabs",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cod4r4.jpg",
+    "released": "2023",
+    "developer": "Statespace",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1792419771449,
+    "tags": [
+      "Action",
+      "Sandbox",
+      "Educational"
+    ],
+    "lastSynced": 1792420332968
+  },
+  {
+    "title": "Among Us",
+    "system": "PC",
+    "genre": "Strategy",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 4,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6kqt.jpg",
+    "released": "2018",
+    "developer": "Innersloth",
+    "criticScore": 82,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1792419785792,
+    "tags": [],
+    "lastSynced": 1792420333593
+  },
+  {
+    "title": "Apex Legends",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 292.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocqh2.jpg",
+    "released": "2019",
+    "developer": "Respawn Entertainment",
+    "criticScore": 88,
+    "gameModes": [
+      "Multiplayer",
+      "Co-operative",
+      "Battle Royale"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Apex Legends: Bloodhound Edition",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Gibraltar Edition",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Lifeline and Bloodhound Double Pack",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Lifeline Edition",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Loba Edition",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Mirage Edition",
+        "done": false
+      },
+      {
+        "title": "Apex Legends: Octane Edition",
+        "done": false
+      }
+    ],
+    "id": 1792419801310,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420334199
+  },
+  {
+    "title": "Arcana Heart 3: Love Max!!!!!",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8m0e.jpg",
+    "released": "2014",
+    "developer": "Examu",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1792419823280,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792420334912
+  },
+  {
+    "title": "Batman: Arkham Asylum - Game of the Year Edition",
+    "system": "PC",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 12,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vok.jpg",
+    "released": "2010",
+    "developer": "Rocksteady Studios",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Batman: Arkham Asylum - Dem Bones Challenge Map",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Asylum",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Asylum - Insane Night Challenge Map Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Asylum - Prey in the Darkness Map Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Asylum - Crime Alley Challenge Map",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "id": 1792419862706
+  },
+  {
+    "title": "Batman: Arkham City - Game of the Year Edition",
+    "system": "PC",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 22.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kia.jpg",
+    "released": "2012",
+    "developer": "Rocksteady Studios",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Batman: Arkham City - Catwoman Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Nightwing Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Robin Bundle",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Arkham City Skins Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Challenge Map Pack",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham City - Harley Quinn's Revenge",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "id": 1792419881037
+  },
+  {
+    "title": "Batman: Arkham Origins",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 21.2,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmd.jpg",
+    "released": "2013",
+    "developer": "NetherRealm Studios",
+    "criticScore": 71,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person",
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Batman: Arkham Origins - Cold, Cold Heart",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Origins - Initiation",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Origins - Season Pass",
+        "done": false
+      }
+    ],
+    "id": 1792419932233,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792420336492
+  },
+  {
+    "title": "Batman: Arkham Knight",
+    "system": "PC",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 39.4,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coagib.jpg",
+    "released": "2015",
+    "developer": "Rocksteady Studios",
+    "criticScore": 92,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Batman: Arkham Knight - A Flip of a Coin",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - A Matter of Family",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - Catwoman's Revenge",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - GCPD Lockdown",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - Harley Quinn Story Pack",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - PlayStation Exclusive Scarecrow Nightmare Missions",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - Red Hood Story Pack",
+        "done": false
+      },
+      {
+        "title": "Batman: Arkham Knight - Season of Infamy: Most Wanted Expansion",
+        "done": false
+      }
+    ],
+    "id": 1792419951285,
+    "tags": [
+      "Action",
+      "Thriller",
+      "Stealth",
+      "Drama"
+    ],
+    "lastSynced": 1792420337319
+  },
+  {
+    "title": "Battle Fantasia -Revised Edition-",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ud9.jpg",
+    "released": "2015",
+    "developer": "Arc System Works",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792419969710,
+    "tags": [
+      "Action"
+    ],
+    "lastSynced": 1792420338047
+  },
+  {
+    "title": "BattleBlock Theater",
+    "system": "PC",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 14,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ify.jpg",
+    "released": "2013",
+    "developer": "The Behemoth",
+    "criticScore": 89,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792419986072,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "lastSynced": 1792420338760
+  },
+  {
+    "title": "Battlerite",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 7.7,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocsmn.jpg",
+    "released": "2017",
+    "developer": "Stunlock Studios",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [],
+    "id": 1792419997849,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792420339466
+  },
+  {
+    "title": "Big Walk",
+    "system": "PC",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7h9m.jpg",
+    "released": "2026",
+    "developer": "House House",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [],
+    "id": 1792420012366,
+    "tags": [
+      "Comedy",
+      "Sandbox",
+      "Open world",
+      "Mystery"
+    ],
+    "lastSynced": 1792420340069
+  },
+  {
+    "title": "Bigfoot",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lj4.jpg",
+    "released": "2017",
+    "developer": "CyberLight Game Studio",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1792420026722,
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival"
+    ],
+    "lastSynced": 1792420340674
+  },
+  {
+    "title": "The Binding of Isaac: Rebirth",
+    "system": "PC",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 32.8,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaare.jpg",
+    "released": "2014",
+    "developer": "Yerson Games",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "dlc": [
+      {
+        "title": "The Binding of Isaac: Afterbirth",
+        "done": false
+      },
+      {
+        "title": "The Binding of Isaac: Repentance",
+        "done": false
+      }
+    ],
+    "id": 1792420061506,
+    "tags": [],
+    "lastSynced": 1792420341276
+  },
+  {
+    "title": "Bionic Commando",
+    "system": "PC",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vwt.jpg",
+    "released": "2009",
+    "developer": "Capcom",
+    "criticScore": 69,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792420086969,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420342130
+  },
+  {
+    "title": "Bite Size Terrors: Erobos Heaven",
+    "system": "PC",
+    "genre": "Adventure",
+    "status": "completed",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6je5.jpg",
+    "released": "2023",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [],
+    "dlc": [],
+    "id": 1792420106364,
+    "tags": [],
+    "lastSynced": 1792420342837
+  },
+  {
+    "title": "BlazBlue: Calamity Trigger",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ei9.jpg",
+    "released": "2008",
+    "developer": "Arc System Works",
+    "criticScore": 73,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792420128348,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420343662
+  },
+  {
+    "title": "BlazBlue: Central Fiction",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co232h.jpg",
+    "released": "2015",
+    "developer": "Arc System Works",
+    "criticScore": 86,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792420159177,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420344374
+  },
+  {
+    "title": "BlazBlue: Chrono Phantasma Extend",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n8f.jpg",
+    "released": "2014",
+    "developer": "Arc System Works",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792420180584,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420344971
+  },
+  {
+    "title": "BlazBlue: Continuum Shift Extend",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob42w.jpg",
+    "released": "2011",
+    "developer": "Arc System Works",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view",
+      "Text"
+    ],
+    "dlc": [],
+    "id": 1792420204608,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "lastSynced": 1792420345658
+  },
+  {
+    "title": "BlazBlue: Cross Tag Battle",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n8d.jpg",
+    "released": "2018",
+    "developer": "Arc System Works",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 1: Platinum/Kanji/Orie",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 2: Jubei/Aegis/Carmine",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 3: Hakumen/NaotoShirogane/Vatista",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 4: Izayoi/Mitsuru/Merkava",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 5: Mai/Akihiko/Yuzuriha",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 6: Nine/Labrys/Mika",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character Pack Vol. 7: Heart/NaotoKurogane/Teddie/Seth",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character: Blake",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Character: Yang",
+        "done": false
+      },
+      {
+        "title": "BlazBlue: Cross Tag Battle - Ver 2.0 Expansion Pack",
+        "done": false
+      }
+    ],
+    "id": 1792420221839,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "lastSynced": 1792420346399
+  },
+  {
+    "title": "Bloodwash",
+    "system": "PC",
+    "genre": "Adventure",
+    "status": "completed",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5brk.jpg",
+    "released": "2021",
+    "developer": "Black Eyed Priest",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1792420233204,
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "lastSynced": 1792420347003
+  },
+  {
+    "title": "Borderlands 2",
+    "system": "PC",
+    "genre": "RPG",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 66.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ba3.jpg",
+    "released": "2012",
+    "developer": "Gearbox Software",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "Borderlands 2: Captain Scarlett and Her Pirate's Booty",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Commander Lilith and the Fight for Sanctuary",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Creature Slaughterdome",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: How Marcus Saved Mercenary Day",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Mad Moxxi and the Wedding Day Massacre",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Mr. Torgue's Campaign of Carnage",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Sir Hammerlock vs. the Son of Crawmerax",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Sir Hammerlock's Big Game Hunt",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: T.K. Baha's Bloody Harvest",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: The Horrible Hunger of the Ravenous Wattle Gobbler",
+        "done": false
+      },
+      {
+        "title": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
+        "done": false
+      }
+    ],
+    "id": 1792420254112
+  },
+  {
+    "title": "Brawlhalla",
+    "system": "PC",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 282,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6i3u.jpg",
+    "released": "2017",
+    "developer": "Blue Mammoth Games",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Brawlhalla X Lara Croft Bundle",
+        "done": false
+      }
+    ],
+    "id": 1792420268700,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Historical"
+    ],
+    "lastSynced": 1792420348036
+  },
+  {
+    "title": "Bongo Cat",
+    "system": "PC",
+    "genre": "Simulation",
+    "status": "completed",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ibr.jpg",
+    "released": "2025",
+    "developer": "Irox Games",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [],
+    "id": 1792420284218,
+    "tags": [
+      "Comedy",
+      "Party"
+    ],
+    "lastSynced": 1792420348639
+  },
+  {
+    "title": "Buckshot Roulette",
+    "system": "PC",
+    "genre": "Simulation",
+    "status": "completed",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co85h5.jpg",
+    "released": "2023",
+    "developer": "Mike Klubnika",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [],
+    "id": 1792420297219,
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "lastSynced": 1792420349282
   }
 ]
