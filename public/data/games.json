@@ -10529,5 +10529,51 @@
       }
     ],
     "id": 1792503297815
+  },
+  {
+    "title": "Animal Crossing: New Horizons - Nintendo Switch 2 Edition",
+    "system": "Nintendo Switch 2",
+    "genre": "Simulation",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocx69.jpg",
+    "released": "2026",
+    "developer": "Nintendo EPD Production Group No. 5",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "id": 1792587753476
+  },
+  {
+    "title": "Castle Crashers Remastered",
+    "system": "Nintendo Switch",
+    "genre": "Action",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 10,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co527d.jpg",
+    "released": "2015",
+    "developer": "The Behemoth",
+    "criticScore": 80,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1792587778045
   }
 ]
