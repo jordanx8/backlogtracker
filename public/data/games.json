@@ -10383,5 +10383,151 @@
       "Horror"
     ],
     "lastSynced": 1792420349282
+  },
+  {
+    "title": "PowerWash Simulator",
+    "system": "Nintendo Switch",
+    "genre": "Simulation",
+    "status": "playing",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 35,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7gek.jpg",
+    "released": "2022",
+    "developer": "FuturLab",
+    "criticScore": 77,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "PowerWash Simulator: Alice's Adventures Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Back to the Future Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Cruise Ship Sun Deck - Summer 2024",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Halloween Seasonal 2024",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Ice Rink - Winter 2024",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Midgar Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Muckingham Files - Part 3",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Muckingham Files - Part 4",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Muckingham Files - Part 5",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Muckingham Files - Part 6",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Santa's Workshop - Winter 2023",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Shrek Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: SpongeBob SquarePants Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Tomb Raider Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Wallace & Gromit Special Pack",
+        "done": false
+      },
+      {
+        "title": "PowerWash Simulator: Warhammer 40,000 Content Pack",
+        "done": false
+      }
+    ],
+    "id": 1792503270869
+  },
+  {
+    "title": "House Flipper",
+    "system": "PC",
+    "genre": "Simulation",
+    "status": "shelved",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 16,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4xdy.jpg",
+    "released": "2018",
+    "developer": "Frozen District",
+    "criticScore": 62,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person"
+    ],
+    "dlc": [
+      {
+        "title": "House Flipper: Apocalypse",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Cyberpunk",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Dine Out",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Farm",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Garden DLC",
+        "done": false
+      },
+      {
+        "title": "House Flipper: HGTV DLC",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Luxury DLC",
+        "done": false
+      },
+      {
+        "title": "House Flipper: Pets",
+        "done": false
+      }
+    ],
+    "id": 1792503297815
   }
 ]
