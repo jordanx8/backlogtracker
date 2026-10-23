@@ -2152,31 +2152,25 @@
     "lastSynced": 1791860795424
   },
   {
-    "igdbId": 3718,
+    "id": 1791671750239,
     "title": "Kirby's Dream Land 2",
     "system": "Game Boy",
-    "status": "backlog",
-    "ownership": "physical",
-    "released": "1995",
-    "notes": "",
-    "rating": null,
     "genre": "Platformer",
+    "status": "playing",
+    "ownership": "physical",
     "franchise": "",
-    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7crs.jpg",
     "timeToBeat": 2.5,
-    "tags": [
-      "Action"
-    ],
-    "id": 1791671750239,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7crs.jpg",
+    "released": "1995",
     "developer": "HAL Laboratory",
     "gameModes": [
       "Single player"
     ],
     "perspectives": [
       "Side view"
-    ],
-    "dlc": [],
-    "lastSynced": 1791723369827
+    ]
   },
   {
     "igdbId": 49834,
@@ -3149,10 +3143,11 @@
     "lastSynced": 1791736421264
   },
   {
+    "id": 1791735216283,
     "title": "Pokémon Puzzle Challenge",
     "system": "Game Boy Color",
     "genre": "Platformer",
-    "status": "backlog",
+    "status": "playing",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": null,
@@ -3167,13 +3162,7 @@
     ],
     "perspectives": [
       "Side view"
-    ],
-    "dlc": [],
-    "id": 1791735216283,
-    "tags": [
-      "Kids"
-    ],
-    "lastSynced": 1791736421876
+    ]
   },
   {
     "title": "Project S-11",
