@@ -10564,5 +10564,72 @@
       "Side view"
     ],
     "id": 1792587778045
+  },
+  {
+    "title": "Star Fox 64",
+    "system": "Nintendo 64",
+    "genre": "Shooter",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 3.8,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8pu.jpg",
+    "released": "1997",
+    "developer": "Nintendo Entertainment Analysis & Development",
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Split screen"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "id": 1792983975109
+  },
+  {
+    "title": "Naruto: Clash of Ninja 2",
+    "system": "GameCube",
+    "genre": "Fighting",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ubb.jpg",
+    "released": "2003",
+    "developer": "Raizing",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1792983987376
+  },
+  {
+    "title": "Banjo-Kazooie",
+    "system": "Nintendo 64",
+    "genre": "Adventure",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobbr5.jpg",
+    "released": "1998",
+    "developer": "Rare",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "id": 1792984014642
   }
 ]
