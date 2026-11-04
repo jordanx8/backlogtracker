@@ -261,7 +261,7 @@
     "title": "Phoenix Wright: Ace Attorney Trilogy",
     "system": "Nintendo Switch",
     "genre": "Adventure",
-    "status": "playing",
+    "status": "shelved",
     "ownership": "digital",
     "franchise": "",
     "timeToBeat": 46.5,
@@ -283,7 +283,7 @@
     "includedGames": [
       {
         "title": "Phoenix Wright: Ace Attorney - Justice For All",
-        "status": "playing",
+        "status": "shelved",
         "done": false
       },
       {
@@ -2156,7 +2156,7 @@
     "title": "Kirby's Dream Land 2",
     "system": "Game Boy",
     "genre": "Platformer",
-    "status": "playing",
+    "status": "completed",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": 2.5,
@@ -2170,7 +2170,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1793475233582
   },
   {
     "igdbId": 49834,
@@ -3162,7 +3167,12 @@
     ],
     "perspectives": [
       "Side view"
-    ]
+    ],
+    "tags": [
+      "Kids"
+    ],
+    "dlc": [],
+    "lastSynced": 1793067461126
   },
   {
     "title": "Project S-11",
@@ -10374,10 +10384,11 @@
     "lastSynced": 1792420349282
   },
   {
+    "id": 1792503270869,
     "title": "PowerWash Simulator",
     "system": "Nintendo Switch",
     "genre": "Simulation",
-    "status": "playing",
+    "status": "shelved",
     "ownership": "digital",
     "franchise": "",
     "timeToBeat": 35,
@@ -10389,11 +10400,11 @@
     "criticScore": 77,
     "gameModes": [
       "Single player",
-      "Multiplayer",
       "Co-operative"
     ],
     "perspectives": [
-      "First person"
+      "First person",
+      "Virtual Reality"
     ],
     "dlc": [
       {
@@ -10460,8 +10471,7 @@
         "title": "PowerWash Simulator: Warhammer 40,000 Content Pack",
         "done": false
       }
-    ],
-    "id": 1792503270869
+    ]
   },
   {
     "title": "House Flipper",
@@ -10517,7 +10527,14 @@
         "done": false
       }
     ],
-    "id": 1792503297815
+    "id": 1792503297815,
+    "tags": [
+      "Action",
+      "Business",
+      "Non-fiction",
+      "Sandbox"
+    ],
+    "lastSynced": 1793067471367
   },
   {
     "title": "Animal Crossing: New Horizons - Nintendo Switch 2 Edition",
@@ -10539,12 +10556,15 @@
     "perspectives": [
       "Bird view / Isometric"
     ],
-    "id": 1792587753476
+    "id": 1792587753476,
+    "tags": [],
+    "dlc": [],
+    "lastSynced": 1793067472194
   },
   {
     "title": "Castle Crashers Remastered",
     "system": "Nintendo Switch",
-    "genre": "Action",
+    "genre": "RPG",
     "status": "shelved",
     "ownership": "digital",
     "franchise": "",
@@ -10563,7 +10583,13 @@
     "perspectives": [
       "Side view"
     ],
-    "id": 1792587778045
+    "id": 1792587778045,
+    "tags": [
+      "Action",
+      "Comedy"
+    ],
+    "dlc": [],
+    "lastSynced": 1793067472941
   },
   {
     "title": "Star Fox 64",
@@ -10572,22 +10598,27 @@
     "status": "backlog",
     "ownership": "physical",
     "franchise": "",
-    "timeToBeat": 3.8,
+    "timeToBeat": 3,
     "rating": null,
     "notes": "",
     "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8pu.jpg",
     "released": "1997",
-    "developer": "Nintendo Entertainment Analysis & Development",
+    "developer": "Nintendo EAD Software Development Group No.5",
     "gameModes": [
       "Single player",
-      "Multiplayer",
-      "Split screen"
+      "Multiplayer"
     ],
     "perspectives": [
-      "First person",
       "Third person"
     ],
-    "id": 1792983975109
+    "id": 1792983975109,
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "criticScore": 78,
+    "dlc": [],
+    "lastSynced": 1793067473635
   },
   {
     "title": "Naruto: Clash of Ninja 2",
@@ -10609,12 +10640,17 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1792983987376
+    "id": 1792983987376,
+    "tags": [
+      "Action"
+    ],
+    "dlc": [],
+    "lastSynced": 1793067474340
   },
   {
     "title": "Banjo-Kazooie",
     "system": "Nintendo 64",
-    "genre": "Adventure",
+    "genre": "Platformer",
     "status": "shelved",
     "ownership": "physical",
     "franchise": "",
@@ -10630,6 +10666,191 @@
     "perspectives": [
       "Third person"
     ],
-    "id": 1792984014642
+    "id": 1792984014642,
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "dlc": [],
+    "lastSynced": 1793067475317
+  },
+  {
+    "title": "Monster Hunter Wilds",
+    "system": "PlayStation 5",
+    "genre": "RPG",
+    "status": "playing",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 24.8,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co904o.jpg",
+    "released": "2025",
+    "developer": "Capcom",
+    "criticScore": 87,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "dlc": [
+      {
+        "title": "Monster Hunter Wilds: Ascendance",
+        "done": false
+      }
+    ],
+    "id": 1793453020419,
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Open world"
+    ],
+    "lastSynced": 1793475241428
+  },
+  {
+    "title": "Super Mario Land 2: 6 Golden Coins",
+    "system": "Game Boy",
+    "genre": "Platformer",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7gxg.jpg",
+    "released": "1992",
+    "developer": "Nintendo R&D1",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "id": 1793475437358
+  },
+  {
+    "title": "Dragon Ball Z: Kakarot + A New Power Awakens Set",
+    "system": "Nintendo Switch",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 50,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3h55.jpg",
+    "released": "2020",
+    "developer": "CyberConnect2",
+    "gameModes": [
+      "Single player",
+      "Multiplayer"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "includedGames": [
+      {
+        "title": "Dragon Ball Z: Kakarot",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball Z: Kakarot - A New Power Awakens: Part 1",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball Z: Kakarot - A New Power Awakens: Part 2",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "dlc": [
+      {
+        "title": "Dragon Ball Z: Kakarot + A New Power Awakens Set - Goku's Next Journey",
+        "done": false
+      }
+    ],
+    "id": 1793803176524
+  },
+  {
+    "title": "Dragon Ball: Xenoverse",
+    "system": "Xbox 360",
+    "genre": "Fighting",
+    "status": "shelved",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 18,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u94.jpg",
+    "released": "2015",
+    "developer": "Dimps",
+    "criticScore": 74,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Side view"
+    ],
+    "dlc": [
+      {
+        "title": "Dragon Ball: Xenoverse - GT Pack 1",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball: Xenoverse - GT Pack 2 + Mira and Towa",
+        "done": false
+      },
+      {
+        "title": "Dragon Ball: Xenoverse - Resurrection F Pack",
+        "done": false
+      }
+    ],
+    "id": 1793803199773
+  },
+  {
+    "title": "Warrior Cats: Clans of the Forest",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "playing",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocmt9.jpg",
+    "released": "2026",
+    "developer": "Bamtang Games",
+    "gameModes": [
+      "Single player"
+    ],
+    "id": 1793803460168
+  },
+  {
+    "title": "Raccoin: Coin Pusher Roguelike",
+    "system": "PC",
+    "genre": "Action",
+    "status": "playing",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 14,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaa0s.jpg",
+    "released": "2026",
+    "developer": "Doraccoon",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Bird view / Isometric"
+    ],
+    "id": 1793803476267
   }
 ]
