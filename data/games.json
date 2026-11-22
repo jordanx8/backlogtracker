@@ -10977,5 +10977,42 @@
     ],
     "igdbId": 144024,
     "lastSynced": 1795385639270
+  },
+  {
+    "id": 1795385728856,
+    "title": "Monster Hunter Rise",
+    "system": "Nintendo Switch",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 59.5,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3uzk.jpg",
+    "released": "2021",
+    "developer": "Capcom Development Division 2",
+    "criticScore": 88,
+    "gameModes": [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Survival"
+    ],
+    "dlc": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "done": false
+      }
+    ],
+    "igdbId": 138950,
+    "lastSynced": 1795385728856
   }
 ]
