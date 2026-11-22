@@ -10935,5 +10935,47 @@
     "dlc": [],
     "igdbId": 152249,
     "lastSynced": 1795383201903
+  },
+  {
+    "id": 1795385639270,
+    "title": "Final Fantasy VII Remake Intergrade",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "digital",
+    "franchise": "",
+    "timeToBeat": 39.3,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9hh.jpg",
+    "released": "2021",
+    "developer": "Square Enix Creative Business Unit I",
+    "criticScore": 92,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction"
+    ],
+    "dlc": [],
+    "includedGames": [
+      {
+        "title": "Final Fantasy VII Remake",
+        "status": "backlog",
+        "done": false
+      },
+      {
+        "title": "Final Fantasy VII Remake: Episode Intermission",
+        "status": "backlog",
+        "done": false
+      }
+    ],
+    "igdbId": 144024,
+    "lastSynced": 1795385639270
   }
 ]
