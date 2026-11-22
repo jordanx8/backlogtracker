@@ -10828,10 +10828,11 @@
     "id": 1793803460168
   },
   {
+    "id": 1793803476267,
     "title": "Raccoin: Coin Pusher Roguelike",
     "system": "PC",
     "genre": "Action",
-    "status": "playing",
+    "status": "completed",
     "ownership": "digital",
     "franchise": "",
     "timeToBeat": 14,
@@ -10845,7 +10846,6 @@
     ],
     "perspectives": [
       "Bird view / Isometric"
-    ],
-    "id": 1793803476267
+    ]
   }
 ]
