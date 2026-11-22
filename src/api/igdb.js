@@ -1,7 +1,5 @@
-import { getHLTB } from './hltb'
-
-const CLIENT_ID     = import.meta.env.VITE_IGDB_CLIENT_ID
-const CLIENT_SECRET = import.meta.env.VITE_IGDB_CLIENT_SECRET
+import { config } from '../config'
+import { getToken } from './auth'
 
 // ── Image URL helpers ─────────────────────────────────────────────────────────
 // IGDB image sizes: t_thumb, t_cover_small, t_cover_big, t_screenshot_med,
@@ -9,31 +7,16 @@ const CLIENT_SECRET = import.meta.env.VITE_IGDB_CLIENT_SECRET
 const imgUrl = (imageId, size = 't_cover_big') =>
   `https://images.igdb.com/igdb/image/upload/${size}/${imageId}.jpg`
 
-// ── Token cache (in-memory, survives hot reloads in dev) ──────────────────────
-let _token       = null
-let _tokenExpiry = 0
-
-async function getToken() {
-  if (_token && Date.now() < _tokenExpiry) return _token
-
-  const res = await fetch(
-    `/twitch-token?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials`,
-    { method: 'POST' }
-  )
-  if (!res.ok) throw new Error(`Twitch token request failed: ${res.status}`)
-  const data = await res.json()
-  _token       = data.access_token
-  _tokenExpiry = Date.now() + (data.expires_in - 60) * 1000  // refresh 1 min early
-  return _token
-}
-
+// ── Proxy call ────────────────────────────────────────────────────────────────
+// IGDB is reached through the owner-only proxy (proxy/), which holds the IGDB
+// credentials. It is authorised with the same GitHub token the app signs in with.
 async function igdbPost(endpoint, body) {
-  const token = await getToken()
-  const res = await fetch(`/igdb-api${endpoint}`, {
+  if (!config.proxyUrl) throw new Error('IGDB lookup is not configured')
+  const name = endpoint.replace(/^\/v4\//, '')
+  const res = await fetch(`${config.proxyUrl}/igdb/${name}`, {
     method: 'POST',
     headers: {
-      'Client-ID':     CLIENT_ID,
-      'Authorization': `Bearer ${token}`,
+      'Authorization': `Bearer ${getToken() ?? ''}`,
       'Content-Type':  'text/plain',
     },
     body,
@@ -207,9 +190,8 @@ export async function enrichGame(title) {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(d => ({ title: d.name, done: false }))
 
-  // Fetch time-to-beat from IGDB, fall back to HLTB if not found
-  const igdbTTB = await getTimeToBeat(g.id).catch(() => null)
-  const timeToBeat = igdbTTB ?? await getHLTB(title).catch(() => null)
+  // Time-to-beat comes from IGDB only
+  const timeToBeat = await getTimeToBeat(g.id).catch(() => null)
 
   return {
     igdbId:       g.id,
