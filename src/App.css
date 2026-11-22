@@ -1862,3 +1862,69 @@ body {
   color: var(--color-muted);
   max-width: 360px;
 }
+
+/* ── Autosave status ─────────────────────────────────────────────────────────── */
+.save-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  padding: 4px 2px;
+  white-space: nowrap;
+}
+.save-status:not(:disabled) { cursor: pointer; text-decoration: underline dotted; }
+.save-status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-completed); }
+.save-status--busy .save-status-dot { background: var(--color-playing); }
+.save-status--warn { color: #f87171; }
+.save-status--warn .save-status-dot { background: #f87171; }
+
+/* ── Sign-in ─────────────────────────────────────────────────────────────────── */
+.signin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+.signin-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.signin-title { display: flex; align-items: center; gap: 10px; }
+.signin-title h1, .signin-card > h1 { font-size: 1.25rem; font-weight: 700; }
+.signin-lead { color: var(--color-muted); font-size: 0.9rem; }
+.signin-lead code, .signin-help code {
+  background: var(--color-surface-2);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.85em;
+  color: var(--color-text);
+}
+.signin-notice {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid var(--color-playing);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-size: 0.85rem;
+  padding: 10px 12px;
+}
+.signin-submit { align-self: stretch; padding: 10px 16px; }
+.signin-submit:disabled { opacity: 0.6; cursor: default; }
+.signin-help { color: var(--color-muted); font-size: 0.85rem; }
+.signin-help summary { cursor: pointer; color: var(--color-text); }
+.signin-help ol { margin: 10px 0 8px 20px; display: flex; flex-direction: column; gap: 4px; }
+.signin-help a { color: var(--color-accent-hover); }
+.signin-help b { color: var(--color-text); font-weight: 600; }
+
+.app-loading--error { flex-direction: column; gap: 14px; text-align: center; padding: 0 16px; }
+.app-loading-actions { display: flex; gap: 8px; }

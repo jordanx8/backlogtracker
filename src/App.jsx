@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import Icon from './components/Icon'
 import GameCard from './components/GameCard'
 import AddGameModal from './components/AddGameModal'
@@ -10,16 +10,18 @@ import RandomPicker from './components/RandomPicker'
 import HomePage from './components/HomePage'
 import ImportModal from './components/ImportModal'
 import { enrichGame } from './api/igdb'
-import { loadData, lsSave, exportData, isDirty } from './api/storage'
+import { createLibrarySync } from './api/storage'
+import SaveStatus from './components/SaveStatus'
 import './App.css'
 
 const EMPTY_FILTERS = { status: 'all', system: 'all', genre: 'all', franchise: 'all', ownership: 'all', search: '' }
 
-export default function App() {
+export default function App({ token, onSignOut, onUnauthorized }) {
   const [games, setGames]       = useState([])
   const [journal, setJournal]   = useState({})
   const [loaded, setLoaded]     = useState(false)
-  const [dirty, setDirty]       = useState(false)
+  const [loadError, setLoadError] = useState('')
+  const [sync, setSync]         = useState({ status: 'saved' })
   const [tab, setTab]           = useState('home')
   const [showModal, setShowModal]       = useState(false)
   const [editingGame, setEditingGame]   = useState(null)
@@ -29,22 +31,74 @@ export default function App() {
   const [filters, setFilters]   = useState(EMPTY_FILTERS)
   const [sortBy, setSortBy]     = useState('title')
 
-  // ── Load from repo files on mount ────────────────────────────────────────────
-  useEffect(() => {
-    loadData().then(({ games: g, journal: j }) => {
-      setGames(g)
-      setJournal(j)
-      setDirty(isDirty())
-      setLoaded(true)
-    })
-  }, [])
+  // ── Sync with the GitHub repository ──────────────────────────────────────────
+  // The engine owns loading, autosave and merging; see src/sync/engine.js.
+  const onUnauthorizedRef = useRef(onUnauthorized)
+  useEffect(() => { onUnauthorizedRef.current = onUnauthorized }, [onUnauthorized])
+  const [engine] = useState(() => createLibrarySync(token, (event) => {
+    if (event.library) {
+      setGames(event.library.games)
+      setJournal(event.library.journal)
+    }
+    setSync({ status: event.status, error: event.error })
+    if (event.status === 'unauthorized') onUnauthorizedRef.current()
+  }))
 
-  // ── Write-through: keep localStorage in sync and mark dirty ──────────────────
+  const loadLibrary = useCallback(() => {
+    setLoadError('')
+    // Show what this device has cached right away, then reconcile with GitHub
+    const cached = engine.cached()
+    if (cached) {
+      setGames(cached.games)
+      setJournal(cached.journal)
+      setLoaded(true)
+    }
+    engine.load()
+      .then(lib => {
+        setGames(lib.games)
+        setJournal(lib.journal)
+        setLoaded(true)
+      })
+      .catch(e => {
+        if (e?.kind === 'unauthorized') onUnauthorizedRef.current()
+        else if (!cached) setLoadError(e?.kind === 'network' ? "Couldn't reach GitHub. Check your connection." : `Couldn't load the library: ${e?.message ?? e}`)
+      })
+  }, [engine])
+
+  useEffect(() => {
+    loadLibrary()
+    return () => engine.stop()
+  }, [engine, loadLibrary])
+
+  // ── Autosave: hand every change to the engine (same objects back = no-op) ────
   useEffect(() => {
     if (!loaded) return
-    lsSave(games, journal)
-    setDirty(true)
-  }, [games, journal, loaded])
+    engine.update({ games, journal })
+  }, [games, journal, loaded, engine])
+
+  // ── Save when leaving, pick up other devices' changes when returning ────────
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.visibilityState === 'hidden') engine.flush()
+      else engine.refresh()
+    }
+    const onFocus  = () => engine.refresh()
+    const onOnline = () => engine.refresh()
+    document.addEventListener('visibilitychange', onVisibility)
+    window.addEventListener('focus', onFocus)
+    window.addEventListener('online', onOnline)
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility)
+      window.removeEventListener('focus', onFocus)
+      window.removeEventListener('online', onOnline)
+    }
+  }, [engine])
+
+  const signOut = () => {
+    if (engine.isDirty() && !window.confirm('Some changes have not been saved to GitHub yet. Sign out anyway and lose them?')) return
+    engine.clear()
+    onSignOut()
+  }
 
   // ── Game CRUD ────────────────────────────────────────────────────────────────
 
@@ -225,12 +279,18 @@ export default function App() {
     wishlist:  wishlistGames.length,
   }
 
-  if (!loaded) return <div className="app-loading">Loading…</div>
-
-  const handleExport = async () => {
-    await exportData(games, journal)
-    setDirty(false)
+  if (loadError) {
+    return (
+      <div className="app-loading app-loading--error">
+        <p>{loadError}</p>
+        <div className="app-loading-actions">
+          <button className="btn-primary" onClick={loadLibrary}>Try again</button>
+          <button className="btn-ghost" onClick={signOut}>Sign out</button>
+        </div>
+      </div>
+    )
   }
+  if (!loaded) return <div className="app-loading">Loading…</div>
 
   return (
     <div className="app">
@@ -243,15 +303,9 @@ export default function App() {
           <div className="header-actions">
             <button className="btn-ghost" title="Random Picker" onClick={() => setShowPicker(true)}><Icon name="dice" size={14} /> Random</button>
             <button className="btn-ghost" title="Import from CSV" onClick={() => setShowImport(true)}><Icon name="import" size={14} /> Import</button>
-            <button
-              className={`btn-ghost${dirty ? ' btn-ghost--dirty' : ''}`}
-              title="Download games.json and journal.json to commit to the repo"
-              onClick={handleExport}
-            >
-              <Icon name="import" size={14} style={{ transform: 'rotate(180deg)' }} />
-              {dirty ? ' Save*' : ' Save'}
-            </button>
             <button className="btn-primary" onClick={() => setShowModal(true)}><Icon name="plus" size={14} /> Add Game</button>
+            <SaveStatus status={sync.status} error={sync.error} onRetry={() => engine.flush()} />
+            <button className="btn-ghost" title="Sign out on this device" onClick={signOut}>Sign out</button>
           </div>
         </div>
         <nav className="tab-bar">

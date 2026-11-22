@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { searchGames, getGameImages, getBundledGames, getTimeToBeat, PLATFORM_ID_MAP } from '../api/igdb'
-import { getHLTB } from '../api/hltb'
 import Icon from './Icon'
+import { igdbEnabled } from '../config'
 
 const SYSTEMS = [
   // Current
@@ -33,7 +33,7 @@ const GENRES = [
 
 const EMPTY = { title: '', system: '', genre: '', status: 'backlog', ownership: '', franchise: '', timeToBeat: '', rating: '', notes: '', cover: '', released: '', includedGames: '', developer: '', criticScore: null, gameModes: [], perspectives: [], dlc: '' }
 
-const API_ENABLED = Boolean(import.meta.env.VITE_IGDB_CLIENT_ID)
+const API_ENABLED = igdbEnabled
 
 // Simple debounce
 function useDebounce(value, delay) {
@@ -116,7 +116,7 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
     const platformId = PLATFORM_ID_MAP[resolvedSystem] ?? null
     searchGames(debouncedQuery, platformId)
       .then(r => { if (!cancelled) { setResults(r); setShowResults(true) } })
-      .catch(() => { if (!cancelled) setSearchError('Search failed. Check your API key.') })
+      .catch(() => { if (!cancelled) setSearchError('IGDB lookup is unavailable right now. You can still fill in the details by hand.') })
       .finally(() => { if (!cancelled) setSearching(false) })
     return () => { cancelled = true }
   }, [debouncedQuery, gamePicked, form.system, customSystem])
@@ -174,13 +174,9 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
     setShowResults(false)
     setGamePicked(true)
 
-    // Fetch time-to-beat from IGDB, fall back to HLTB if not found
+    // Fetch time-to-beat from IGDB (left empty for manual entry if IGDB has none)
     setTtbLoading(true)
     getTimeToBeat(result.igdbId)
-      .then(async hours => {
-        if (hours != null) return hours
-        return getHLTB(result.title).catch(() => null)
-      })
       .then(hours => {
         if (hours != null) setForm(prev => ({ ...prev, timeToBeat: hours }))
       })
@@ -319,6 +315,9 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
         <form onSubmit={handleSubmit} className="modal-form">
 
           {/* ── IGDB search ── */}
+          {!API_ENABLED && (
+            <p className="field-hint">IGDB lookup isn't set up for this site, so enter the details by hand.</p>
+          )}
           {API_ENABLED && (
             <div className="field" ref={dropdownRef}>
               <label>Search Database {searching && <span className="search-spinner"><Icon name="sync" size={12} /></span>}</label>
