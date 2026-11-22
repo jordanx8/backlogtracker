@@ -10904,5 +10904,36 @@
     "dlc": [],
     "igdbId": 368182,
     "lastSynced": 1795382257111
+  },
+  {
+    "id": 1795383201903,
+    "title": "Marvel's Guardians of the Galaxy",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 19.1,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co39pu.jpg",
+    "released": "2021",
+    "developer": "Eidos Montréal",
+    "criticScore": 81,
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "First person",
+      "Third person"
+    ],
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Comedy"
+    ],
+    "dlc": [],
+    "igdbId": 152249,
+    "lastSynced": 1795383201903
   }
 ]
