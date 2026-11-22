@@ -3152,7 +3152,7 @@
     "title": "Pokémon Puzzle Challenge",
     "system": "Game Boy Color",
     "genre": "Platformer",
-    "status": "playing",
+    "status": "backlog",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": null,
@@ -3167,12 +3167,7 @@
     ],
     "perspectives": [
       "Side view"
-    ],
-    "tags": [
-      "Kids"
-    ],
-    "dlc": [],
-    "lastSynced": 1793067461126
+    ]
   },
   {
     "title": "Project S-11",
