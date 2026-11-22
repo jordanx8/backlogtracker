@@ -1,15 +1,29 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { findMatch, rankCandidates, normalizeTitle, significantWords, igdbFields, getTimeToBeat, PLATFORM_ID_MAP } from './igdb.js'
+import { findMatch, resolvePlatform, rankCandidates, normalizeTitle, significantWords, igdbFields, getTimeToBeat, PLATFORM_ID_MAP, IGDB_PLATFORM_NAMES } from './igdb.js'
 import { SYSTEMS } from '../src/constants.js'
 
 const ts = year => Date.UTC(year, 5, 1) / 1000
 const g = (id, name, year, extra = {}) => ({ id, name, first_release_date: year ? ts(year) : undefined, ...extra })
 
 /** IGDB stub: `routes` maps a predicate on (endpoint, body) to results. */
-function fakeIgdb(handler) {
-  const calls = []
-  return { calls, post: async (endpoint, body) => { calls.push({ endpoint, body }); return handler(endpoint, body) } }
+/** IGDB's platform table as the stub knows it (name -> id). */
+const PLATFORMS = { 'PC (Microsoft Windows)': 6, 'Nintendo Switch': 130, 'Nintendo Switch 2': 508, 'Wii': 5 }
+
+/** IGDB stub. Platform lookups are answered from PLATFORMS; `calls` records game queries only. */
+function fakeIgdb(handler, { platforms = PLATFORMS } = {}) {
+  const calls = [], platformCalls = []
+  return {
+    calls, platformCalls,
+    post: async (endpoint, body) => {
+      if (endpoint === 'platforms') {
+        platformCalls.push(body)
+        return Object.entries(platforms).filter(([name]) => body.includes(`"${name}"`)).map(([name, id]) => ({ id, name }))
+      }
+      calls.push({ endpoint, body })
+      return handler(endpoint, body)
+    },
+  }
 }
 
 test('normalizeTitle ignores case, punctuation and accents', () => {
@@ -153,6 +167,42 @@ test('time to beat converts seconds to hours', async () => {
   assert.equal(await getTimeToBeat(fakeIgdb(() => []), 1), null)
 })
 
-test('every app system except Other maps to an IGDB platform', () => {
+test('every app system except Other has an IGDB platform name and a fallback ID', () => {
+  assert.deepEqual(SYSTEMS.filter(s => s !== 'Other' && !(s in IGDB_PLATFORM_NAMES)), [])
   assert.deepEqual(SYSTEMS.filter(s => s !== 'Other' && !(s in PLATFORM_ID_MAP)), [])
+})
+
+test('the platform is looked up by its IGDB name', async () => {
+  const igdb = fakeIgdb(() => [], { platforms: { 'Nintendo Switch 2': 999 } })
+  assert.deepEqual(await resolvePlatform(igdb, 'Nintendo Switch 2'), { id: 999, name: 'Nintendo Switch 2', verified: true })
+  assert.match(igdb.platformCalls[0], /where name = "Nintendo Switch 2"; limit 5;/)
+})
+
+test('platforms with several IGDB names try each', async () => {
+  const igdb = fakeIgdb(() => [], { platforms: { 'Super Nintendo Entertainment System': 19 } })
+  assert.equal((await resolvePlatform(igdb, 'Super Nintendo')).id, 19)
+  assert.match(igdb.platformCalls[0], /name = "Super Nintendo Entertainment System" \| name = "Super Nintendo Entertainment System \(SNES\)"/)
+})
+
+test('if the name lookup finds nothing, the built-in ID is used and flagged', async () => {
+  const igdb = fakeIgdb(() => [], { platforms: {} })
+  assert.deepEqual(await resolvePlatform(igdb, 'Nintendo Switch 2'), { id: 508, name: 'Nintendo Switch 2', verified: false })
+  assert.equal(await resolvePlatform(igdb, 'Arcade cabinet'), null)
+})
+
+test('Switch 2 searches use the looked-up platform, not a stale ID', async () => {
+  const igdb = fakeIgdb(() => [g(152249, "Marvel's Guardians of the Galaxy", 2021)])
+  const { match, searched } = await findMatch(igdb, { title: "Marvel's Guardians of the Galaxy", system: 'Nintendo Switch 2' })
+  assert.equal(match.id, 152249)
+  assert.match(igdb.calls[0].body, /platforms = \(508\)/)
+  assert.match(searched, /IGDB platform Nintendo Switch 2, #508/)
+})
+
+test('nothing on the system but the exact title elsewhere: reported, not chosen', async () => {
+  const other = g(152249, "Marvel's Guardians of the Galaxy", 2021, { platforms: [{ name: 'PlayStation 5' }] })
+  const igdb = fakeIgdb((_, body) => (body.includes('platforms =') ? [] : [other]))
+  const { match, candidates, elsewhere } = await findMatch(igdb, { title: "Marvel's Guardians of the Galaxy", system: 'Nintendo Switch 2' })
+  assert.equal(match, null)
+  assert.deepEqual(candidates, [])
+  assert.equal(elsewhere.id, 152249)
 })

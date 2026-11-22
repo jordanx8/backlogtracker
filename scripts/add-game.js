@@ -161,7 +161,7 @@ export async function commitGames(github, { headSha, base, next, message }) {
  */
 export async function run({ inputs, igdb, github, now = Date.now() }) {
   const lines = [`## Add game from IGDB`, '', `Looked for ${inputs.igdbId ? `IGDB ID ${inputs.igdbId}` : `**${inputs.title}** on **${inputs.system}**${inputs.year ? ` (released ${inputs.year})` : ''}`}.`, '']
-  const { match, candidates, searched, widened } = await findMatch(igdb, inputs)
+  const { match, candidates, searched, widened, elsewhere } = await findMatch(igdb, inputs)
   const others = candidates.filter(c => c !== match).slice(0, 5)
   const scope = widened ? 'searched wider: up to 200 results plus every-word name matches' : 'first search'
 
@@ -170,6 +170,13 @@ export async function run({ inputs, igdb, github, now = Date.now() }) {
     if (others.length) {
       lines.push('Closest IGDB results on this system. Run the workflow again with one of these **IGDB IDs**:', '')
       for (const c of others) lines.push(`- ${describe(c)}`)
+    } else if (elsewhere) {
+      const on = (elsewhere.platforms ?? []).map(p => p.name).join(', ') || 'no systems'
+      lines.push(
+        `IGDB has **${elsewhere.name}** (IGDB ID ${elsewhere.id}), but lists it only for: ${on}. It wasn't used because you chose ${inputs.system}.`,
+        '',
+        `If you do own it on ${inputs.system}, run the workflow again with IGDB ID **${elsewhere.id}**.`,
+      )
     } else {
       lines.push(`IGDB has nothing matching that title on ${inputs.system}. Check the spelling and the system, or try fewer words.`)
     }

@@ -107,11 +107,11 @@ IGDB can't be called from a browser (it blocks cross-site requests, and its secr
 
 How the match is chosen:
 
-- **Only your system.** Every search is limited to games IGDB lists for the system you picked. Games only on other systems are never chosen or listed. A system typed under "Other" isn't an IGDB platform, so that search isn't limited.
+- **Only your system.** Every search is limited to games IGDB lists for the system you picked. The workflow looks your system up by name on IGDB, and the summary shows which IGDB platform it used. Games only on other systems are never chosen or listed. A system typed under "Other" isn't an IGDB platform, so that search isn't limited.
 - **First search:** 20 results. If one has the exact title (ignoring case, punctuation and accents), it's used. When several do, the release year you entered decides.
 - **Wider search,** only if the first one isn't confident: 200 results, plus a search for games whose name contains every word you typed. That finds "The Legend of Zelda: Tears of the Kingdom" from "Zelda Tears of the Kingdom".
 - **Confident** means an exact title, or exactly one result containing every word you typed (ignoring "the", "of", "a", "an" and "and"; a release year narrows these too).
-- **Otherwise the run fails without changing anything** and lists the closest games on your system with their IGDB IDs. Re-run with the right ID, or add the release year.
+- **Otherwise the run fails without changing anything** and lists the closest games on your system with their IGDB IDs. Re-run with the right ID, or add the release year. If nothing is listed for your system but IGDB has the exact title elsewhere, the summary says which systems IGDB lists it for and gives its ID, in case IGDB's platform data is incomplete.
 
 Every run's summary shows which game was picked, and whether the wider search found it.
 

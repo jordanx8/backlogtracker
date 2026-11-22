@@ -19,6 +19,7 @@ const HADES = {
 function fakeIgdb(results = [HADES]) {
   return {
     post: async (endpoint, body) => {
+      if (endpoint === 'platforms') return [{ id: 6, name: 'PC (Microsoft Windows)' }]
       if (endpoint === 'game_time_to_beats') return [{ normally: 79200 }]
       if (body.includes('where bundles')) return []
       return results
@@ -100,6 +101,23 @@ test('no match: library unchanged, candidates listed with IGDB IDs', async () =>
   assert.equal(github.commits.length, 0)
   assert.match(summary, /Hadestown \(2025\) · IGDB ID 5/)
   assert.match(summary, /searched wider/)
+})
+
+test('no match on the system but the title exists elsewhere: the summary says where and gives the ID', async () => {
+  const github = fakeGithub([])
+  const elsewhere = { id: 152249, name: "Marvel's Guardians of the Galaxy", platforms: [{ name: 'PlayStation 5' }, { name: 'PC (Microsoft Windows)' }] }
+  const igdb = {
+    post: async (endpoint, body) => {
+      if (endpoint === 'platforms') return [{ id: 508, name: 'Nintendo Switch 2' }]
+      return body.includes('platforms =') ? [] : [elsewhere]
+    },
+  }
+  const { outcome, summary } = await run({ inputs: inputs({ title: "Marvel's Guardians of the Galaxy", system: 'Nintendo Switch 2' }), igdb, github })
+  assert.equal(outcome, 'no_match')
+  assert.equal(github.commits.length, 0)
+  assert.match(summary, /IGDB platform Nintendo Switch 2, #508/)
+  assert.match(summary, /lists it only for: PlayStation 5, PC \(Microsoft Windows\)/)
+  assert.match(summary, /IGDB ID \*\*152249\*\*/)
 })
 
 test('a game already in the library is refreshed, keeping the owner\'s fields', async () => {

@@ -43,7 +43,42 @@ export function createIgdbClient({ clientId, clientSecret, fetch: doFetch = glob
 const imgUrl = (imageId, size = 't_cover_big') =>
   `https://images.igdb.com/igdb/image/upload/${size}/${imageId}.jpg`
 
-/** App system name → IGDB platform ID, used to limit the search. */
+/**
+ * App system name → IGDB platform name(s). The search looks the platform up by
+ * name on IGDB at run time, so a wrong ID can't silently empty every search.
+ */
+export const IGDB_PLATFORM_NAMES = {
+  'PC':               ['PC (Microsoft Windows)'],
+  'PlayStation 5':    ['PlayStation 5'],
+  'PlayStation 4':    ['PlayStation 4'],
+  'PlayStation 3':    ['PlayStation 3'],
+  'PlayStation 2':    ['PlayStation 2'],
+  'PlayStation':      ['PlayStation'],
+  'Xbox Series X/S':  ['Xbox Series X|S'],
+  'Xbox One':         ['Xbox One'],
+  'Xbox 360':         ['Xbox 360'],
+  'Xbox':             ['Xbox'],
+  'Nintendo Switch':  ['Nintendo Switch'],
+  'Nintendo Switch 2':['Nintendo Switch 2'],
+  'Wii U':            ['Wii U'],
+  'Wii':              ['Wii'],
+  'Nintendo 3DS':     ['Nintendo 3DS'],
+  'Nintendo DS':      ['Nintendo DS'],
+  'Game Boy Advance': ['Game Boy Advance'],
+  'Game Boy Color':   ['Game Boy Color'],
+  'Game Boy':         ['Game Boy'],
+  'GameCube':         ['Nintendo GameCube'],
+  'Nintendo 64':      ['Nintendo 64'],
+  'Super Nintendo':   ['Super Nintendo Entertainment System', 'Super Nintendo Entertainment System (SNES)'],
+  'NES':              ['Nintendo Entertainment System', 'Nintendo Entertainment System (NES)'],
+  'Dreamcast':        ['Dreamcast'],
+  'Sega Saturn':      ['Sega Saturn'],
+  'Sega Genesis':     ['Sega Mega Drive/Genesis'],
+  'iOS':              ['iOS'],
+  'Android':          ['Android'],
+}
+
+/** Fallback IDs, used only if the name lookup returns nothing. */
 export const PLATFORM_ID_MAP = {
   'PC':               6,
   'PlayStation 5':    167,
@@ -56,7 +91,7 @@ export const PLATFORM_ID_MAP = {
   'Xbox 360':         12,
   'Xbox':             11,
   'Nintendo Switch':  130,
-  'Nintendo Switch 2':471,
+  'Nintendo Switch 2':508,   // was 471, which is a different IGDB platform
   'Wii U':            41,
   'Wii':              5,
   'Nintendo 3DS':     37,
@@ -198,33 +233,66 @@ function unique(lists) {
 }
 
 /**
+ * The IGDB platform for an app system: looked up by name on IGDB, falling back
+ * to PLATFORM_ID_MAP. Null for systems IGDB doesn't know (e.g. "Other" entries).
+ * @returns {Promise<{ id: number, name: string, verified: boolean } | null>}
+ */
+export async function resolvePlatform(igdb, system) {
+  const names = IGDB_PLATFORM_NAMES[system]
+  if (!names) return null
+  try {
+    const where = names.map(n => `name = "${quote(n)}"`).join(' | ')
+    const found = await igdb.post('platforms', `fields id,name; where ${where}; limit 5;`)
+    if (found.length) return { id: found[0].id, name: found[0].name, verified: true }
+  } catch {
+    // fall through to the built-in ID
+  }
+  const id = PLATFORM_ID_MAP[system]
+  return id ? { id, name: system, verified: false } : null
+}
+
+/**
  * Find the IGDB game for what the owner entered. Every query is limited to
  * the chosen system's IGDB platform (unfiltered only for systems IGDB doesn't
  * know, like "Other"). A first search of 20 results is widened to 200 results
- * plus a every-word name search when it has no confident match.
- * @returns {Promise<{ match: object|null, candidates: object[], searched: string, widened: boolean }>}
+ * plus an every-word name search when it has no confident match.
+ * @returns {Promise<{ match: object|null, candidates: object[], searched: string, widened: boolean,
+ *                     platform: object|null, elsewhere: object|null }>}
  *   `match` is null when nothing confident was found; `candidates` are the
- *   closest results (to show the owner), best first.
+ *   closest results on the system (to show the owner), best first.
+ *   `elsewhere` is set when nothing was found on the system but IGDB has the
+ *   exact title on other systems: it is reported, never chosen.
  */
 export async function findMatch(igdb, { title, system, year, igdbId }) {
   if (igdbId) {
     const [g] = await igdb.post('games', `${GAME_FIELDS} where id = ${Number(igdbId)};`)
-    return { match: g ?? null, candidates: g ? [g] : [], searched: `IGDB ID ${igdbId}`, widened: false }
+    return { match: g ?? null, candidates: g ? [g] : [], searched: `IGDB ID ${igdbId}`, widened: false, platform: null, elsewhere: null }
   }
 
-  const platformId = PLATFORM_ID_MAP[system] ?? null
-  const searched   = platformId ? `"${title}" on ${system}` : `"${title}" (any system: ${system} isn't an IGDB platform)`
+  const platform   = await resolvePlatform(igdb, system)
+  const platformId = platform?.id ?? null
+  const searched   = platform
+    ? `"${title}" on ${system} (IGDB platform ${platform.name}, #${platform.id}${platform.verified ? '' : ', built-in ID: name lookup failed'})`
+    : `"${title}" (any system: ${system} isn't an IGDB platform)`
 
   const first = rankCandidates(await textSearch(igdb, title, platformId, FIRST_PASS_LIMIT), { title, year })
   const firstMatch = confidentMatch(first, { title, year })
-  if (firstMatch) return { match: firstMatch, candidates: first, searched, widened: false }
+  if (firstMatch) return { match: firstMatch, candidates: first, searched, widened: false, platform, elsewhere: null }
 
   const [wideText, byWords] = await Promise.all([
     textSearch(igdb, title, platformId, WIDE_PASS_LIMIT),
     wordSearch(igdb, title, platformId, WIDE_PASS_LIMIT),
   ])
-  const wide = rankCandidates(unique([first, wideText, byWords]), { title, year })
-  return { match: confidentMatch(wide, { title, year }), candidates: wide, searched, widened: true }
+  const wide  = rankCandidates(unique([first, wideText, byWords]), { title, year })
+  const match = confidentMatch(wide, { title, year })
+
+  // Nothing at all on this system: say whether IGDB has the title elsewhere
+  let elsewhere = null
+  if (!match && !wide.length && platformId) {
+    const anywhere = await textSearch(igdb, title, null, FIRST_PASS_LIMIT).catch(() => [])
+    elsewhere = anywhere.find(g => isExact(g, title)) ?? null
+  }
+  return { match, candidates: wide, searched, widened: true, platform, elsewhere }
 }
 
 // ── Details ──────────────────────────────────────────────────────────────────

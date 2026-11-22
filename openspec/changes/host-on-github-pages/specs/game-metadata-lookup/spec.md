@@ -32,6 +32,10 @@ The workflow SHALL search IGDB for the entered title, with every query limited t
 - **WHEN** the owner enters system "Nintendo Switch"
 - **THEN** every query is limited to games IGDB lists for Nintendo Switch, and games only on other systems are never chosen or listed
 
+#### Scenario: Platform identified by name
+- **WHEN** the workflow limits a search to a system
+- **THEN** it finds that system's IGDB platform by name at run time, and the summary shows the IGDB platform name and ID it used
+
 #### Scenario: System with no IGDB platform
 - **WHEN** the owner chooses Other and types a system name
 - **THEN** the search is not limited to a platform
@@ -61,6 +65,10 @@ When neither search gives a confident match, which is an exact title or exactly 
 #### Scenario: Nothing on the system
 - **WHEN** neither search returns any game for the system
 - **THEN** the run fails, the library is unchanged, and the summary says nothing was found for that system
+
+#### Scenario: Exact title exists only on other systems
+- **WHEN** neither search returns any game for the system, but IGDB has a game with the exact title on other systems
+- **THEN** the run fails without using that game, and the summary names it, the systems IGDB lists it for, and its IGDB ID to re-run with
 
 ### Requirement: Preview without changing the library
 A preview-only run SHALL report the match it would use and SHALL NOT commit anything.
