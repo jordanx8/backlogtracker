@@ -94,11 +94,12 @@ test('preview reports the match and commits nothing', async () => {
 
 test('no match: library unchanged, candidates listed with IGDB IDs', async () => {
   const github = fakeGithub([])
-  const igdb = fakeIgdb([{ id: 5, name: 'Hades II', first_release_date: ts(2025) }])
-  const { outcome, summary } = await run({ inputs: inputs({ system: 'Other', 'other-system': 'Arcade' }), igdb, github })
+  const igdb = fakeIgdb([{ id: 5, name: 'Hadestown', first_release_date: ts(2025) }])
+  const { outcome, summary } = await run({ inputs: inputs(), igdb, github })
   assert.equal(outcome, 'no_match')
   assert.equal(github.commits.length, 0)
-  assert.match(summary, /Hades II \(2025\) · IGDB ID 5/)
+  assert.match(summary, /Hadestown \(2025\) · IGDB ID 5/)
+  assert.match(summary, /searched wider/)
 })
 
 test('a game already in the library is refreshed, keeping the owner\'s fields', async () => {

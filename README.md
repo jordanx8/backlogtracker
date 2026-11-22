@@ -105,7 +105,15 @@ IGDB can't be called from a browser (it blocks cross-site requests, and its secr
 
 3. Run it. About a minute later the game is committed to `data/games.json`, and the app shows it when you switch back to it.
 
-How the match is chosen: an exact title (ignoring case and punctuation) wins, then the release year you entered, then IGDB's own ranking. If nothing is listed for your system, it looks across all systems but only accepts an exact title. If it isn't confident, the run **fails without changing anything** and lists the closest games with their IGDB IDs. Re-run with the right ID. Every run's summary shows which game was picked.
+How the match is chosen:
+
+- **Only your system.** Every search is limited to games IGDB lists for the system you picked. Games only on other systems are never chosen or listed. A system typed under "Other" isn't an IGDB platform, so that search isn't limited.
+- **First search:** 20 results. If one has the exact title (ignoring case, punctuation and accents), it's used. When several do, the release year you entered decides.
+- **Wider search,** only if the first one isn't confident: 200 results, plus a search for games whose name contains every word you typed. That finds "The Legend of Zelda: Tears of the Kingdom" from "Zelda Tears of the Kingdom".
+- **Confident** means an exact title, or exactly one result containing every word you typed (ignoring "the", "of", "a", "an" and "and"; a release year narrows these too).
+- **Otherwise the run fails without changing anything** and lists the closest games on your system with their IGDB IDs. Re-run with the right ID, or add the release year.
+
+Every run's summary shows which game was picked, and whether the wider search found it.
 
 If the game is already in your library (same IGDB game, or same title and system), the run refreshes its IGDB details instead of adding a copy. Your status, ownership, rating, notes and checked-off DLC stay as they were.
 

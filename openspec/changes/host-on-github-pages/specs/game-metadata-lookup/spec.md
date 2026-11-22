@@ -18,7 +18,7 @@ The repository SHALL provide a manually run workflow, "Add game from IGDB", whos
 - **THEN** its summary shows the IGDB game that was chosen, with its IGDB ID and release year, and the other close candidates
 
 ### Requirement: Match the game using the options entered
-The workflow SHALL search IGDB for the entered title, limited to the IGDB platform of the entered system. It SHALL prefer an exact title match (ignoring case and punctuation), then a release year equal to the one entered, then IGDB's own ranking.
+The workflow SHALL search IGDB for the entered title, with every query limited to the IGDB platform of the entered system. It SHALL prefer an exact title match (ignoring case and punctuation), then a release year equal to the one entered, then IGDB's own ranking.
 
 #### Scenario: Exact title preferred
 - **WHEN** the search returns "Hades II" first and "Hades" second for the title "Hades"
@@ -28,24 +28,39 @@ The workflow SHALL search IGDB for the entered title, limited to the IGDB platfo
 - **WHEN** two games share the entered title and the owner entered release year 2023
 - **THEN** the one released in 2023 is chosen
 
-#### Scenario: Platform limit
+#### Scenario: Only the chosen system
 - **WHEN** the owner enters system "Nintendo Switch"
-- **THEN** only games IGDB lists for Nintendo Switch are considered in the first search
+- **THEN** every query is limited to games IGDB lists for Nintendo Switch, and games only on other systems are never chosen or listed
+
+#### Scenario: System with no IGDB platform
+- **WHEN** the owner chooses Other and types a system name
+- **THEN** the search is not limited to a platform
 
 #### Scenario: IGDB ID given
 - **WHEN** the owner enters an IGDB ID
 - **THEN** that game is used without searching
 
+### Requirement: Search wider before giving up
+When the first search has no confident match, the workflow SHALL search again with more results, including games whose names contain every significant word of the entered title, before deciding.
+
+#### Scenario: Title typed without its prefix
+- **WHEN** the owner enters "Zelda Tears of the Kingdom" for Nintendo Switch and the first search has no confident match
+- **THEN** the wider search finds "The Legend of Zelda: Tears of the Kingdom", the only result containing every word, and it is chosen
+
+#### Scenario: Confident on the first search
+- **WHEN** the first search returns an exact title match
+- **THEN** no wider search is made
+
 ### Requirement: Refuse uncertain matches
-When no acceptable match exists, the workflow SHALL fail without changing the library and SHALL list the closest candidates with their IGDB IDs.
+When neither search gives a confident match, which is an exact title or exactly one result containing every entered word, the workflow SHALL fail without changing the library and SHALL list the closest candidates on that system with their IGDB IDs.
 
-#### Scenario: Nothing on the platform, no exact title elsewhere
-- **WHEN** the platform-limited search finds nothing and the unrestricted search finds no exact title match
-- **THEN** the run fails, the library is unchanged, and the summary lists up to five candidates with IGDB IDs to re-run with
+#### Scenario: Only loose matches
+- **WHEN** both searches return games on the system, but none has the exact title and several contain every entered word
+- **THEN** the run fails, the library is unchanged, and the summary lists up to five of those games with IGDB IDs to re-run with
 
-#### Scenario: Exact title on another platform listing
-- **WHEN** the platform-limited search finds nothing but the unrestricted search finds an exact title match
-- **THEN** that game is used, with the system the owner entered
+#### Scenario: Nothing on the system
+- **WHEN** neither search returns any game for the system
+- **THEN** the run fails, the library is unchanged, and the summary says nothing was found for that system
 
 ### Requirement: Preview without changing the library
 A preview-only run SHALL report the match it would use and SHALL NOT commit anything.

@@ -116,57 +116,115 @@ export const releaseYear = g =>
 
 // ── Matching ─────────────────────────────────────────────────────────────────
 
+const FIRST_PASS_LIMIT = 20
+const WIDE_PASS_LIMIT  = 200
+const STOP_WORDS = new Set(['the', 'of', 'a', 'an', 'and'])
+
 /** Title comparison key: lower case, punctuation and accents removed. */
 export function normalizeTitle(title) {
   return String(title ?? '')
-    .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .normalize('NFKD').replace(/[̀-ͯ]/g, '')
     .toLowerCase()
     .replace(/&/g, ' and ')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
 }
 
+/** Words that must appear in a title for it to count as containing the entered title. */
+export function significantWords(title) {
+  return [...new Set(normalizeTitle(title).split(' ').filter(w => w && !STOP_WORDS.has(w)))]
+}
+
+const isExact = (g, title) => normalizeTitle(g.name) === normalizeTitle(title)
+
+function hasAllWords(g, words) {
+  const have = new Set(normalizeTitle(g.name).split(' '))
+  return words.length > 0 && words.every(w => have.has(w))
+}
+
 /**
- * Order candidates: exact title first, then matching release year, then
- * IGDB's own order (stable).
+ * Order candidates: exact title first, then containing every entered word,
+ * then matching release year, then IGDB's own order (stable).
  */
 export function rankCandidates(candidates, { title, year }) {
-  const want = normalizeTitle(title)
-  const score = g => (normalizeTitle(g.name) === want ? 2 : 0) + (year && releaseYear(g) === String(year) ? 1 : 0)
+  const words = significantWords(title)
+  const score = g =>
+    (isExact(g, title) ? 4 : 0) +
+    (hasAllWords(g, words) ? 2 : 0) +
+    (year && releaseYear(g) === String(year) ? 1 : 0)
   return candidates
     .map((g, i) => ({ g, i, s: score(g) }))
     .sort((a, b) => b.s - a.s || a.i - b.i)
     .map(x => x.g)
 }
 
-async function search(igdb, title, platformId) {
-  const where = platformId ? `where platforms = (${platformId});` : ''
-  const data = await igdb.post('games', `${GAME_FIELDS} search "${quote(title)}"; limit 15; ${where}`)
-  return data.filter(g => !EXCLUDED_TYPES.has(gameType(g)))
+/**
+ * The confident match among ranked candidates, or null:
+ *   - an exact title (release year, then IGDB order, decide between several), or
+ *   - the only candidate containing every entered word (narrowed by year if given).
+ */
+export function confidentMatch(ranked, { title, year }) {
+  const exact = ranked.filter(g => isExact(g, title))
+  if (exact.length) return exact[0]
+
+  const words = significantWords(title)
+  let containing = ranked.filter(g => hasAllWords(g, words))
+  if (year && containing.length > 1) {
+    const sameYear = containing.filter(g => releaseYear(g) === String(year))
+    if (sameYear.length) containing = sameYear
+  }
+  return containing.length === 1 ? containing[0] : null
+}
+
+const platformClause = platformId => (platformId ? `platforms = (${platformId})` : '')
+const keep = data => data.filter(g => !EXCLUDED_TYPES.has(gameType(g)))
+
+async function textSearch(igdb, title, platformId, limit) {
+  const where = platformClause(platformId)
+  return keep(await igdb.post('games', `${GAME_FIELDS} search "${quote(title)}"; ${where ? `where ${where}; ` : ''}limit ${limit};`))
+}
+
+/** Games whose name contains every significant word (case-insensitive). */
+async function wordSearch(igdb, title, platformId, limit) {
+  const words = significantWords(title).slice(0, 5)
+  if (!words.length) return []
+  const clauses = [...words.map(w => `name ~ *"${quote(w)}"*`), platformClause(platformId)].filter(Boolean)
+  return keep(await igdb.post('games', `${GAME_FIELDS} where ${clauses.join(' & ')}; limit ${limit};`))
+}
+
+function unique(lists) {
+  const seen = new Set()
+  return lists.flat().filter(g => (seen.has(g.id) ? false : (seen.add(g.id), true)))
 }
 
 /**
- * Find the IGDB game for what the owner entered.
- * @returns {Promise<{ match: object|null, candidates: object[], searched: string }>}
- *   `match` is null when nothing acceptable was found; `candidates` are the
+ * Find the IGDB game for what the owner entered. Every query is limited to
+ * the chosen system's IGDB platform (unfiltered only for systems IGDB doesn't
+ * know, like "Other"). A first search of 20 results is widened to 200 results
+ * plus a every-word name search when it has no confident match.
+ * @returns {Promise<{ match: object|null, candidates: object[], searched: string, widened: boolean }>}
+ *   `match` is null when nothing confident was found; `candidates` are the
  *   closest results (to show the owner), best first.
  */
 export async function findMatch(igdb, { title, system, year, igdbId }) {
   if (igdbId) {
     const [g] = await igdb.post('games', `${GAME_FIELDS} where id = ${Number(igdbId)};`)
-    return { match: g ?? null, candidates: g ? [g] : [], searched: `IGDB ID ${igdbId}` }
+    return { match: g ?? null, candidates: g ? [g] : [], searched: `IGDB ID ${igdbId}`, widened: false }
   }
 
   const platformId = PLATFORM_ID_MAP[system] ?? null
-  if (platformId) {
-    const onPlatform = rankCandidates(await search(igdb, title, platformId), { title, year })
-    if (onPlatform.length) return { match: onPlatform[0], candidates: onPlatform, searched: `"${title}" on ${system}` }
-  }
+  const searched   = platformId ? `"${title}" on ${system}` : `"${title}" (any system: ${system} isn't an IGDB platform)`
 
-  // Unknown system, or nothing listed for it: search everywhere, exact title only
-  const anywhere = rankCandidates(await search(igdb, title, null), { title, year })
-  const exact = anywhere.find(g => normalizeTitle(g.name) === normalizeTitle(title))
-  return { match: exact ?? null, candidates: anywhere, searched: platformId ? `"${title}" on any platform (none listed for ${system})` : `"${title}"` }
+  const first = rankCandidates(await textSearch(igdb, title, platformId, FIRST_PASS_LIMIT), { title, year })
+  const firstMatch = confidentMatch(first, { title, year })
+  if (firstMatch) return { match: firstMatch, candidates: first, searched, widened: false }
+
+  const [wideText, byWords] = await Promise.all([
+    textSearch(igdb, title, platformId, WIDE_PASS_LIMIT),
+    wordSearch(igdb, title, platformId, WIDE_PASS_LIMIT),
+  ])
+  const wide = rankCandidates(unique([first, wideText, byWords]), { title, year })
+  return { match: confidentMatch(wide, { title, year }), candidates: wide, searched, widened: true }
 }
 
 // ── Details ──────────────────────────────────────────────────────────────────

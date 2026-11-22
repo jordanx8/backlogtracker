@@ -161,16 +161,17 @@ export async function commitGames(github, { headSha, base, next, message }) {
  */
 export async function run({ inputs, igdb, github, now = Date.now() }) {
   const lines = [`## Add game from IGDB`, '', `Looked for ${inputs.igdbId ? `IGDB ID ${inputs.igdbId}` : `**${inputs.title}** on **${inputs.system}**${inputs.year ? ` (released ${inputs.year})` : ''}`}.`, '']
-  const { match, candidates, searched } = await findMatch(igdb, inputs)
+  const { match, candidates, searched, widened } = await findMatch(igdb, inputs)
   const others = candidates.filter(c => c !== match).slice(0, 5)
+  const scope = widened ? 'searched wider: up to 200 results plus every-word name matches' : 'first search'
 
   if (!match) {
-    lines.push(`No confident match for ${searched}. The library was not changed.`, '')
+    lines.push(`No confident match for ${searched} (${scope}). The library was not changed.`, '')
     if (others.length) {
-      lines.push('Closest IGDB results. Run the workflow again with one of these **IGDB IDs**:', '')
+      lines.push('Closest IGDB results on this system. Run the workflow again with one of these **IGDB IDs**:', '')
       for (const c of others) lines.push(`- ${describe(c)}`)
     } else {
-      lines.push('IGDB returned nothing. Check the spelling, or try a shorter title.')
+      lines.push(`IGDB has nothing matching that title on ${inputs.system}. Check the spelling and the system, or try fewer words.`)
     }
     return { outcome: 'no_match', summary: lines.join('\n') }
   }
@@ -181,7 +182,7 @@ export async function run({ inputs, igdb, github, now = Date.now() }) {
   ])
   const fields = igdbFields(match, { timeToBeat, bundled })
 
-  lines.push(`**Match:** ${describe(match)}`, '')
+  lines.push(`**Match:** ${describe(match)}${widened ? ' (found by the wider search)' : ''}`, '')
   if (fields.cover) lines.push(`<img src="${fields.cover}" alt="" height="160">`, '')
   lines.push(
     `| Field | Value |`, `| --- | --- |`,

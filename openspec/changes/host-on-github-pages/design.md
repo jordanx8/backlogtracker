@@ -62,17 +62,20 @@ The owner creates a fine-grained personal access token restricted to this reposi
 ### IGDB lookups run in a GitHub Actions workflow, not in the app
 IGDB can't be called from a browser: it blocks cross-site requests, and its client secret would be published. Rather than host a proxy, the owner adds IGDB-backed games through a `workflow_dispatch` workflow, **Add game from IGDB**. Its form takes title, system, status, ownership, an optional release year, an optional IGDB ID, and a preview-only switch. The workflow runs `scripts/add-game.js` with Node and no dependencies, using `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET` from repository secrets.
 
-Matching uses only what the owner entered:
+Matching uses only what the owner entered, and every IGDB query is limited to the IGDB platform for the chosen system. Results from other systems are never considered. A system with no IGDB platform ("Other") is searched unfiltered.
 1. If an IGDB ID is given, use that game directly.
-2. Otherwise search IGDB for the title, limited to the IGDB platform for the chosen system, excluding mods, episodes and seasons. If that finds nothing, search again without the platform, but accept only an exact title match.
-3. Rank candidates: exact title match, ignoring case and punctuation, first; then a release year equal to the one entered; then IGDB's own order.
-4. If no candidate is acceptable (no results, or a fallback search without an exact match), fail the run with the top candidates and their IGDB IDs in the job summary, so the owner can re-run with an ID. The library is not changed.
+2. **First pass:** IGDB text search for the title, 20 results, excluding mods, episodes and seasons.
+3. **Wider pass**, only if the first pass has no confident match: IGDB text search with 200 results, plus a name-contains query requiring every significant word of the title (up to five words), with 200 results. Results are combined and de-duplicated.
+4. A match is **confident** when it is an exact title (ignoring case, punctuation and accents), or when exactly one result contains every word the owner typed, ignoring "the", "of", "a", "an" and "and". Between several exact titles, a release year equal to the one entered decides, then IGDB's order. A release year also narrows the every-word results.
+5. With no confident match after both passes, fail the run without changing the library. The job summary lists the closest results on that system with their IGDB IDs, so the owner can re-run with an ID.
 
 The game is built from the owner's choices (system, status, ownership) plus IGDB's details: title, cover, release year, genre, franchise, developer, critic score, modes, perspectives, themes, DLC, time to beat, and bundled games. If the library already has the game (same `igdbId`, or the same title and system), the run refreshes its IGDB details and keeps the owner's fields: status, ownership, rating, notes, and the done-states of DLC and included games.
 
 The script commits `data/games.json` with the same Git Data API client and three-way merge as the app, authenticated with the workflow's `GITHUB_TOKEN` (`contents: write`). If the app saved in the meantime, the merge combines both changes. Commits made with `GITHUB_TOKEN` don't trigger other workflows, so there is no Pages rebuild. The app picks up the new game when its tab next regains focus. A job summary shows the chosen match and the runners-up.
 
 The IGDB mapping code (`PLATFORM_ID_MAP`, genre and platform maps, field extraction) moves from `src/api/igdb.js` to `scripts/igdb.js`. The app no longer imports it.
+
+Searching other platforms when the chosen one has no result was tried first. It was dropped because the owner wants results limited to the system they picked. Accepting IGDB's top result when nothing matched exactly was also dropped: it could silently add the wrong game.
 
 *Alternatives:* An IGDB proxy on Deno Deploy (shutting down in 2027) or Vercel would keep live search in the form, but it adds a hosting service to maintain. A workflow triggered automatically by every save was considered. It was rejected because the owner wants the lookup driven by the options they enter, and to keep it out of the everyday editing flow. Calling IGDB from the browser is not possible (CORS and the client secret).
 

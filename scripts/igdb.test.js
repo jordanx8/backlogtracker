@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { findMatch, rankCandidates, normalizeTitle, igdbFields, getTimeToBeat, PLATFORM_ID_MAP } from './igdb.js'
+import { findMatch, rankCandidates, normalizeTitle, significantWords, igdbFields, getTimeToBeat, PLATFORM_ID_MAP } from './igdb.js'
 import { SYSTEMS } from '../src/constants.js'
 
 const ts = year => Date.UTC(year, 5, 1) / 1000
@@ -37,8 +37,7 @@ test('search is limited to the platform of the chosen system', async () => {
   const igdb = fakeIgdb(() => [g(1, 'Hades', 2020)])
   const { match } = await findMatch(igdb, { title: 'Hades', system: 'Nintendo Switch' })
   assert.equal(match.id, 1)
-  assert.match(igdb.calls[0].body, /where platforms = \(130\);/)
-  assert.match(igdb.calls[0].body, /search "Hades";/)
+  assert.match(igdb.calls[0].body, /search "Hades"; where platforms = \(130\); limit 20;/)
 })
 
 test('mods, episodes and seasons are ignored', async () => {
@@ -47,21 +46,62 @@ test('mods, episodes and seasons are ignored', async () => {
   assert.equal(match.id, 1)
 })
 
-test('nothing on the platform: an exact title elsewhere is accepted', async () => {
-  const igdb = fakeIgdb((_, body) => (body.includes('where platforms') ? [] : [g(3, 'Hades II'), g(1, 'Hades')]))
-  const { match } = await findMatch(igdb, { title: 'Hades', system: 'Wii' })
-  assert.equal(match.id, 1)
-  assert.equal(igdb.calls.length, 2)
+test('a confident first search makes no wider search', async () => {
+  const igdb = fakeIgdb(() => [g(1, 'Hades')])
+  await findMatch(igdb, { title: 'Hades', system: 'PC' })
+  assert.equal(igdb.calls.length, 1)
+  assert.match(igdb.calls[0].body, /limit 20;/)
 })
 
-test('nothing on the platform and no exact title elsewhere: no match, candidates returned', async () => {
-  const igdb = fakeIgdb((_, body) => (body.includes('where platforms') ? [] : [g(3, 'Hades II'), g(4, 'Hadestown')]))
+test('no confident first result: searches wider, still limited to the system', async () => {
+  const zelda = g(7, 'The Legend of Zelda: Tears of the Kingdom', 2023)
+  const igdb = fakeIgdb((_, body) => {
+    if (body.includes('limit 20;')) return [g(1, 'Zelda Musou'), g(2, 'Kingdom Hearts')]
+    if (body.includes('name ~')) return [zelda]
+    return []
+  })
+  const { match, widened } = await findMatch(igdb, { title: 'Zelda Tears of the Kingdom', system: 'Nintendo Switch' })
+  assert.equal(match.id, 7)
+  assert.equal(widened, true)
+  assert.equal(igdb.calls.length, 3)
+  for (const c of igdb.calls) assert.match(c.body, /platforms = \(130\)/)
+  const words = igdb.calls.find(c => c.body.includes('name ~')).body
+  assert.match(words, /name ~ \*"zelda"\* & name ~ \*"tears"\* & name ~ \*"kingdom"\* & platforms = \(130\); limit 200;/)
+  assert.ok(igdb.calls.some(c => /search "Zelda Tears of the Kingdom"; where platforms = \(130\); limit 200;/.test(c.body)))
+})
+
+test('several results containing every word is not confident', async () => {
+  const igdb = fakeIgdb(() => [g(1, 'Mario Kart 8'), g(2, 'Mario Kart 8 Deluxe')])
+  const { match, candidates } = await findMatch(igdb, { title: 'Mario Kart', system: 'Nintendo Switch' })
+  assert.equal(match, null)
+  assert.deepEqual(candidates.map(x => x.id), [1, 2])
+})
+
+test('release year narrows results that contain every word', async () => {
+  const igdb = fakeIgdb(() => [g(1, 'Mario Kart 8', 2014), g(2, 'Mario Kart 8 Deluxe', 2017)])
+  const { match } = await findMatch(igdb, { title: 'Mario Kart', system: 'Nintendo Switch', year: '2017' })
+  assert.equal(match.id, 2)
+})
+
+test('nothing confident after both searches: no match, candidates from the system only', async () => {
+  const igdb = fakeIgdb(() => [g(3, 'Hadestown'), g(4, 'Hadean Lands')])
   const { match, candidates } = await findMatch(igdb, { title: 'Hades', system: 'Wii' })
   assert.equal(match, null)
   assert.deepEqual(candidates.map(x => x.id), [3, 4])
+  for (const c of igdb.calls) assert.match(c.body, /platforms = \(5\)/)
 })
 
-test('a system with no IGDB platform searches everywhere, exact title only', async () => {
+test('results found by both wide searches are listed once', async () => {
+  const igdb = fakeIgdb(() => [g(3, 'Hadestown'), g(3, 'Hadestown')])
+  const { candidates } = await findMatch(igdb, { title: 'Hades', system: 'PC' })
+  assert.deepEqual(candidates.map(x => x.id), [3])
+})
+
+test('significant words drop stop words and punctuation', () => {
+  assert.deepEqual(significantWords('The Legend of Zelda: A Link to the Past'), ['legend', 'zelda', 'link', 'to', 'past'])
+})
+
+test('a system with no IGDB platform is searched without a platform filter', async () => {
   const igdb = fakeIgdb(() => [g(5, 'Some Game')])
   const { match } = await findMatch(igdb, { title: 'Some Game', system: 'Arcade cabinet' })
   assert.equal(match.id, 5)
