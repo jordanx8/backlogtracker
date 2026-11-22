@@ -35,26 +35,26 @@
 - [x] 5.6 Remove the `save-data` plugin from `vite.config.js`; verify `npm run dev` starts and loading and saving work against GitHub
 - [x] 5.7 Rewrite the README storage section (data in `data/`, autosave commits, multi-device merge, public-data caveat); verify it matches the behaviour
 
-## 6. IGDB proxy
+## 6. Add games from IGDB with a workflow
 
-- [x] 6.1 Create `proxy/main.ts` for Deno Deploy: CORS allowlist from `ALLOWED_ORIGIN` plus localhost, GitHub token push-access check cached for 10 minutes, cached Twitch app token, and forwarding of an endpoint allowlist (`games`, `game_time_to_beats`, `screenshots`); verify with `deno test` covering missing token, read-only token, disallowed endpoint, and success with a stubbed upstream
-- [x] 6.2 Point `src/api/igdb.js` at `VITE_IGDB_PROXY_URL` with the GitHub token, drop the client ID and secret from the frontend, and enable IGDB features based on the proxy URL; verify the built bundle contains no `IGDB_CLIENT_SECRET` value (`grep` over `dist/`)
-- [x] 6.3 Show a clear "lookup unavailable" state in the add-game form when the proxy fails or is not configured; verify by pointing the proxy URL at a dead address
-- [ ] 6.4 Remove the `/twitch-token` and `/igdb-api` dev proxies from `vite.config.js`, and document running the proxy locally with `deno run`; verify search works in `npm run dev` against a local proxy
-- [ ] 6.5 Add a README section for deploying the proxy (create the Deno Deploy project from `proxy/`, set `IGDB_CLIENT_ID`, `IGDB_CLIENT_SECRET`, `GITHUB_OWNER`, `GITHUB_REPO`, `ALLOWED_ORIGIN`); verify by following it to a working deployment
+- [x] 6.1 Move the IGDB mapping and matching into `scripts/igdb.js` (platform, genre and field mapping; candidate ranking by exact title, year, and IGDB order; acceptance rules for the platform-less fallback); verify with unit tests for ranking, fallback acceptance, and field mapping
+- [x] 6.2 Write `scripts/add-game.js`: read the inputs, look up by IGDB ID or search, build the new game or refresh an existing one (keeping status, ownership, rating, notes and done-states), commit `data/games.json` with the three-way merge on conflict, write a job summary, and support preview-only; verify with unit tests using stubbed IGDB and GitHub clients
+- [x] 6.3 Add `.github/workflows/add-game.yml` (`workflow_dispatch` inputs matching the app's systems, statuses and ownership options; `contents: write`; IGDB secrets); verify the workflow file parses and its system choices match the app
+- [x] 6.4 Remove IGDB from the app: delete `src/api/igdb.js` and the IGDB search, image picker, time-to-beat and bundle lookups from `AddGameModal`, the IGDB sync from `App.jsx` and `StatsPage`, and the proxy and `VITE_IGDB_PROXY_URL` settings; point the add-game form to the workflow; verify `npm run build` passes and the bundle makes no IGDB or proxy requests
+- [ ] 6.5 Document adding games from IGDB in the README (the IGDB secrets to set, running the workflow, preview and IGDB ID re-runs, running the script locally); verify by following it to a game added on GitHub
 
 ## 7. Pages deployment
 
-- [ ] 7.1 Add `.github/workflows/deploy.yml` that builds with the `VITE_*` repository variables and deploys with `actions/deploy-pages`, ignoring `data/**` and `openspec/**`; verify that a code push deploys and an autosave commit does not
-- [ ] 7.2 Document the Pages setup in the README (Pages source set to GitHub Actions, repository variables to add); verify the site loads at the Pages URL
+- [x] 7.1 Add `.github/workflows/deploy.yml` that builds with the `VITE_*` repository variables and deploys with `actions/deploy-pages`, ignoring `data/**` and `openspec/**`; verify that a code push deploys and an autosave commit does not
+- [x] 7.2 Document the Pages setup in the README (Pages source set to GitHub Actions, repository variables to add); verify the site loads at the Pages URL
 
 ## 8. End-to-end checks
 
-- [ ] 8.1 On the deployed site, run through sign-in, add a game with IGDB auto-fill, edit, journal entry, and sign-out; verify each step and the resulting commits on GitHub
+- [ ] 8.1 On the deployed site, run through sign-in, add a game by hand, add a game with the IGDB workflow and see it appear, edit, journal entry, and sign-out; verify each step and the resulting commits on GitHub
 - [ ] 8.2 With two devices or browser profiles, run the merge scenarios in `specs/library-sync/spec.md` (different games, same game different fields, same field, delete vs edit); verify the final `data/` files match the expected results
-- [ ] 8.3 Confirm that a visitor without a token sees only the sign-in screen, and that `/backlogtracker/data/games.json` is not served; verify in a private window
+- [x] 8.3 Confirm that a visitor without a token sees only the sign-in screen, and that `/backlogtracker/data/games.json` is not served; verify in a private window
 
 ## Workflow follow-up
 
-- Owner setup outside the code: create the fine-grained token, create the Deno Deploy account (sign in with GitHub) and project, set Pages source to GitHub Actions, and add the repository variables.
+- Owner setup outside the code: create the fine-grained token, add the IGDB Actions secrets, set Pages source to GitHub Actions, and add the repository variables.
 - Archive the change after implementation and the end-to-end checks are complete.

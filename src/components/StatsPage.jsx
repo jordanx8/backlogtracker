@@ -100,7 +100,7 @@ function StatusPie({ byStatus, total }) {
   )
 }
 
-export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, onClearSync, unsyncedCount }) {
+export default function StatsPage({ allGames, journal }) {
   // ── Stat filters ─────────────────────────────────────────────────────────────
   const [filterStatus,    setFilterStatus]    = useState('all')
   const [filterSystem,    setFilterSystem]    = useState('all')
@@ -255,47 +255,8 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
   // ── Completion rate ──────────────────────────────────────────────────────────
   const completionPct = pct(byStatus.completed + byStatus.shelved, total)
 
-  const isSyncing = syncState && !syncState.finished
-
   return (
     <div className="stats-page">
-
-      {/* ── IGDB Sync banner ── */}
-      {syncState ? (
-        <div className={`sync-banner${syncState.finished ? ' sync-banner--done' : ''}`}>
-          <div className="sync-banner-left">
-            {syncState.finished ? (
-              <>
-                <span className="sync-icon"><Icon name="check" size={14} /></span>
-                <span>
-                  {syncState.total === 0
-                    ? 'Nothing to sync — all games are already up to date.'
-                    : `${syncState.mode === 'full' ? 'Full sync' : 'New-only sync'} complete — ${syncState.total - syncState.errors} updated${syncState.errors > 0 ? `, ${syncState.errors} failed` : ''}`
-                  }
-                </span>
-              </>
-            ) : (
-              <>
-                <span className="sync-spinner"><Icon name="sync" size={14} /></span>
-                <span>
-                  {syncState.mode === 'full' ? 'Full sync' : 'Syncing new games'} — {syncState.done} / {syncState.total}
-                </span>
-              </>
-            )}
-          </div>
-          {syncState.finished && (
-            <button className="btn-ghost btn-sm" onClick={onClearSync}>Dismiss</button>
-          )}
-          {!syncState.finished && (
-            <div className="sync-progress-bar">
-              <div
-                className="sync-progress-fill"
-                style={{ width: `${Math.round((syncState.done / syncState.total) * 100)}%` }}
-              />
-            </div>
-          )}
-        </div>
-      ) : null}
 
       {/* ── Filters ── */}
       <div className="stats-filters">
@@ -369,24 +330,6 @@ export default function StatsPage({ allGames, journal, onSyncIGDB, syncState, on
           {anyFilter ? `Showing ${total} of ${owned.length} owned games` : `${total} owned games · ${wishlistCount} wishlisted`}
         </span>
 
-        <div className="sync-split" title="Sync game data from IGDB">
-          <button
-            className="btn-ghost btn-sm sync-split-main"
-            onClick={() => onSyncIGDB('new')}
-            disabled={isSyncing}
-            title={unsyncedCount ? `Sync ${unsyncedCount} game${unsyncedCount !== 1 ? 's' : ''} that haven't been synced yet` : 'All games already synced'}
-          >
-            {isSyncing && syncState?.mode === 'new' ? <><Icon name="sync" size={13} /> Syncing…</> : <><Icon name="sync" size={13} /> Sync new{unsyncedCount ? ` (${unsyncedCount})` : ''}</>}
-          </button>
-          <button
-            className="btn-ghost btn-sm sync-split-full"
-            onClick={() => onSyncIGDB('full')}
-            disabled={isSyncing}
-            title="Re-sync all games regardless of sync history"
-          >
-            {isSyncing && syncState?.mode === 'full' ? <Icon name="sync" size={13} /> : <><Icon name="sync" size={13} /> Full</>}
-          </button>
-        </div>
       </div>
 
       {total === 0 ? (

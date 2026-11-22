@@ -1928,3 +1928,18 @@ body {
 
 .app-loading--error { flex-direction: column; gap: 14px; text-align: center; padding: 0 16px; }
 .app-loading-actions { display: flex; gap: 8px; }
+
+/* ── Add-from-IGDB hint in the add form ──────────────────────────────────────── */
+.igdb-hint {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  font-size: 0.83rem;
+  padding: 10px 12px;
+}
+.igdb-hint svg { flex-shrink: 0; margin-top: 3px; color: var(--color-accent); }
+.igdb-hint a { color: var(--color-accent-hover); }

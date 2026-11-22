@@ -1,0 +1,116 @@
+name: Add game from IGDB
+
+# Run from the Actions tab: Add game from IGDB -> Run workflow.
+# Finds the game on IGDB using the options below and commits it to data/games.json.
+# Needs repository secrets IGDB_CLIENT_ID and IGDB_CLIENT_SECRET (see README).
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: Game title
+        required: true
+        type: string
+      system:
+        description: System
+        required: true
+        type: choice
+        options:
+          - 'Nintendo Switch'
+          - 'Nintendo Switch 2'
+          - 'PlayStation 5'
+          - 'PlayStation 4'
+          - 'Xbox Series X/S'
+          - 'Xbox One'
+          - 'PC'
+          - 'PlayStation 3'
+          - 'Xbox 360'
+          - 'Wii U'
+          - 'Wii'
+          - 'Nintendo 3DS'
+          - 'Nintendo DS'
+          - 'Game Boy Advance'
+          - 'Game Boy Color'
+          - 'Game Boy'
+          - 'GameCube'
+          - 'Nintendo 64'
+          - 'Super Nintendo'
+          - 'NES'
+          - 'PlayStation 2'
+          - 'PlayStation'
+          - 'Xbox'
+          - 'Dreamcast'
+          - 'Sega Saturn'
+          - 'Sega Genesis'
+          - 'iOS'
+          - 'Android'
+          - 'Other'
+      other-system:
+        description: System name, if you chose Other
+        required: false
+        type: string
+      status:
+        description: Status
+        required: true
+        default: backlog
+        type: choice
+        options:
+          - 'backlog'
+          - 'playing'
+          - 'completed'
+          - 'shelved'
+          - 'wishlist'
+      ownership:
+        description: Ownership
+        required: true
+        default: none
+        type: choice
+        options:
+          - 'none'
+          - 'physical'
+          - 'digital'
+          - 'both'
+      year:
+        description: Release year (optional, helps pick the right game)
+        required: false
+        type: string
+      igdb-id:
+        description: IGDB ID (optional, skips the search; shown in a previous run's summary)
+        required: false
+        type: string
+      preview:
+        description: Preview only (show the match, don't add it)
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: add-game
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Find on IGDB and add to the library
+        run: node scripts/add-game.js
+        env:
+          INPUT_TITLE: ${{ inputs.title }}
+          INPUT_SYSTEM: ${{ inputs.system }}
+          INPUT_OTHER_SYSTEM: ${{ inputs.other-system }}
+          INPUT_STATUS: ${{ inputs.status }}
+          INPUT_OWNERSHIP: ${{ inputs.ownership }}
+          INPUT_YEAR: ${{ inputs.year }}
+          INPUT_IGDB_ID: ${{ inputs.igdb-id }}
+          INPUT_PREVIEW: ${{ inputs.preview }}
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DATA_BRANCH: ${{ github.event.repository.default_branch }}

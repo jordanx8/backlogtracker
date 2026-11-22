@@ -6,7 +6,7 @@ A personal video game backlog tracker built with React and Vite. Keep track of w
 
 - **Game library** – add, edit, and remove games with status, system, genre, franchise, and ownership info
 - **Filtering and sorting** – filter by status, system, genre, franchise, ownership, or text search
-- **Metadata lookup** – optional IGDB integration auto-fills cover art, game details, and main-story time to beat
+- **Add from IGDB** – a GitHub Actions workflow finds a game on IGDB from the title and system you enter, and adds it with cover art, details and main-story time to beat
 - **Included games** – track individual games inside collections/bundles with a done checkbox
 - **Journal** – per-game notes, plus a combined journal view across all games
 - **Stats page** – overview of your collection
@@ -20,7 +20,7 @@ A personal video game backlog tracker built with React and Vite. Keep track of w
 - [React 19](https://react.dev/)
 - [Vite](https://vite.dev/) (with `@vitejs/plugin-react`)
 - [oxlint](https://oxc.rs/docs/guide/usage/linter) for linting, `node --test` for unit tests
-- No app server – data is read and written with the GitHub API; IGDB lookups go through a tiny [Deno Deploy](https://deno.com/deploy) function in [`proxy/`](proxy/)
+- No server and no other services – data is read and written with the GitHub API, and IGDB lookups run in GitHub Actions ([`scripts/add-game.js`](scripts/add-game.js))
 
 ## Who Can See and Change It
 
@@ -47,12 +47,9 @@ Create `.env.local` (see [`.env.example`](.env.example)). None of these values a
 VITE_GITHUB_OWNER=your-github-username
 VITE_GITHUB_REPO=backlogtracker
 VITE_GITHUB_BRANCH=main
-VITE_IGDB_PROXY_URL=https://your-proxy.deno.dev
 ```
 
-Leave `VITE_IGDB_PROXY_URL` empty to run without IGDB lookups; you then enter game details by hand.
-
-> Never put the IGDB client secret in a `VITE_*` variable: Vite copies those into the published JavaScript. The secret belongs only in the proxy's environment (see [`proxy/README.md`](proxy/README.md)).
+> Never put the IGDB client secret in a `VITE_*` variable: Vite copies those into the published JavaScript. It belongs only in the GitHub Actions secrets (see [Adding games from IGDB](#adding-games-from-igdb)).
 
 ### Run the app
 
@@ -70,21 +67,56 @@ Open the URL printed in the terminal (usually http://localhost:5173) and sign in
 | `npm run build`   | Create a production build in `dist/`          |
 | `npm run preview` | Serve the production build locally            |
 | `npm run lint`    | Lint the source with oxlint                   |
-| `npm test`        | Run the unit tests (sync, merge, GitHub client, proxy) |
+| `npm test`        | Run the unit tests (sync, merge, GitHub client, IGDB matching) |
 
 ## Deploying
 
-### 1. IGDB proxy (Deno Deploy)
-
-Follow [`proxy/README.md`](proxy/README.md): create a Deno Deploy project from this repo with entrypoint `proxy/main.ts`, and set `IGDB_CLIENT_ID`, `IGDB_CLIENT_SECRET`, `GITHUB_OWNER`, `GITHUB_REPO` and `ALLOWED_ORIGIN` (your Pages origin, e.g. `https://your-github-username.github.io`).
-
-### 2. GitHub Pages
+### GitHub Pages
 
 1. In the repository's **Settings → Pages**, set **Source** to **GitHub Actions**.
-2. In **Settings → Secrets and variables → Actions → Variables**, add `VITE_IGDB_PROXY_URL` (the Deno Deploy URL). `VITE_GITHUB_OWNER`, `VITE_GITHUB_REPO` and `VITE_GITHUB_BRANCH` default to this repository and `main`; add them only to override.
+2. Optional: in **Settings → Secrets and variables → Actions → Variables**, set `VITE_GITHUB_OWNER`, `VITE_GITHUB_REPO` or `VITE_GITHUB_BRANCH`. They default to this repository and `main`.
 3. Push to `main` (or run the **Deploy to GitHub Pages** workflow by hand). The site is published at `https://<owner>.github.io/backlogtracker/`.
 
 The workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) runs the tests, builds and deploys. It skips commits that only touch `data/`, so autosaves don't trigger deploys.
+
+## Adding Games from IGDB
+
+IGDB can't be called from a browser (it blocks cross-site requests, and its secret would be public), so the app has no IGDB search. Instead, a workflow looks the game up and adds it.
+
+### One-time setup
+
+1. Create an application in the [Twitch Developer Console](https://dev.twitch.tv/console) to get an IGDB **Client ID** and **Client Secret**.
+2. In the repository's **Settings → Secrets and variables → Actions → Secrets**, add `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET`.
+
+### Adding a game
+
+1. Open **Actions → Add game from IGDB → Run workflow** (the app's Add Game form links there). It works from a phone too.
+2. Fill in the form:
+
+   | Field | Notes |
+   | ----- | ----- |
+   | **Game title** | Required |
+   | **System** | Required. The search only considers games IGDB lists for this system |
+   | **System name, if you chose Other** | For systems not in the list |
+   | **Status**, **Ownership** | Saved on the new game |
+   | **Release year** | Optional. Picks the right one when several games share a title |
+   | **IGDB ID** | Optional. Skips the search and uses this exact game |
+   | **Preview only** | Shows what it would add, without adding it |
+
+3. Run it. About a minute later the game is committed to `data/games.json`, and the app shows it when you switch back to it.
+
+How the match is chosen: an exact title (ignoring case and punctuation) wins, then the release year you entered, then IGDB's own ranking. If nothing is listed for your system, it looks across all systems but only accepts an exact title. If it isn't confident, the run **fails without changing anything** and lists the closest games with their IGDB IDs. Re-run with the right ID. Every run's summary shows which game was picked.
+
+If the game is already in your library (same IGDB game, or same title and system), the run refreshes its IGDB details instead of adding a copy. Your status, ownership, rating, notes and checked-off DLC stay as they were.
+
+### Running it locally
+
+```bash
+IGDB_CLIENT_ID=… IGDB_CLIENT_SECRET=… GITHUB_TOKEN=<your app token> GITHUB_REPOSITORY=jordanx8/backlogtracker \
+  node scripts/add-game.js --title "Hades" --system PC --status playing --preview
+```
+
+Drop `--preview` to commit. Other flags: `--ownership`, `--year`, `--igdb-id`, `--other-system`.
 
 ## How Data Is Stored
 
@@ -120,11 +152,11 @@ src/
 ├── Root.jsx             # Sign-in gate
 ├── App.jsx              # App shell, state, and routing between tabs
 ├── config.js            # Build-time settings (VITE_* variables)
+├── constants.js         # Systems, genres, statuses (shared with the IGDB workflow)
 ├── main.jsx             # Entry point
 ├── api/
 │   ├── auth.js          # Token storage on this device
 │   ├── github.js        # GitHub API client (read files, atomic commits)
-│   ├── igdb.js          # IGDB lookups through the proxy
 │   └── storage.js       # Wires the sync engine to the repository
 ├── sync/
 │   ├── engine.js        # Load, autosave, conflict handling
@@ -146,7 +178,10 @@ src/
 data/
 ├── games.json
 └── journal.json
-proxy/                   # IGDB proxy for Deno Deploy
+scripts/
+├── add-game.js          # "Add game from IGDB" workflow script
+└── igdb.js              # IGDB search, matching and field mapping
 .github/workflows/
+├── add-game.yml         # Add game from IGDB (run by hand)
 └── deploy.yml           # GitHub Pages deploy
 ```

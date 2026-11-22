@@ -59,21 +59,28 @@ Commit messages summarise what changed, e.g. `Update library: edit Pragmata, add
 The owner creates a fine-grained personal access token restricted to this repository, with Contents read and write and Metadata read. On sign-in the app calls `GET /repos/{owner}/{repo}` and requires `permissions.push === true`. The token is kept in localStorage on that device. Sign-out clears the token and all cached data.
 *Alternative:* GitHub OAuth. It needs a server-side code exchange, which means another backend endpoint and an OAuth app, for no benefit to a single user.
 
-### IGDB proxy on Deno Deploy
-A single Deno Deploy function exposes `POST /igdb/<endpoint>` for an allowlist of IGDB endpoints (`games`, `game_time_to_beats`, `screenshots`). For each request it:
-1. Checks the CORS origin: the Pages origin and `http://localhost:*`.
-2. Reads `Authorization: Bearer <github token>`, calls `GET /repos/{owner}/{repo}` with it, and requires push permission. Results are cached in memory by a hash of the token for 10 minutes, to avoid one GitHub call per lookup.
-3. Gets and caches a Twitch app token using `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET` from Deno Deploy environment variables.
-4. Forwards the request body to IGDB and returns the response.
+### IGDB lookups run in a GitHub Actions workflow, not in the app
+IGDB can't be called from a browser: it blocks cross-site requests, and its client secret would be published. Rather than host a proxy, the owner adds IGDB-backed games through a `workflow_dispatch` workflow, **Add game from IGDB**. Its form takes title, system, status, ownership, an optional release year, an optional IGDB ID, and a preview-only switch. The workflow runs `scripts/add-game.js` with Node and no dependencies, using `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET` from repository secrets.
 
-The function's source lives in the repository under `proxy/`. Its configuration (owner, repo, allowed origin) comes from environment variables.
-*Alternative:* Cloudflare Workers. The owner has no account, and Deno Deploy signs in with GitHub. Or GitHub Actions as an asynchronous backend, rejected because each lookup would take 30 to 60 seconds.
+Matching uses only what the owner entered:
+1. If an IGDB ID is given, use that game directly.
+2. Otherwise search IGDB for the title, limited to the IGDB platform for the chosen system, excluding mods, episodes and seasons. If that finds nothing, search again without the platform, but accept only an exact title match.
+3. Rank candidates: exact title match, ignoring case and punctuation, first; then a release year equal to the one entered; then IGDB's own order.
+4. If no candidate is acceptable (no results, or a fallback search without an exact match), fail the run with the top candidates and their IGDB IDs in the job summary, so the owner can re-run with an ID. The library is not changed.
+
+The game is built from the owner's choices (system, status, ownership) plus IGDB's details: title, cover, release year, genre, franchise, developer, critic score, modes, perspectives, themes, DLC, time to beat, and bundled games. If the library already has the game (same `igdbId`, or the same title and system), the run refreshes its IGDB details and keeps the owner's fields: status, ownership, rating, notes, and the done-states of DLC and included games.
+
+The script commits `data/games.json` with the same Git Data API client and three-way merge as the app, authenticated with the workflow's `GITHUB_TOKEN` (`contents: write`). If the app saved in the meantime, the merge combines both changes. Commits made with `GITHUB_TOKEN` don't trigger other workflows, so there is no Pages rebuild. The app picks up the new game when its tab next regains focus. A job summary shows the chosen match and the runners-up.
+
+The IGDB mapping code (`PLATFORM_ID_MAP`, genre and platform maps, field extraction) moves from `src/api/igdb.js` to `scripts/igdb.js`. The app no longer imports it.
+
+*Alternatives:* An IGDB proxy on Deno Deploy (shutting down in 2027) or Vercel would keep live search in the form, but it adds a hosting service to maintain. A workflow triggered automatically by every save was considered. It was rejected because the owner wants the lookup driven by the options they enter, and to keep it out of the everyday editing flow. Calling IGDB from the browser is not possible (CORS and the client secret).
 
 ### Frontend configuration
-Build-time values contain no secrets: `VITE_GITHUB_OWNER`, `VITE_GITHUB_REPO`, `VITE_GITHUB_BRANCH` (default `main`), and `VITE_IGDB_PROXY_URL`. Vite `base` is `/backlogtracker/` for production builds and `/` in dev. IGDB features are enabled when `VITE_IGDB_PROXY_URL` is set, replacing the old `VITE_IGDB_CLIENT_ID` check.
+Build-time values contain no secrets: `VITE_GITHUB_OWNER`, `VITE_GITHUB_REPO` and `VITE_GITHUB_BRANCH` (default `main`). Vite `base` is `/backlogtracker/` for production builds and `/` in dev. The app has no IGDB configuration.
 
 ### Local dev uses the same paths
-`npm run dev` talks to the real GitHub repository with the signed-in token, and to the proxy URL, which can be the deployed proxy or a local `deno run`. The `save-data` plugin and the `/twitch-token` and `/igdb-api` dev proxies are removed.
+`npm run dev` talks to the real GitHub repository with the signed-in token. The add-game script can also be run locally with `node scripts/add-game.js` (see the README). The `save-data` plugin and the `/twitch-token` and `/igdb-api` dev proxies are removed.
 
 ### Pages deploy
 A GitHub Actions workflow builds on pushes to `main` and deploys with `actions/deploy-pages`. It uses `paths-ignore: ['data/**', 'openspec/**']` so autosave commits don't trigger deploys. The `VITE_*` values come from repository variables, not secrets, since none of them are sensitive.
@@ -89,12 +96,12 @@ Delete `src/api/hltb.js`, the HLTB fallback in `enrichGame`, and the fallback in
 - [Many small commits in history] → Debounced batches and descriptive messages keep history readable. This replaces the manual "dump" commits.
 - [Edits on both sides of one field: local wins, so the other device's value is lost] → Rare for a single person. The lost value remains in git history.
 - [The page closes before the debounced save fires] → Local content persists in localStorage and saves on next open, merging if needed.
-- [Deno Deploy changes or the free tier changes] → The proxy is a small, portable fetch handler, easy to move to another host.
-- [The proxy's token-check cache delays revocation by up to 10 minutes] → Acceptable. Revoking the token on GitHub also stops all saves immediately.
+- [Adding a game from IGDB takes a workflow run (about 30 to 60 seconds) and happens outside the app] → Accepted, in exchange for no extra service. Manual add in the app stays instant, and the form in the Actions tab works from a phone.
+- [The chosen IGDB match is wrong] → Exact-title and year ranking, platform limit, a preview-only mode, and an IGDB ID override. The summary always shows what was picked.
 
 ## Migration Plan
 
 1. Move `public/data/*.json` to `data/` in the same commit that switches the app to the API.
 2. On first load of the new app, if the old `backlog_dirty` flag is set, treat the old localStorage content as local, with the freshly loaded head as base. The normal merge then saves it. Remove the old keys afterwards.
-3. Owner setup, documented in the README: create the fine-grained token; create the Deno Deploy project linked to `proxy/` and set `IGDB_CLIENT_ID`, `IGDB_CLIENT_SECRET`, `GITHUB_OWNER`, `GITHUB_REPO` and `ALLOWED_ORIGIN`; set the repository variables; set Pages source to GitHub Actions.
+3. Owner setup, documented in the README: create the fine-grained token; add `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET` as Actions repository secrets; set the repository variables; set Pages source to GitHub Actions.
 4. Rollback: revert the app commits. The data format is unchanged, so moving `data/` back to `public/data/` restores the old flow.

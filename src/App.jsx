@@ -9,7 +9,6 @@ import StatsPage from './components/StatsPage'
 import RandomPicker from './components/RandomPicker'
 import HomePage from './components/HomePage'
 import ImportModal from './components/ImportModal'
-import { enrichGame } from './api/igdb'
 import { createLibrarySync } from './api/storage'
 import SaveStatus from './components/SaveStatus'
 import './App.css'
@@ -158,65 +157,6 @@ export default function App({ token, onSignOut, onUnauthorized }) {
 
   const openEdit  = (game) => { setEditingGame(game); setShowModal(true) }
   const closeModal = () => { setShowModal(false); setEditingGame(null) }
-
-  // ── IGDB bulk sync ───────────────────────────────────────────────────────────
-  const [syncState, setSyncState] = useState(null) // null | { done, total, errors, mode }
-
-  const unsyncedCount = games.filter(g => !g.lastSynced).length
-
-  const syncFromIGDB = useCallback(async (mode = 'new') => {
-    // 'new'  = only games that have never been synced (no lastSynced field)
-    // 'full' = all games regardless
-    const toSync = mode === 'full'
-      ? games
-      : games.filter(g => !g.lastSynced)
-
-    if (!toSync.length) {
-      setSyncState({ done: 0, total: 0, errors: 0, mode, finished: true })
-      return
-    }
-
-    setSyncState({ done: 0, total: toSync.length, errors: 0, mode })
-
-    let errors = 0
-    for (let i = 0; i < toSync.length; i++) {
-      const g = toSync[i]
-      try {
-        const patch = await enrichGame(g.title)
-        if (patch) {
-          setGames(prev => prev.map(pg => {
-            if (pg.id !== g.id) return pg
-            return {
-              ...pg,
-              genre:        patch.genre        ?? pg.genre,
-              franchise:    patch.franchise    ?? pg.franchise,
-              tags:         patch.tags?.length   ? patch.tags         : (pg.tags ?? []),
-              timeToBeat:   patch.timeToBeat   ?? pg.timeToBeat,
-              developer:    patch.developer    ?? pg.developer,
-              criticScore:  patch.criticScore  ?? pg.criticScore,
-              gameModes:    patch.gameModes?.length ? patch.gameModes  : (pg.gameModes ?? []),
-              perspectives: patch.perspectives?.length ? patch.perspectives : (pg.perspectives ?? []),
-              // Merge DLC: keep existing done-states, add new entries with done:false
-              dlc: (() => {
-                const existing = Object.fromEntries((pg.dlc ?? []).map(d => [d.title, d.done]))
-                const incoming = patch.dlc ?? pg.dlc ?? []
-                return incoming.map(d => ({ ...d, done: existing[d.title] ?? d.done }))
-              })(),
-              cover:        pg.cover    || patch.cover    || pg.cover,
-              released:     pg.released || patch.released || pg.released,
-              lastSynced:   Date.now(),
-            }
-          }))
-        }
-      } catch {
-        errors++
-      }
-      setSyncState({ done: i + 1, total: toSync.length, errors, mode })
-      await new Promise(r => setTimeout(r, 260))
-    }
-
-    setSyncState(prev => ({ ...prev, finished: true }))
-  }, [games])
 
   // ── Journal CRUD ─────────────────────────────────────────────────────────────
   // Sub-game entries are keyed as `${gameId}:${subGameTitle}` in the journal map.
@@ -394,10 +334,6 @@ export default function App({ token, onSignOut, onUnauthorized }) {
           <StatsPage
             allGames={games}
             journal={journal}
-            onSyncIGDB={syncFromIGDB}
-            syncState={syncState}
-            onClearSync={() => setSyncState(null)}
-            unsyncedCount={unsyncedCount}
           />
         )}
       </main>

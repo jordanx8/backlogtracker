@@ -11,7 +11,6 @@ export const config = {
   owner:    import.meta.env?.VITE_GITHUB_OWNER  || '',
   repo:     import.meta.env?.VITE_GITHUB_REPO   || '',
   branch:   import.meta.env?.VITE_GITHUB_BRANCH || 'main',
-  proxyUrl: (import.meta.env?.VITE_IGDB_PROXY_URL || '').replace(/\/+$/, ''),
   dataDir:  'data',
 }
 
@@ -27,6 +26,3 @@ if (missingConfig.length) {
     'Set them in .env.local (dev) or as repository variables (Pages build).'
   )
 }
-
-/** True when the IGDB lookup proxy is configured. */
-export const igdbEnabled = Boolean(config.proxyUrl)

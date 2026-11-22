@@ -8,7 +8,7 @@ on:
     paths-ignore:
       - 'data/**'
       - 'openspec/**'
-      - 'proxy/**'
+      - 'scripts/**'
       - '**.md'
   workflow_dispatch:
 
@@ -39,7 +39,6 @@ jobs:
           VITE_GITHUB_OWNER: ${{ vars.VITE_GITHUB_OWNER || github.repository_owner }}
           VITE_GITHUB_REPO: ${{ vars.VITE_GITHUB_REPO || github.event.repository.name }}
           VITE_GITHUB_BRANCH: ${{ vars.VITE_GITHUB_BRANCH || 'main' }}
-          VITE_IGDB_PROXY_URL: ${{ vars.VITE_IGDB_PROXY_URL }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
