@@ -10847,5 +10847,33 @@
     "perspectives": [
       "Bird view / Isometric"
     ]
+  },
+  {
+    "id": 1795382241338,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "system": "Nintendo Switch 2",
+    "genre": "Adventure",
+    "status": "completed",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": 24,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocv5r.jpg",
+    "released": "2026",
+    "developer": "Nintendo EPD Production Group No. 3",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "tags": [
+      "Action",
+      "Fantasy"
+    ],
+    "dlc": [],
+    "igdbId": 405460,
+    "lastSynced": 1795382241338
   }
 ]
