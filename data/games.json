@@ -10875,5 +10875,34 @@
     "dlc": [],
     "igdbId": 405460,
     "lastSynced": 1795382241338
+  },
+  {
+    "id": 1795382257111,
+    "title": "Yakuza Kiwami 3",
+    "system": "Nintendo Switch 2",
+    "genre": "Action",
+    "status": "backlog",
+    "ownership": "physical",
+    "franchise": "",
+    "timeToBeat": null,
+    "rating": null,
+    "notes": "",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coay0x.jpg",
+    "released": "2026",
+    "developer": "Ryu Ga Gotoku Studio",
+    "gameModes": [
+      "Single player"
+    ],
+    "perspectives": [
+      "Third person"
+    ],
+    "tags": [
+      "Action",
+      "Drama",
+      "Open world"
+    ],
+    "dlc": [],
+    "igdbId": 368182,
+    "lastSynced": 1795382257111
   }
 ]
