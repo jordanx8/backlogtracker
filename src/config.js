@@ -14,6 +14,9 @@ export const config = {
   dataDir:  'data',
 }
 
+/** Where new games are added: the "Add game from IGDB" workflow on GitHub. */
+export const ADD_FROM_IGDB_URL = `https://github.com/${config.owner}/${config.repo}/actions/workflows/add-game.yml`
+
 /** Names of required settings that are missing, or [] when configured. */
 export const missingConfig = [
   !config.owner && 'VITE_GITHUB_OWNER',

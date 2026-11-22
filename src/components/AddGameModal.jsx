@@ -1,12 +1,8 @@
 import { useState } from 'react'
 import Icon from './Icon'
 import { SYSTEMS, GENRES } from '../constants'
-import { config } from '../config'
 
 const EMPTY = { title: '', system: '', genre: '', status: 'backlog', ownership: '', franchise: '', timeToBeat: '', rating: '', notes: '', cover: '', released: '', includedGames: '', developer: '', criticScore: null, gameModes: [], perspectives: [], dlc: '' }
-
-// IGDB lookups run in GitHub Actions, not in the app (see scripts/add-game.js)
-const ADD_FROM_IGDB_URL = `https://github.com/${config.owner}/${config.repo}/actions/workflows/add-game.yml`
 
 function formFromGame(game) {
   if (!game) return EMPTY
@@ -34,8 +30,12 @@ function formFromGame(game) {
   }
 }
 
+/**
+ * Edit an existing game. New games are added only by the "Add game from IGDB"
+ * workflow (scripts/add-game.js), not in the app.
+ */
 export default function AddGameModal({ game, onSave, onClose, existingSystems }) {
-  // The modal is mounted fresh for each add/edit, so initial state comes from `game`
+  // The modal is mounted fresh for each edit, so initial state comes from `game`
   const [form, setForm] = useState(() => formFromGame(game))
   const [customSystem, setCustomSystem] = useState(() => (game && !SYSTEMS.includes(game.system) ? game.system : ''))
   const [errors, setErrors] = useState({})
@@ -118,22 +118,11 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
     <div className="modal-overlay" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <div className="modal">
         <div className="modal-header">
-          <h2>{game ? 'Edit Game' : 'Add Game'}</h2>
+          <h2>Edit Game</h2>
           <button className="icon-btn" onClick={onClose}><Icon name="close" size={14} /></button>
         </div>
 
         <form onSubmit={handleSubmit} className="modal-form">
-
-          {!game && (
-            <p className="igdb-hint">
-              <Icon name="sync" size={13} />
-              <span>
-                Want the cover, genre and time to beat filled in from IGDB?{' '}
-                <a href={ADD_FROM_IGDB_URL} target="_blank" rel="noreferrer">Add it with the IGDB workflow</a>{' '}
-                instead. The game shows up here about a minute after the run.
-              </span>
-            </p>
-          )}
 
           {/* ── Cover ── */}
           {form.cover && (
@@ -155,7 +144,6 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
               value={form.title}
               onChange={e => set('title', e.target.value)}
               placeholder="e.g. Elden Ring"
-              autoFocus={!game}
             />
             {errors.title && <span className="field-error">{errors.title}</span>}
           </div>
@@ -346,7 +334,7 @@ export default function AddGameModal({ game, onSave, onClose, existingSystems })
 
           <div className="modal-footer">
             <button type="button" className="btn-secondary" onClick={onClose}>Cancel</button>
-            <button type="submit" className="btn-primary">{game ? 'Save Changes' : 'Add Game'}</button>
+            <button type="submit" className="btn-primary">Save Changes</button>
           </div>
         </form>
       </div>

@@ -50,7 +50,7 @@
 
 ## 8. End-to-end checks
 
-- [ ] 8.1 On the deployed site, run through sign-in, add a game by hand, add a game with the IGDB workflow and see it appear, edit, journal entry, and sign-out; verify each step and the resulting commits on GitHub
+- [ ] 8.1 On the deployed site, run through sign-in, use Add from IGDB to open the workflow and add a game, see it appear, edit, journal entry, and sign-out; verify each step and the resulting commits on GitHub
 - [ ] 8.2 With two devices or browser profiles, run the merge scenarios in `specs/library-sync/spec.md` (different games, same game different fields, same field, delete vs edit); verify the final `data/` files match the expected results
 - [x] 8.3 Confirm that a visitor without a token sees only the sign-in screen, and that `/backlogtracker/data/games.json` is not served; verify in a private window
 

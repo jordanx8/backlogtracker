@@ -11,7 +11,6 @@ A personal video game backlog tracker built with React and Vite. Keep track of w
 - **Journal** – per-game notes, plus a combined journal view across all games
 - **Stats page** – overview of your collection
 - **Random picker** – can't decide what to play next? Let the app choose
-- **CSV import** – bulk-import an existing library from a CSV file
 - **Stored in GitHub** – the library is JSON in this repo, loaded and autosaved through the GitHub API, so every change is a commit
 - **Use it anywhere** – hosted on GitHub Pages, editable from any device, with changes from different devices merged automatically
 
@@ -90,7 +89,7 @@ IGDB can't be called from a browser (it blocks cross-site requests, and its secr
 
 ### Adding a game
 
-1. Open **Actions → Add game from IGDB → Run workflow** (the app's Add Game form links there). It works from a phone too.
+1. Open **Actions → Add game from IGDB → Run workflow**. The app's **Add from IGDB** button opens it. This is the only way to add a single game; the app itself only edits games. It works from a phone too.
 2. Fill in the form:
 
    | Field | Notes |
@@ -181,7 +180,6 @@ src/
     ├── AllJournal.jsx
     ├── StatsPage.jsx
     ├── RandomPicker.jsx
-    ├── ImportModal.jsx  # CSV import
     └── Icon.jsx
 data/
 ├── games.json

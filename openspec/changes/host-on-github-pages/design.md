@@ -99,7 +99,7 @@ Delete `src/api/hltb.js`, the HLTB fallback in `enrichGame`, and the fallback in
 - [Many small commits in history] → Debounced batches and descriptive messages keep history readable. This replaces the manual "dump" commits.
 - [Edits on both sides of one field: local wins, so the other device's value is lost] → Rare for a single person. The lost value remains in git history.
 - [The page closes before the debounced save fires] → Local content persists in localStorage and saves on next open, merging if needed.
-- [Adding a game from IGDB takes a workflow run (about 30 to 60 seconds) and happens outside the app] → Accepted, in exchange for no extra service. Manual add in the app stays instant, and the form in the Actions tab works from a phone.
+- [Adding a game from IGDB takes a workflow run (about 30 to 60 seconds) and happens outside the app] → Accepted, in exchange for no extra service. The app's Add button opens the workflow, and the form in the Actions tab works from a phone. Edits in the app stay instant.
 - [The chosen IGDB match is wrong] → Exact-title and year ranking, platform limit, a preview-only mode, and an IGDB ID override. The summary always shows what was picked.
 
 ## Migration Plan

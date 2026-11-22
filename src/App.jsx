@@ -8,8 +8,8 @@ import AllJournal from './components/AllJournal'
 import StatsPage from './components/StatsPage'
 import RandomPicker from './components/RandomPicker'
 import HomePage from './components/HomePage'
-import ImportModal from './components/ImportModal'
 import { createLibrarySync } from './api/storage'
+import { ADD_FROM_IGDB_URL } from './config'
 import SaveStatus from './components/SaveStatus'
 import './App.css'
 
@@ -26,7 +26,6 @@ export default function App({ token, onSignOut, onUnauthorized }) {
   const [editingGame, setEditingGame]   = useState(null)
   const [journalGame, setJournalGame]   = useState(null)   // { game, subGame? }
   const [showPicker, setShowPicker]     = useState(false)
-  const [showImport, setShowImport]     = useState(false)
   const [filters, setFilters]   = useState(EMPTY_FILTERS)
   const [sortBy, setSortBy]     = useState('title')
 
@@ -100,19 +99,6 @@ export default function App({ token, onSignOut, onUnauthorized }) {
   }
 
   // ── Game CRUD ────────────────────────────────────────────────────────────────
-
-  const addGame = (game) => {
-    setGames(prev => [...prev, { ...game, id: Date.now() }])
-    setShowModal(false)
-  }
-
-  const importGames = (incoming) => {
-    const ts = Date.now()
-    setGames(prev => [
-      ...prev,
-      ...incoming.map((g, i) => ({ ...g, id: ts + i })),
-    ])
-  }
 
   const updateGame = (updated) => {
     setGames(prev => prev.map(g => g.id === updated.id ? updated : g))
@@ -242,8 +228,7 @@ export default function App({ token, onSignOut, onUnauthorized }) {
           </div>
           <div className="header-actions">
             <button className="btn-ghost" title="Random Picker" onClick={() => setShowPicker(true)}><Icon name="dice" size={14} /> Random</button>
-            <button className="btn-ghost" title="Import from CSV" onClick={() => setShowImport(true)}><Icon name="import" size={14} /> Import</button>
-            <button className="btn-primary" onClick={() => setShowModal(true)}><Icon name="plus" size={14} /> Add Game</button>
+            <a className="btn-primary btn-link" href={ADD_FROM_IGDB_URL} target="_blank" rel="noreferrer" title="Games are added by the Add game from IGDB workflow on GitHub"><Icon name="plus" size={14} /> Add from IGDB</a>
             <SaveStatus status={sync.status} error={sync.error} onRetry={() => engine.flush()} />
             <button className="btn-ghost" title="Sign out on this device" onClick={signOut}>Sign out</button>
           </div>
@@ -338,10 +323,10 @@ export default function App({ token, onSignOut, onUnauthorized }) {
         )}
       </main>
 
-      {showModal && (
+      {showModal && editingGame && (
         <AddGameModal
           game={editingGame}
-          onSave={editingGame ? updateGame : addGame}
+          onSave={updateGame}
           onClose={closeModal}
           existingSystems={allSystems}
         />
@@ -368,13 +353,6 @@ export default function App({ token, onSignOut, onUnauthorized }) {
         />
       )}
 
-      {showImport && (
-        <ImportModal
-          existingGames={games}
-          onImport={(incoming) => { importGames(incoming); }}
-          onClose={() => setShowImport(false)}
-        />
-      )}
     </div>
   )
 }
@@ -420,7 +398,7 @@ function WishlistTab({ games, onEdit, onDelete, onMoveToCollection }) {
       {filtered.length === 0 ? (
         <div className="empty-state">
           <p>{games.length === 0 ? 'Your wishlist is empty.' : 'No games match your search.'}</p>
-          {games.length === 0 && <p className="empty-state-sub">Add a game and set its status to Wishlist.</p>}
+          {games.length === 0 && <p className="empty-state-sub">Add a game with the <a href={ADD_FROM_IGDB_URL} target="_blank" rel="noreferrer">IGDB workflow</a> and set its status to Wishlist.</p>}
         </div>
       ) : (
         <div className="game-grid">

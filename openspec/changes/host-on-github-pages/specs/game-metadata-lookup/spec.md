@@ -92,11 +92,22 @@ The workflow's commit SHALL NOT discard edits that the app saved while the workf
 - **THEN** the resulting library contains both the app's edit and the added game
 
 ### Requirement: No IGDB access from the app
-The app SHALL NOT contact IGDB or any lookup service, and SHALL let the owner add and edit games by hand, including time to beat.
+The app SHALL NOT contact IGDB or any lookup service. It SHALL let the owner edit existing games by hand, including time to beat.
 
-#### Scenario: Adding by hand
-- **WHEN** the owner adds a game in the app
-- **THEN** the game is saved with the details entered, no IGDB request is made, and the form points to the workflow for adding from IGDB
+#### Scenario: Editing by hand
+- **WHEN** the owner edits a game in the app
+- **THEN** the changes are saved as entered, and no IGDB request is made
+
+### Requirement: New games come only from the workflow
+The app SHALL NOT offer any way to add games, neither a form for one game nor a bulk import. Its add action SHALL open the "Add game from IGDB" workflow on GitHub instead.
+
+#### Scenario: Owner wants to add a game
+- **WHEN** the owner uses the app's add action
+- **THEN** the "Add game from IGDB" workflow page opens on GitHub, and no game is created in the app
+
+#### Scenario: No bulk import
+- **WHEN** the owner looks for a way to import games from a file
+- **THEN** the app offers none
 
 #### Scenario: Existing values kept
 - **WHEN** a game already has details recorded, including a time to beat previously filled from HowLongToBeat
