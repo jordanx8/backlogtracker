@@ -2220,7 +2220,7 @@
     "title": "Pokémon Blue Version",
     "system": "Game Boy",
     "genre": "RPG",
-    "status": "backlog",
+    "status": "playing",
     "ownership": "physical",
     "franchise": "",
     "timeToBeat": 28,
@@ -2239,8 +2239,257 @@
     "tags": [
       "Fantasy"
     ],
-    "dlc": [],
-    "lastSynced": 1791860796154
+    "lastSynced": 1791860796154,
+    "journalCount": 0,
+    "journal": {
+      "1791671459729": [
+        {
+          "id": 1791673983872,
+          "date": "2026-10-10",
+          "text": "- Eight tricked us fuck her\n- Diana (Seven)/Eight were created to help heal the doctor's daughter\n- Healed Diana and now she can clear away that black goop\n- Got the cool blue armor finally\n- what's up with the black goop though. (dead filament? something like that)"
+        },
+        {
+          "id": 1791770617989,
+          "date": "2026-10-11",
+          "text": "- 100%'d all areas except the most recent one that was unlocked"
+        },
+        {
+          "id": 1791860780717,
+          "date": "2026-10-12",
+          "text": "- beat the main story. Hugh saves Diana and :(\n- final boss was cwazy lookin\n- started the secret mission shiz,, beat the upgraded first boss as well\n- new jackhammer weapon is dope"
+        },
+        {
+          "id": 1791979208915,
+          "date": "2026-10-13",
+          "text": "- finished secret mission shiz and got the mod chip that might save Hugh?\n- also completed all bingo cards"
+        },
+        {
+          "id": 1791981835472,
+          "date": "2026-10-14",
+          "text": "- completed hidden mission and got the true ending. Hugh lives!"
+        }
+      ],
+      "1791671750170": [
+        {
+          "id": 1791674022257,
+          "date": "2026-10-10",
+          "text": "- 100% World 2\n- Played through a little Kirby Fighters,, very cool references to old games (N64 Factory)"
+        },
+        {
+          "id": 1793803291808,
+          "date": "2026-11-04",
+          "text": "beat a couple of levels. im at world 5(?) now"
+        },
+        {
+          "id": 1795320523226,
+          "date": "2026-11-21",
+          "text": "got all sun stones and completed the arena"
+        }
+      ],
+      "undefined": [
+        {
+          "id": 1791741386764,
+          "date": "2026-10-11",
+          "text": "test"
+        }
+      ],
+      "1791672074438": [
+        {
+          "id": 1791770589395,
+          "date": "2026-10-11",
+          "text": "- saved fish guy that has the pet turtle and he gave me an ice pick. to pick ice?"
+        },
+        {
+          "id": 1792243774471,
+          "date": "2026-10-16",
+          "text": "- finished chapter 6- opened the last 2 contraptions to open the control room at the bottom of the glacial area. \n- beat like 3 bosses in the process. the one right before the control room was very annoying"
+        },
+        {
+          "id": 1792246024799,
+          "date": "2026-10-17",
+          "text": "- completed the main story! A blast overall but I'm ready to be done with it.\n- you save the fish people and you can continue to do all the side missions and whatnot. final boss was a big ole shrimp"
+        }
+      ],
+      "1791671750178:Phoenix Wright: Ace Attorney - Justice For All": [
+        {
+          "id": 1791742111531,
+          "date": "2026-10-09",
+          "text": "- started big top turnabout (supposedly the worst case.)"
+        },
+        {
+          "id": 1793475177117,
+          "date": "2026-10-31",
+          "text": "shelving for now"
+        }
+      ],
+      "1791671750238": [
+        {
+          "id": 1791824533096,
+          "date": "2026-10-12",
+          "text": "- beat the normal mode\n- played on OG gameboy for funsies, very relaxing on the hammock\n- OG gameboy does not look bad in the sun. not perf, but not awful\n- think I'll play through hard mode"
+        }
+      ],
+      "1791724129137": [
+        {
+          "id": 1792243794367,
+          "date": "2026-10-15",
+          "text": "- unlocked all characters and karts"
+        }
+      ],
+      "1791671750177": [
+        {
+          "id": 1792369563683,
+          "date": "2026-10-18",
+          "text": "this game sucks, idk I ill come back to it"
+        }
+      ],
+      "1792090824119:Yakuza 5 Remastered": [
+        {
+          "id": 1792419380362,
+          "date": "2026-10-18",
+          "text": "- played through the first chapter\n- Kiryu is undercover in this new city? Using a new name and working for a taxi company.\n- The Tojo Clan is trying to work together with this yakuza group that is in a new city\n- Majima is no longer 2nd in command, it's some new guy\n- feel like I need a refresher on the end of Y4"
+        },
+        {
+          "id": 1792552317824,
+          "date": "2026-10-19",
+          "text": "- daigo missing?\n- taxi stuff is fun. Porn virus side story was great."
+        },
+        {
+          "id": 1792587424686,
+          "date": "2026-10-20",
+          "text": "- had to drive a guy that really had to pee. Taxi driving is a lil frustrating\n- playing through a bunch of side stories. Good ole 'Kuza."
+        },
+        {
+          "id": 1792760018703,
+          "date": "2026-10-22",
+          "text": "- Daigo is not actually missing, he went into hiding to avoid getting murdered.\n- His right hand man is bad,, Kiryu's girl was actually spying on him\n- played a lot of Taxi shit"
+        },
+        {
+          "id": 1793014739975,
+          "date": "2026-10-25",
+          "text": "- finished all the Taxi racing missions"
+        },
+        {
+          "id": 1793032087848,
+          "date": "2026-10-26",
+          "text": "- Finished Part 1, to recap:\n-- Omi Alliance leader is dying and Daigo was attempting to befriend other, smaller clans (like Yamagasa) to help defend against the more aggressive potential new leaders of the Omi\n-- Daigo disappears and Aoyama blames the Yamagasa\n-- Kiryu confronts the Yamgasa and Aoyama shoots the Yamagasa leader and pins it on Kiryu\n-- turns out Yamagasa didn't kidnap Daigo and his daughter was the lady Kiryu was \"dating\"\n-- Kiryu is in hiding to help protect Haruka's new pop star career.\n-- the 2 body guards (Morinanga and Aizawa), Morinaga is actually one of the guys behind Aoyama being annoying. Aoyama gets shot in the head by Morinaga cause he was about to squeal and also admits that he killed Aizawa)\n-- Daigo still in hiding\n-- Kiryu is pissed and wants to go to Tokyo to stop whatever Morinaga is planning. The Omi Alliance guy wants to do the same.\n-- Majima body was found to be dead. Pissing Kiryu off and convincing him to go to Tokyo."
+        },
+        {
+          "id": 1793201205324,
+          "date": "2026-10-28",
+          "text": "- Yakuza are tripe\n- Part 2 is Saejima's story\n- He submits himself to jail in order to do his time and then return to the Tojo Clan\n- he's getting tortured, but he's just dealing with it so he gets probation early for being a good prisoner\n- the guy in jail is trying to keep saejima in jail, and the jail gets a letter that Saejima is expelled from the Tojo Clan\n- the warden realizes something is going on and helps Saejima and Baba escape, but when they escape the prisoners have taken over and kill the warden and try to kill Saejima but he successfully beats them and escapes\n- fights a bear in the forest and passes out, getting saved by a mystery man"
+        },
+        {
+          "id": 1793450590656,
+          "date": "2026-10-31",
+          "text": "at a hunting tribe-ish place. Got saved by a hunter. You can go hunting with Saejima"
+        },
+        {
+          "id": 1793803267308,
+          "date": "2026-11-04",
+          "text": "got through hunting side mission. pretty fun\n\njust moved into the city section of saejima's story"
+        },
+        {
+          "id": 1795354221261,
+          "date": "2026-11-22",
+          "text": "got to haruka's story\n\nbaba was working for the bad guy and murdered the guy who was tryna tell Saejima everything. seems like majima is not dead?"
+        }
+      ],
+      "1792503297815": [
+        {
+          "id": 1792503319977,
+          "date": "2026-10-19",
+          "text": "this made me wanna get power wash simulator. so I did"
+        }
+      ],
+      "1792503270869": [
+        {
+          "id": 1792503397589,
+          "date": "2026-10-19",
+          "text": "- cleaned my van and started washing up a backyard. p relaxing"
+        },
+        {
+          "id": 1792712829007,
+          "date": "2026-10-21",
+          "text": "- cleaned a fuggin bike"
+        },
+        {
+          "id": 1793803112491,
+          "date": "2026-11-04",
+          "text": "- shelving,, controls are bleh on the switch"
+        }
+      ],
+      "1791671750239": [
+        {
+          "id": 1792759862508,
+          "date": "2026-10-22",
+          "text": "- completed world 1\n- beat world 2, but still need to get the gem. there's some blocks I can't figure out how to break just yet in level 2"
+        },
+        {
+          "id": 1793014764437,
+          "date": "2026-10-25",
+          "text": "- beat a lot more worlds. At World 6 now"
+        },
+        {
+          "id": 1793201215114,
+          "date": "2026-10-28",
+          "text": "- made it to world 7"
+        },
+        {
+          "id": 1793450526250,
+          "date": "2026-10-31",
+          "text": "beaten the game,, working on getting the rest of the rainbow drops"
+        },
+        {
+          "id": 1793475130358,
+          "date": "2026-10-31",
+          "text": "100% is annoying, holding off on that for now. marking as complete"
+        }
+      ],
+      "1791735216283": [
+        {
+          "id": 1792759912531,
+          "date": "2026-10-22",
+          "text": "- beat challenge mode on easy and finished some of the puzzles and shiz\n- got a good ways through challenge mode on normal and unlocked pikachu"
+        }
+      ],
+      "1793453020419": [
+        {
+          "id": 1793453035638,
+          "date": "2026-10-31",
+          "text": "completed ch 5 of story. fucked up gore masala"
+        },
+        {
+          "id": 1793453041216,
+          "date": "2026-10-31",
+          "text": "magala****"
+        }
+      ],
+      "1793803476267": [
+        {
+          "id": 1793803498716,
+          "date": "2026-11-04",
+          "text": "got the all prizes achievement finally. working on completing the collection now"
+        },
+        {
+          "id": 1795354299849,
+          "date": "2026-11-22",
+          "text": "done! unless I feel like going back and getting rabbit achievement"
+        }
+      ],
+      "1793803460168": [
+        {
+          "id": 1793803517616,
+          "date": "2026-11-04",
+          "text": "im a warrior now :)\n\nthis game sucks"
+        },
+        {
+          "id": 1795354279128,
+          "date": "2026-11-22",
+          "text": "shelving for now"
+        }
+      ]
+    }
   },
   {
     "id": 1791671750242,
